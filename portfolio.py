@@ -3,13 +3,13 @@ from PIL import Image
 import base64
 from io import BytesIO
 
-# --- PAGE CONFIG ---
+
 st.set_page_config(page_title="Suhas Venkata", page_icon="📁", layout="wide")
 
-# --- LOAD IMAGE ---
+
 profile_pic = Image.open("profile.jpg")
 
-# Convert image to base64 for inline HTML
+
 def image_to_base64(img):
     buffered = BytesIO()
     img.save(buffered, format="PNG")
@@ -17,7 +17,7 @@ def image_to_base64(img):
 
 img_b64 = image_to_base64(profile_pic)
 
-# --- CUSTOM STYLES ---
+
 st.markdown("""
 <style>
 body {
