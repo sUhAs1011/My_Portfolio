@@ -128,7 +128,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-# --- HERO SECTION ---
+
 col1, col2 = st.columns([3, 2])
 
 with col1:
@@ -147,7 +147,7 @@ with col1:
 with col2:
     st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 
-# --- SKILLS SECTION ---
+
 st.markdown("---")
 st.header("🛠️ Skills")
 st.write("""
@@ -159,12 +159,12 @@ st.write("""
 - **Tools**: Git, Postman, Docker, VS Code
 """)
 
-# --- JOURNEY SECTION ---
+
 st.markdown("---")
 st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center;'>Here is my personal journey 🧾</p>", unsafe_allow_html=True)
 
-# --- Timeline CSS (alternating vertical style) ---
+
 st.markdown("""
 <style>
 .timeline-container {
@@ -243,7 +243,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Timeline Content ---
+
 st.markdown("""
 <div class="timeline-container">
 
@@ -275,7 +275,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- PROJECTS SECTION ---
+
 st.markdown("---")
 st.header("🚀 Projects")
 
@@ -297,7 +297,7 @@ A chatbot for mining law compliance using Sentence Transformers and MongoDB. Han
 """)
 st.write("**Tech Stack**: NLP, MongoDB, Tkinter GUI")
 
-# --- Custom Footer with Styling ---
+
 st.markdown("""
     <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
         Made with ❤️ by <strong>Suhas Venkata</strong>
@@ -306,7 +306,7 @@ st.markdown("""
 
 
 
-# --- Gradient Button CSS (No underline) ---
+
 st.markdown("""
 <style>
 .contact-button {
@@ -331,7 +331,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Centered Contact Buttons ---
+
 st.markdown("""
 <div style='text-align: center; margin-top: 20px;'>
     <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">📧 Email</a>
