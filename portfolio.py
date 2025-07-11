@@ -257,7 +257,7 @@ st.markdown("""
 
   <div class="timeline-item">
     <div class="timeline-content right">
-      <h3>12th PUC</h3>
+      <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
     </div>
