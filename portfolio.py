@@ -276,8 +276,6 @@ st.markdown("""
 st.markdown("---")
 st.header("🚀 Projects")
 
-st.markdown("---")
-st.header("🚀 Projects")
 
 # --- Blockchain Healthcare Project with Image ---
 col1, col2 = st.columns([2, 1])
@@ -302,54 +300,81 @@ with col1:
     """)
 
 with col2:
-    st.image("healthcare.jpg", caption="Healthcare Blockchain System", use_column_width=True)
+    st.image("healthcare.jpg", caption="Healthcare Blockchain System", use_container_width=True)
 
 
-st.write("""
-Engineered a **real-time intrusion detection system** using Arduino (April 2024), designed to enhance home security through automated alerts and physical deterrents.
+# Alarm Burglar System with image on the left and content on the right
+st.markdown("---")
+col_left, col_right = st.columns([1, 2])
 
-Key features include:
-- Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
-- Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.
-- Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
+with col_left:
+    st.image("arduino.jpg", caption="Arduino-Based Security System", use_container_width=True)
 
-**Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
-""")
+with col_right:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-ALARM-BURGLAR-SYSTEM' target='_blank' style='text-decoration: none; color: white;'>🔐 Alarm Burglar System with Arduino</a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Engineered a **real-time intrusion detection system** using Arduino (April 2024), designed to enhance home security through automated alerts and physical deterrents.
 
-st.markdown(
-    "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>💬 LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
-    unsafe_allow_html=True
-)
+    Key features include:
+    - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.  
+    - Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.  
+    - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
 
-st.write("""
-Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry (April 2025).
+    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
+    """)
 
-Key features include:
-- Analyzed and interpreted mining laws to deliver precise legal responses based on user input.
-- Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.
-- Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
 
-This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
+# LegalBot with image on the right and content on the left
+st.markdown("---")
+col_left, col_right = st.columns([2, 1])
 
-**Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI, NLP
-""")
+with col_left:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>💬 LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry.
 
-st.markdown(
-    "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁️ Cloud Storage System using UDP</a></h3>",
-    unsafe_allow_html=True
-)
+    Key features include:
+    - Analyzed and interpreted mining laws to deliver precise legal responses based on user input.  
+    - Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.  
+    - Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
 
-st.write("""
-Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
+    This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-Key features include:
-- Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
-- Integrated **SSL certificates** for secure communication between client and server.
-- Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
-- Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
+    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI, NLP
+    """)
 
-**Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
-""")
+with col_right:
+    st.image("chatbot.jpg", caption="LegalBot - AI Chatbot for Mining Compliance", use_container_width=True)
+
+# Cloud Storage with image on the left and content on the right
+st.markdown("---")
+col_left, col_right = st.columns([1, 2])
+
+with col_left:
+    st.image("udp.jpg", caption="UDP-Based Cloud Storage System", use_container_width=True)
+
+with col_right:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁️ Cloud Storage System using UDP</a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
+
+    Key features include:
+    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.  
+    - Integrated **SSL certificates** for secure communication between client and server.  
+    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.  
+    - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
+
+    **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
+    """)
 
 
 # --- Custom Footer with Styling ---
