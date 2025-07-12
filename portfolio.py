@@ -276,28 +276,34 @@ st.markdown("""
 st.markdown("---")
 st.header("🚀 Projects")
 
-st.markdown(
-    "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>🗳️ Blockchain-Powered Healthcare Insights</a></h3>",
-    unsafe_allow_html=True
-)
+st.markdown("---")
+st.header("🚀 Projects")
 
-st.write("""
-Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **IPFS**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
+# --- Blockchain Healthcare Project with Image ---
+col1, col2 = st.columns([2, 1])
 
-Leveraged machine learning to:
-- Analyze patient histories
-- Predict adverse drug reactions
-- Recommend personalized treatment plans
+with col1:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>🗳️ Blockchain-Powered Healthcare Insights</a></h3>",
+        unsafe_allow_html=True
+    )
 
-This system significantly improved the speed and accuracy of clinical decision-making.
+    st.write("""
+    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **IPFS**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
-**Tech Stack**: Spring Boot, MySQL, React, Chart.js, IPFS, Blockchain, ML
-""")
+    Leveraged machine learning to:
+    - Analyze patient histories  
+    - Predict adverse drug reactions  
+    - Recommend personalized treatment plans  
 
-st.markdown(
-    "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-ALARM-BURGLAR-SYSTEM' target='_blank' style='text-decoration: none; color: white;'>🔐 Alarm Burglar System with Arduino</a></h3>",
-    unsafe_allow_html=True
-)
+    This system significantly improved the speed and accuracy of clinical decision-making.
+
+    **Tech Stack**: Spring Boot, MySQL, React, Chart.js, IPFS, Blockchain, ML
+    """)
+
+with col2:
+    st.image("healthcare.jpg", caption="Healthcare Blockchain System", use_column_width=True)
+
 
 st.write("""
 Engineered a **real-time intrusion detection system** using Arduino (April 2024), designed to enhance home security through automated alerts and physical deterrents.
