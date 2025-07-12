@@ -156,6 +156,8 @@ st.write("""
 - **Tools**: Git, Postman, Docker, VS Code
 """)
 
+### --- EXPERIENCE 
+
 # --- JOURNEY SECTION ---
 st.markdown("---")
 st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
