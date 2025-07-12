@@ -156,7 +156,19 @@ st.write("""
 - **Tools**: Git, Postman, Docker, VS Code
 """)
 
-### --- EXPERIENCE 
+# --- EXPERIENCE SECTION ---
+st.markdown("---")
+st.header("💼 Experience")
+
+st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence)")
+st.write("""
+📅 June 2025 – August 2025  
+ - Built a career advisory platform leveraging NLP, vector search, and data analytics to identify gaps between user resume skills and target job
+requirements. 
+ - Recommended personalized online courses (primarily from Coursera) to help users bridge skill gaps and upskill effectively based on job
+description analysis.
+""")
+
 
 # --- JOURNEY SECTION ---
 st.markdown("---")
@@ -472,5 +484,4 @@ st.markdown("""
     <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">💻 GitHub</a>
 </div>
 """, unsafe_allow_html=True)
-
 
