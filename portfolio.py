@@ -249,14 +249,16 @@ st.markdown("""
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
       <p>📅 2022 – Present</p>
+      <p>CGPA: 8.06</p>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-content right">
-      <h3>12th PUC</h3>
+      <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
+      <p>86% 12th boards </p>
     </div>
   </div>
 
@@ -265,6 +267,7 @@ st.markdown("""
       <h3>10th CBSE</h3>
       <p>DPS EAST</p>
       <p>📅 2006 – 2020</p>
+      <p>90% 10th boards </p>
     </div>
   </div>
 
