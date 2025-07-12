@@ -4,7 +4,7 @@ import base64
 from io import BytesIO
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Suhas Venkata", page_icon="📁", layout="wide")
+st.set_page_config(page_title="Suhas_Portfolio", page_icon="📁", layout="wide")
 
 # --- LOAD IMAGE ---
 profile_pic = Image.open("profile.jpg")
