@@ -379,6 +379,33 @@ with col_right:
     **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
     """)
 
+# Portfolio Project with image on the right and content on the left
+st.markdown("---")
+col_left, col_right = st.columns([2, 1])
+
+with col_left:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/My_Portfolio' target='_blank' style='text-decoration: none; color: white;'>📁 Personal Portfolio Website</a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
+
+    Features include:
+    - Animated hero section with a circular profile picture and gradient headers  
+    - Skill badges, project showcases with GitHub integration  
+    - A vertical educational timeline  
+    - Downloadable resume and aesthetic contact buttons  
+
+    The portfolio is fully responsive and easy to maintain, serving as a central hub for professional representation.
+
+    **Tech Stack**: Streamlit, Python, HTML/CSS, PIL
+    """)
+
+with col_right:
+    st.image("portfolio.jpg", caption="Streamlit Portfolio", use_container_width=True)
+
+
 
 # --- Custom Footer with Styling ---
 st.markdown("""
