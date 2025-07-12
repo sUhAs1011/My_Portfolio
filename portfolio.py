@@ -134,10 +134,10 @@ col1, col2 = st.columns([3, 2])
 with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
     st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
-    st.markdown("<div class='subtitle'>B.Tech CSE Student</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subtitle'>B.Tech CSE</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.. My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
+            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
@@ -274,6 +274,28 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# --- ACHIEVEMENTS SECTION ---
+st.markdown("---")
+st.header("🏆 Achievements")
+
+# Heal-O-Code Hackathon
+st.subheader("🧠 Heal-O-Code Hackathon – March 2025")
+st.write("""
+Top 10 out of 50+ teams in **Heal-O-Code Hackathon**  
+Built a healthcare decision support tool using **Blockchain** and **Machine Learning** for faster clinical decision-making.
+""")
+
+# MRD Scholarship
+st.subheader("🎓 MRD Scholarship – March 2023")
+st.write("""
+Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+""")
+
+# Distinction Scholarship
+st.subheader("🎖️ Distinction Scholarship ")
+st.write("""
+Received **Distinction Scholarship** of 2000 Rs for achieving above 7.75 SGPA in **Semesters 2, 3, 4, and 5** at **PES University**.
+""")
 
 # --- PROJECTS SECTION ---
 st.markdown("---")
@@ -406,11 +428,10 @@ with col_right:
     st.image("portfolio.jpg", caption="Streamlit Portfolio", use_container_width=True)
 
 
-
 # --- Custom Footer with Styling ---
 st.markdown("""
     <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
-        Made with ❤️ by <strong>Suhas Venkata</strong>
+        Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
 
@@ -449,4 +470,5 @@ st.markdown("""
     <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">💻 GitHub</a>
 </div>
 """, unsafe_allow_html=True)
+
 
