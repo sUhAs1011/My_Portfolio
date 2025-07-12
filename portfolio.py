@@ -3,13 +3,13 @@ from PIL import Image
 import base64
 from io import BytesIO
 
-
+# --- PAGE CONFIG ---
 st.set_page_config(page_title="Suhas Venkata", page_icon="📁", layout="wide")
 
-
+# --- LOAD IMAGE ---
 profile_pic = Image.open("profile.jpg")
 
-
+# Convert image to base64 for inline HTML
 def image_to_base64(img):
     buffered = BytesIO()
     img.save(buffered, format="PNG")
@@ -17,7 +17,7 @@ def image_to_base64(img):
 
 img_b64 = image_to_base64(profile_pic)
 
-
+# --- CUSTOM STYLES ---
 st.markdown("""
 <style>
 body {
@@ -128,7 +128,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-
+# --- HERO SECTION ---
 col1, col2 = st.columns([3, 2])
 
 with col1:
@@ -137,7 +137,7 @@ with col1:
     st.markdown("<div class='subtitle'>B.Tech CSE Student</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering
+            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.. My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
@@ -145,24 +145,23 @@ I am Suhas Venkata, a junior at PES University, Electronic City, currently pursu
 with col2:
     st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 
-
+# --- SKILLS SECTION ---
 st.markdown("---")
 st.header("🛠️ Skills")
 st.write("""
-- **Languages**: Python, Java, C++, JavaScript  
-- **Web Development**: HTML, CSS, React, Node.js, Spring Boot  
+- **Languages**: Python, Java, C++, C, Rust  
+- **Web Development**: HTML, CSS, JavaScript
 - **Database**: MySQL, MongoDB  
-- **AI/ML**: scikit-learn, Pandas, Numpy, Streamlit  
-- **Security**: SSL, Network Protocols, Cryptography  
+- **AI/ML**: scikit-learn, Pandas, Numpy, Streamlit, NLTK, Spacy, pytorch
 - **Tools**: Git, Postman, Docker, VS Code
 """)
 
-
+# --- JOURNEY SECTION ---
 st.markdown("---")
 st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center;'>Here is my personal journey 🧾</p>", unsafe_allow_html=True)
 
-
+# --- Timeline CSS (alternating vertical style) ---
 st.markdown("""
 <style>
 .timeline-container {
@@ -241,7 +240,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
+# --- Timeline Content ---
 st.markdown("""
 <div class="timeline-container">
 
@@ -255,7 +254,7 @@ st.markdown("""
 
   <div class="timeline-item">
     <div class="timeline-content right">
-      <h3>12th CBSE</h3>
+      <h3>12th PUC</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
     </div>
@@ -273,29 +272,81 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-
+# --- PROJECTS SECTION ---
 st.markdown("---")
 st.header("🚀 Projects")
 
-st.subheader("🗳️ Electronic Voting System")
+st.markdown(
+    "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>🗳️ Blockchain-Powered Healthcare Insights</a></h3>",
+    unsafe_allow_html=True
+)
+
 st.write("""
-Built a secure and role-based electronic voting system using Java Spring Boot and MySQL, with React frontend and dynamic result visualization.
-""")
-st.write("**Tech Stack**: Spring Boot, MySQL, React, Chart.js")
+Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **IPFS**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
-st.subheader("🧠 Emotion Classifier (ML Hackathon)")
+Leveraged machine learning to:
+- Analyze patient histories
+- Predict adverse drug reactions
+- Recommend personalized treatment plans
+
+This system significantly improved the speed and accuracy of clinical decision-making.
+
+**Tech Stack**: Spring Boot, MySQL, React, Chart.js, IPFS, Blockchain, ML
+""")
+
+st.markdown(
+    "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-ALARM-BURGLAR-SYSTEM' target='_blank' style='text-decoration: none; color: white;'>🔐 Alarm Burglar System with Arduino</a></h3>",
+    unsafe_allow_html=True
+)
+
 st.write("""
-Built an ML model to classify sentiments into Positive, Negative, and Neutral from text data, achieving high accuracy.
-""")
-st.write("**Tech Stack**: scikit-learn, Pandas, CSV")
+Engineered a **real-time intrusion detection system** using Arduino (April 2024), designed to enhance home security through automated alerts and physical deterrents.
 
-st.subheader("💬 LegalBot")
+Key features include:
+- Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
+- Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.
+- Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
+
+**Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
+""")
+
+st.markdown(
+    "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>💬 LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
+    unsafe_allow_html=True
+)
+
 st.write("""
-A chatbot for mining law compliance using Sentence Transformers and MongoDB. Handles user queries, detects contradictions, and suggests alternatives.
+Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry (April 2025).
+
+Key features include:
+- Analyzed and interpreted mining laws to deliver precise legal responses based on user input.
+- Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.
+- Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
+
+This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
+
+**Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI, NLP
 """)
-st.write("**Tech Stack**: NLP, MongoDB, Tkinter GUI")
+
+st.markdown(
+    "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁️ Cloud Storage System using UDP</a></h3>",
+    unsafe_allow_html=True
+)
+
+st.write("""
+Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
+
+Key features include:
+- Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
+- Integrated **SSL certificates** for secure communication between client and server.
+- Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
+- Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
+
+**Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
+""")
 
 
+# --- Custom Footer with Styling ---
 st.markdown("""
     <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
         Made with ❤️ by <strong>Suhas Venkata</strong>
@@ -304,7 +355,7 @@ st.markdown("""
 
 
 
-
+# --- Gradient Button CSS (No underline) ---
 st.markdown("""
 <style>
 .contact-button {
@@ -329,7 +380,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
+# --- Centered Contact Buttons ---
 st.markdown("""
 <div style='text-align: center; margin-top: 20px;'>
     <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">📧 Email</a>
