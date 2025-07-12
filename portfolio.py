@@ -137,9 +137,7 @@ with col1:
     st.markdown("<div class='subtitle'>B.Tech CSE Student</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-        Hey! I'm Suhas and I'm a student passionate about building secure, intelligent systems.  
-        My interests lie in AI, Machine Learning, Blockchain, and Cybersecurity.  
-        Welcome to my portfolio! 😊
+I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
