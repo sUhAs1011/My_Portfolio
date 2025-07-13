@@ -1,10 +1,17 @@
 # My Portfolio
 
+- Hello All, this is a portfolio I made during my summer break between my junior and the senior year. This is my personal web interface portfolio which I created using streamlit and PIL which are GUI frameworks in python.I deployed this website with the help of https://streamlit.io/cloud and deployed it.
+- Please visit the website https://suhas-1011-portfolio.streamlit.app/ and please look into my portfolio.
 
+
+
+
+### Commands to run the streamlit code
 <img width="696" height="453" alt="image" src="https://github.com/user-attachments/assets/5af34bb3-31c3-451f-a78d-6f030377db90" />
 
+### Web Interface of My Portfolio
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/75106cdb-4f2e-4457-8d9f-1a8b0230a638" />
 
-<img width="1916" height="868" alt="image" src="https://github.com/user-attachments/assets/4fea9dd7-6270-4b9e-b688-9130d597e907" />
 
 
 
