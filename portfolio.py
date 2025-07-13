@@ -427,7 +427,6 @@ with col_left:
     Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
 
     Features include:
-    - Animated hero section with a circular profile picture and gradient headers  
     - Skill badges, project showcases with GitHub integration  
     - A vertical educational timeline  
     - Downloadable resume and aesthetic contact buttons  
