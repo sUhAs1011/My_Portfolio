@@ -476,6 +476,18 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# --- RESUME DOWNLOAD ---
+with open("new_resume.pdf", "rb") as file:
+    resume_data = file.read()
+    b64_resume = base64.b64encode(resume_data).decode()
+
+st.markdown("""
+<div style='text-align: center;'>
+    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Download Resume</a>
+</div>
+""".format(b64_resume), unsafe_allow_html=True)
+
+
 # --- Centered Contact Buttons ---
 st.markdown("""
 <div style='text-align: center; margin-top: 20px;'>
