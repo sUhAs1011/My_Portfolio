@@ -218,9 +218,11 @@ st.markdown("""
     left: 60%;
 }
 
+<style>
 .timeline-dot {
     position: absolute;
-    left: 50%;
+    top: 20px;  /* vertical alignment */
+    left: 50%;  /* center horizontally */
     transform: translateX(-50%);
     width: 18px;
     height: 18px;
@@ -229,9 +231,7 @@ st.markdown("""
     border-radius: 50%;
     z-index: 2;
 }
-.timeline-dot {
-    top: 30px;  /* Adjust as needed */
-}
+</style>
 
 
 @media screen and (max-width: 768px) {
@@ -254,6 +254,7 @@ st.markdown("""
 <div class="timeline-container">
 
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content left">
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
@@ -263,20 +264,22 @@ st.markdown("""
   </div>
 
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content right">
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
-      <p>86% 12th boards </p>
+      <p>86% 12th boards</p>
     </div>
   </div>
 
   <div class="timeline-item">
+    <div class="timeline-dot"></div>
     <div class="timeline-content left">
       <h3>10th CBSE</h3>
       <p>DPS EAST</p>
       <p>📅 2006 – 2020</p>
-      <p>90% 10th boards </p>
+      <p>90% 10th boards</p>
     </div>
   </div>
 
