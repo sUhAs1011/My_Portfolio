@@ -218,25 +218,18 @@ st.markdown("""
     left: 60%;
 }
 
-.timeline-content::before {
-    content: " ";
+.timeline-dot {
     position: absolute;
-    top: 20px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
     background-color: #00C6FB;
     border: 4px solid white;
-    z-index: 1;
+    border-radius: 50%;
+    z-index: 2;
 }
 
-.left::before {
-    left: 95%;
-}
-
-.right::before {
-    left: -15px;
-}
 
 @media screen and (max-width: 768px) {
     .timeline-content {
