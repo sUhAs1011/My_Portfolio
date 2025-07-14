@@ -229,6 +229,9 @@ st.markdown("""
     border-radius: 50%;
     z-index: 2;
 }
+.timeline-dot {
+    top: 30px;  /* Adjust as needed */
+}
 
 
 @media screen and (max-width: 768px) {
