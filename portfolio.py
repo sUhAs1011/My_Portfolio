@@ -482,7 +482,7 @@ with open("new_resume.pdf", "rb") as file:
 
 st.markdown("""
 <div style='text-align: center;'>
-    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Download Resume</a>
+    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Resume</a>
 </div>
 """.format(b64_resume), unsafe_allow_html=True)
 
