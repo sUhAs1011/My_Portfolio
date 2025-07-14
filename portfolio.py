@@ -137,7 +137,7 @@ with col1:
     st.markdown("<div class='subtitle'>B.Tech CSE</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
+            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
@@ -218,21 +218,25 @@ st.markdown("""
     left: 60%;
 }
 
-<style>
-.timeline-dot {
+.timeline-content::before {
+    content: " ";
     position: absolute;
-    top: 20px;  /* vertical alignment */
-    left: 50%;  /* center horizontally */
-    transform: translateX(-50%);
-    width: 18px;
-    height: 18px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     background-color: #00C6FB;
     border: 4px solid white;
-    border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
 }
-</style>
 
+.left::before {
+    left: 95%;
+}
+
+.right::before {
+    left: -15px;
+}
 
 @media screen and (max-width: 768px) {
     .timeline-content {
@@ -254,7 +258,6 @@ st.markdown("""
 <div class="timeline-container">
 
   <div class="timeline-item">
-    <div class="timeline-dot"></div>
     <div class="timeline-content left">
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
@@ -264,22 +267,20 @@ st.markdown("""
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-dot"></div>
     <div class="timeline-content right">
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
-      <p>86% 12th boards</p>
+      <p>86% 12th boards </p>
     </div>
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-dot"></div>
     <div class="timeline-content left">
       <h3>10th CBSE</h3>
       <p>DPS EAST</p>
       <p>📅 2006 – 2020</p>
-      <p>90% 10th boards</p>
+      <p>90% 10th boards </p>
     </div>
   </div>
 
@@ -426,6 +427,7 @@ with col_left:
     Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
 
     Features include:
+    - Animated hero section with a circular profile picture and gradient headers  
     - Skill badges, project showcases with GitHub integration  
     - A vertical educational timeline  
     - Downloadable resume and aesthetic contact buttons  
@@ -480,7 +482,7 @@ with open("new_resume.pdf", "rb") as file:
 
 st.markdown("""
 <div style='text-align: center;'>
-    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Resume</a>
+    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Download Resume</a>
 </div>
 """.format(b64_resume), unsafe_allow_html=True)
 
