@@ -150,9 +150,9 @@ st.markdown("---")
 st.header("🛠️ Skills")
 st.write("""
 - **Languages**: Python, Java, C++, C, Rust  
-- **Web Development**: HTML, CSS, JavaScript
-- **Database**: MySQL, MongoDB  
-- **AI/ML**: scikit-learn, Pandas, Numpy, Streamlit, NLTK, Spacy, pytorch
+- **Web Development**: HTML, CSS, JavaScript, Streamlit
+- **Database**: MySQL, MongoDB, VectorDatabases
+- **AI/ML**: scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
 - **Tools**: Git, Docker, Kubernetes, SQL, VSCode, Jupyter, Colab
 - **Operating Systems**: Windows, Ubuntu, Linux
 """)
