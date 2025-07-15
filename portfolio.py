@@ -151,7 +151,7 @@ st.header("🛠️ Skills")
 st.write("""
 - **Languages**: Python, Java, C++, C, Rust  
 - **Web Development**: HTML, CSS, JavaScript, Streamlit
-- **Database**: MySQL, MongoDB, VectorDatabases
+- **Database**: MySQL, MongoDB, ChromaDB
 - **AI/ML**: scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
 - **Tools**: Git, Docker, Kubernetes, SQL, VSCode, Jupyter, Colab
 - **Operating Systems**: Windows, Ubuntu, Linux
