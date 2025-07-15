@@ -153,7 +153,8 @@ st.write("""
 - **Web Development**: HTML, CSS, JavaScript
 - **Database**: MySQL, MongoDB  
 - **AI/ML**: scikit-learn, Pandas, Numpy, Streamlit, NLTK, Spacy, pytorch
-- **Tools**: Git, Postman, Docker, VS Code
+- **Tools**: Git, Docker, Kubernetes, SQL, VSCode, Jupyter, Colab
+- **Operating Systems**: Windows, Ubuntu, Linux
 """)
 
 # --- EXPERIENCE SECTION ---
