@@ -368,7 +368,7 @@ st.markdown("""
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
-      <p>12th Borads 86%</p>
+      <p>12th Borads : 86%</p>
     </div>
   </div>
 
@@ -377,7 +377,7 @@ st.markdown("""
       <h3>10th CBSE</h3>
       <p>DPS East</p>
       <p>📅 2006 – 2020</p>
-      <p>10th Boards 90%</p>
+      <p>10th Boards : 90%</p>
     </div>
   </div>
 
