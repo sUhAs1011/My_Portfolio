@@ -349,6 +349,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- SKILLS CONTENT ---
+st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
+st.markdown("---")
+st.header("🛠️ Skills")
 st.markdown("""
 - **Languages:** Python, Java, C++, C, Rust  
 - **Web Development:** HTML, CSS, JavaScript, Streamlit  
