@@ -328,12 +328,10 @@ with col1:
     st.write("""
     Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **Inter Planetary File System (IPFS)**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
-    Leveraged machine learning to:
-    - Analyze patient histories  
+    Key features include:
+    - Analyzing patient histories  
     - Predict adverse drug reactions  
-    - Recommend personalized treatment plans  
-
-    This system significantly improved the speed and accuracy of clinical decision-making.
+    - Recommend personalized treatment plans based on patient's history 
 
     **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain, ML
     """)
