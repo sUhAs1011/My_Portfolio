@@ -295,7 +295,7 @@ st.header("🏆 Achievements")
 st.subheader("🧠 Heal-O-Code Hackathon – March 2025")
 st.write("""
 Top 10 out of 50+ teams in **Heal-O-Code Hackathon**  
-Built a healthcare decision support tool using **Blockchain** and **Machine Learning** for faster clinical decision-making.
+Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
 """)
 
 # MRD Scholarship
@@ -307,7 +307,7 @@ Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**,
 # Distinction Scholarship
 st.subheader("🎖️ Distinction Scholarship ")
 st.write("""
-Received **Distinction Scholarship** of 2000 Rs for achieving above 7.75 SGPA in **Semesters 2, 3, 4, and 5** at **PES University**.
+Received **Distinction Scholarship** of ₹ 2000 for achieving above 7.75 SGPA in **Semesters 2, 3, 4, and 5** at **PES University**.
 """)
 
 # --- PROJECTS SECTION ---
@@ -325,7 +325,7 @@ with col1:
     )
 
     st.write("""
-    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **IPFS**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
+    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **Inter Planetary File System (IPFS)**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
     Leveraged machine learning to:
     - Analyze patient histories  
