@@ -152,7 +152,7 @@ st.write("""
 - **Languages**: Python, Java, C++, C, Rust  
 - **Web Development**: HTML, CSS, JavaScript, Streamlit
 - **Database**: MySQL, MongoDB, ChromaDB
-- **AI/ML**: scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
+- **AI/ML**: Scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
 - **Tools**: Git, Docker, Kubernetes, VSCode, Jupyter, Colab
 - **Operating Systems**: Windows, Ubuntu, Linux
 """)
