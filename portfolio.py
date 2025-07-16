@@ -355,7 +355,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Engineered a **real-time intrusion detection system** using Arduino (April 2024), designed to enhance home security through automated alerts and physical deterrents.
+    Engineered a **real-time intrusion detection system** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
 
     Key features include:
     - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.  
