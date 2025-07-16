@@ -9,15 +9,18 @@ st.set_page_config(page_title="Suhas_Portfolio", page_icon="📁", layout="wide"
 
 # --- LOAD IMAGE ---
 # Assuming 'profile.jpg' is in the same directory as your script
-profile_pic = Image.open("profile.jpg")
+# Function to safely load and convert images to base64 for inline HTML
+def load_and_base64_image(file_path):
+    try:
+        img = Image.open(file_path)
+        buffered = BytesIO()
+        img.save(buffered, format="PNG") # Use PNG for transparency if needed
+        return base64.b64encode(buffered.getvalue()).decode()
+    except FileNotFoundError:
+        st.error(f"Error: {file_path} not found. Please ensure the image is in the correct directory.")
+        return None # Return None if file is not found
 
-# Convert image to base64 for inline HTML
-def image_to_base64(img):
-    buffered = BytesIO()
-    img.save(buffered, format="PNG")
-    return base64.b64encode(buffered.getvalue()).decode()
-
-img_b64 = image_to_base64(profile_pic)
+img_b64 = load_and_base64_image("profile.jpg")
 
 # --- CUSTOM STYLES ---
 st.markdown("""
@@ -34,14 +37,16 @@ body {
 .gradient-text {
     font-size: 48px;
     font-weight: 800;
-    background: -webkit-linear-gradient(90deg, #005BEA, #00C6FB);
+    /* Corrected: use linear-gradient for standard syntax and -webkit- for webkit browsers */
+    background: linear-gradient(90deg, #005BEA, #00C6FB);
     -webkit-background-clip: text;
-    color: white; 
+    -webkit-text-fill-color: white; /* Makes text transparent so gradient background shows through */
+    color: white; /* Fallback for browsers that don't support -webkit-text-fill-color */
     margin-bottom: 5px;
 }
 
 .gradient-text span {
-    -webkit-text-fill-color: inherit;
+    -webkit-text-fill-color: white; /* Span within gradient-text should also be transparent to inherit parent's gradient */
 }
 
 .subtitle {
@@ -86,7 +91,13 @@ body {
     padding: 40px 20px 20px 40px;
 }
 
-/* Timeline styling */
+/* Ensure content sections have padding to account for fixed navbar */
+.content-section {
+    padding-top: 80px; /* Adjust based on navbar height + desired spacing */
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+/* Timeline styling (for .timeline-wrapper, .timeline-col, etc. - these are generic and might not be used directly in the final timeline HTML, but good to keep if you have other timeline styles) */
 .timeline-wrapper {
     display: flex;
     justify-content: space-between;
@@ -133,14 +144,14 @@ body {
     margin-top: 5px;
 }
 
-/* Simplified Navigation Bar Styling */
+/* Simplified Navigation Bar Styling (navbar-custom) */
 .navbar-custom {
     overflow: hidden;
     background-color: #0e1117; /* Match body background for seamless look */
     position: fixed;
     top: 40px;
     width: 100%;
-    left:-2.5%;
+    left: -2.5%;
     z-index: 1000;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
@@ -164,11 +175,7 @@ body {
     background-color: transparent; /* Keep background transparent */
 }
 
-.content-section {
-    padding-top: 80px; /* Adjust this value based on your navbar height */
-}
-
-/* Timeline CSS (alternating vertical style) - existing */
+/* Timeline CSS (alternating vertical style) - actual implementation style */
 .timeline-container {
     position: relative;
     max-width: 800px;
@@ -200,6 +207,7 @@ body {
     border-radius: 6px;
     width: 40%;
     color: white;
+    box-shadow: 0 0 10px rgba(0, 198, 251, 0.2); /* Subtle glow from cyan */
 }
 
 .left {
@@ -242,18 +250,50 @@ body {
         left: 15px;
     }
 }
+
+/* --- Gradient Button CSS (No underline) --- */
+.contact-button {
+    display: inline-block;
+    padding: 14px 26px;
+    margin: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none !important;
+    color: white !important;
+    background: linear-gradient(90deg, #6e00ff, #c800c8, #0008ff);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 10px rgba(200, 0, 255, 0.3);
+}
+.contact-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(200, 0, 255, 0.6);
+    text-decoration: none !important;
+}
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+/* your .timeline-container, .timeline-item, .left/right CSS here */
+</style>
+""", unsafe_allow_html=True)
+
 
 # --- NAVIGATION BAR ---
 st.markdown("""
 <div class="navbar-custom">
     <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
+    <a href="#journey">🚶‍♂️ My Journey</a>
     <a href="#achievements">🏆 Achievements</a>
     <a href="#projects">🚀 Projects</a>
 </div>
 """, unsafe_allow_html=True)
+# Removed excessive <br> tags. The content-section padding-top should handle spacing.
+# If more space is still needed, adjust the padding-top in .content-section CSS or add fewer <br> tags.
+# st.markdown("<br>", unsafe_allow_html=True) # You can add one or two if needed
 
 # --- HERO SECTION ---
 st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
@@ -271,7 +311,8 @@ with col1:
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
+    if img_b64: # Only render if image was loaded successfully
+        st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 
@@ -303,6 +344,46 @@ requirements.
 description analysis.
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+
+
+# --- MY JOURNEY SECTION ---
+st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
+st.markdown("---")
+st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="timeline-container">
+
+  <div class="timeline-item">
+    <div class="timeline-content left">
+      <h3>10th CBSE</h3>
+      <p>DPS East</p>
+      <p>📅 2006 – 2020</p>
+      <p>90%</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content right">
+      <h3>12th CBSE</h3>
+      <p>Geetanjali Olympiad School</p>
+      <p>📅 2020 – 2022</p>
+      <p>86%</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content left">
+      <h3>B.Tech CSE</h3>
+      <p>PES University</p>
+      <p>📅 2022 – Present</p>
+      <p>CGPA: 8.06</p>
+    </div>
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
 
 
 # --- ACHIEVEMENTS SECTION ---
@@ -468,41 +549,20 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- Gradient Button CSS (No underline) ---
-st.markdown("""
-<style>
-.contact-button {
-    display: inline-block;
-    padding: 14px 26px;
-    margin: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none !important;
-    color: white !important;
-    background: linear-gradient(90deg, #6e00ff, #c800c8, #0008ff);
-    border-radius: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    transition: 0.4s ease-in-out;
-    box-shadow: 0 0 10px rgba(200, 0, 255, 0.3);
-}
-.contact-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(200, 0, 255, 0.6);
-    text-decoration: none !important;
-}
-</style>
-""", unsafe_allow_html=True)
 
 # --- RESUME DOWNLOAD ---
-with open("new_resume.pdf", "rb") as file:
-    resume_data = file.read()
-    b64_resume = base64.b64encode(resume_data).decode()
+try:
+    with open("new_resume.pdf", "rb") as file:
+        resume_data = file.read()
+        b64_resume = base64.b64encode(resume_data).decode()
 
-st.markdown("""
-<div style='text-align: center;'>
-    <a href="data:application/pdf;base64,{}" download="Suhas_Resume.pdf" class="contact-button">📄 Resume</a>
-</div>
-""".format(b64_resume), unsafe_allow_html=True)
+    st.markdown(f"""
+    <div style='text-align: center;'>
+        <a href="data:application/pdf;base64,{b64_resume}" download="Suhas_Resume.pdf" class="contact-button">📄 Resume</a>
+    </div>
+    """, unsafe_allow_html=True)
+except FileNotFoundError:
+    st.warning("Resume file 'new_resume.pdf' not found. Download button will not appear.")
 
 # --- Centered Contact Buttons ---
 st.markdown("""
