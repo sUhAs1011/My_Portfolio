@@ -350,39 +350,12 @@ st.markdown("""
 
 # --- SKILLS CONTENT ---
 st.markdown("""
-<div class="skills-box">
-
-    <div class="skill-category">
-        <div class="skill-title">🧠 Languages</div>
-        <div class="skill-items">🐍 Python | ☕ Java | 💻 C++ | 🧮 C | ⚙️ Rust</div>
-    </div>
-
-    <div class="skill-category">
-        <div class="skill-title">🌐 Web Development</div>
-        <div class="skill-items">🌍 HTML | 🎨 CSS | 📜 JavaScript | 📊 Streamlit</div>
-    </div>
-
-    <div class="skill-category">
-        <div class="skill-title">🗄️ Databases</div>
-        <div class="skill-items">🐬 MySQL | 🍃 MongoDB | 🧠 ChromaDB</div>
-    </div>
-
-    <div class="skill-category">
-        <div class="skill-title">🤖 AI/ML</div>
-        <div class="skill-items">📘 Scikit-learn | 🐼 Pandas | 📈 Numpy | 🗣️ NLTK | 🧠 Spacy | 🔥 PyTorch</div>
-    </div>
-
-    <div class="skill-category">
-        <div class="skill-title">🧰 Tools</div>
-        <div class="skill-items">🐙 Git | 🐳 Docker | ☸️ Kubernetes | 🖥️ VSCode | 📓 Jupyter | 🧪 Colab</div>
-    </div>
-
-    <div class="skill-category">
-        <div class="skill-title">🖥️ Operating Systems</div>
-        <div class="skill-items">🪟 Windows | 🐧 Ubuntu | 🐧 Linux</div>
-    </div>
-
-</div>
+- **Languages:** Python, Java, C++, C, Rust  
+- **Web Development:** HTML, CSS, JavaScript, Streamlit  
+- **Database:** MySQL, MongoDB, ChromaDB  
+- **AI/ML:** Scikit-learn, Pandas, Numpy, NLTK, Spacy, PyTorch  
+- **Tools:** Git, Docker, Kubernetes, VSCode, Jupyter, Colab  
+- **Operating Systems:** Windows, Ubuntu, Linux 
 """, unsafe_allow_html=True)
 
 
