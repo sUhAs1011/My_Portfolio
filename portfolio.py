@@ -137,7 +137,7 @@ with col1:
     st.markdown("<div class='subtitle'>B.Tech CSE</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-            I am Suhas Venkata, a junior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
+            I am Suhas Venkata, a Junior at PES University(Electronic City), currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by a deep interest in machine learning and deep learning. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
