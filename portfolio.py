@@ -263,7 +263,7 @@ st.markdown("""
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
       <p>📅 2022 – Present</p>
-      <p>CGPA:8.06</p>
+      <p>CGPA : 8.06</p>
     </div>
   </div>
 
@@ -308,7 +308,7 @@ Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**,
 # Distinction Scholarship
 st.subheader("🎖️ Distinction Scholarship ")
 st.write("""
-Received **Distinction Scholarship** of ₹ 2000 for achieving above 7.75 SGPA in **Semesters 2, 3, 4, and 5** at **PES University**.
+Received **Distinction Scholarship** of ₹ 2000 for achieving above 7.75 SGPA in **Semesters 2, 3, 4, 5 and 6** at **PES University**.
 """)
 
 # --- PROJECTS SECTION ---
@@ -335,7 +335,7 @@ with col1:
 
     This system significantly improved the speed and accuracy of clinical decision-making.
 
-    **Tech Stack**: Spring Boot, MySQL, React, Chart.js, IPFS, Blockchain, ML
+    **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain, ML
     """)
 
 with col2:
