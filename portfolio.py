@@ -137,7 +137,8 @@ with col1:
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
     st.markdown("""
     <div class='intro'>
-            I am Suhas Venkata, a Junior at PES University(Electronic City), currently pursuing a Bachelor's degree in Computer Science and Engineering.My academic journey is driven by a deep interest in machine learning and deep learning. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
+            ChatGPT said:
+I'm Suhas Venkata, a Computer Science junior at PES University (Electronic City) with a strong interest in machine learning and deep learning. I'm passionate about learning, taking on new challenges, and sharpening my technical skills to make a meaningful impact.
     </div>
     """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
