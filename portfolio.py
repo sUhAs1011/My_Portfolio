@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PIL import Image
 import base64
@@ -7,6 +8,7 @@ from io import BytesIO
 st.set_page_config(page_title="Suhas_Portfolio", page_icon="📁", layout="wide")
 
 # --- LOAD IMAGE ---
+# Assuming 'profile.jpg' is in the same directory as your script
 profile_pic = Image.open("profile.jpg")
 
 # Convert image to base64 for inline HTML
@@ -20,8 +22,13 @@ img_b64 = image_to_base64(profile_pic)
 # --- CUSTOM STYLES ---
 st.markdown("""
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0e1117;
+    color: white; /* Ensure text is visible on dark background */
 }
 
 .gradient-text {
@@ -29,7 +36,7 @@ body {
     font-weight: 800;
     background: -webkit-linear-gradient(90deg, #005BEA, #00C6FB);
     -webkit-background-clip: text;
-    color: white;
+    color: white; 
     margin-bottom: 5px;
 }
 
@@ -125,58 +132,43 @@ body {
     color: #888;
     margin-top: 5px;
 }
-</style>
-""", unsafe_allow_html=True)
 
-# --- HERO SECTION ---
-col1, col2 = st.columns([3, 2])
+/* Simplified Navigation Bar Styling */
+.navbar-custom {
+    overflow: hidden;
+    background-color: #0e1117; /* Match body background for seamless look */
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    left:-5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 15px 40px; /* Adjust padding to match image more closely */
+    box-sizing: border-box; /* Include padding in width */
+    border-bottom: 1px solid #222; /* Subtle border for separation */
+}
 
-with col1:
-    st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
-    st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
-    st.markdown("""
-    <div class='intro'>
-I'm Suhas Venkata, a Computer Science junior at PES University (Electronic City) with a strong interest in machine learning and deep learning. I'm passionate about learning, taking on new challenges, and sharpening my technical skills to make a meaningful impact.
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+.navbar-custom a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 15px; /* Adjust padding for button size */
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s, background-color 0.3s;
+    margin-left: 20px; /* Space between links */
+}
 
-with col2:
-    st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
+.navbar-custom a:hover {
+    color: #00C6FB; /* Highlight color on hover */
+    background-color: transparent; /* Keep background transparent */
+}
 
-# --- SKILLS SECTION ---
-st.markdown("---")
-st.header("🛠️ Skills")
-st.write("""
-- **Languages**: Python, Java, C++, C, Rust  
-- **Web Development**: HTML, CSS, JavaScript, Streamlit
-- **Database**: MySQL, MongoDB, ChromaDB
-- **AI/ML**: Scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
-- **Tools**: Git, Docker, Kubernetes, VSCode, Jupyter, Colab
-- **Operating Systems**: Windows, Ubuntu, Linux
-""")
+.content-section {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+}
 
-# --- EXPERIENCE SECTION ---
-st.markdown("---")
-st.header("💼 Experience")
-
-st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence) June 2025 – August 2025 ")
-st.write(""" 
- - Built a career advisory platform leveraging NLP, vector search, and data analytics to identify gaps between user resume skills and target job
-requirements. 
- - Recommended personalized online courses (primarily from Coursera) to help users bridge skill gaps and upskill effectively based on job
-description analysis.
-""")
-
-
-# --- JOURNEY SECTION ---
-st.markdown("---")
-st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
-
-# --- Timeline CSS (alternating vertical style) ---
-st.markdown("""
-<style>
+/* Timeline CSS (alternating vertical style) - existing */
 .timeline-container {
     position: relative;
     max-width: 800px;
@@ -253,48 +245,75 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Timeline Content ---
+# --- NAVIGATION BAR ---
 st.markdown("""
-<div class="timeline-container">
-
-  <div class="timeline-item">
-    <div class="timeline-content left">
-      <h3>B.Tech CSE</h3>
-      <p>PES University</p>
-      <p>📅 2022 – Present</p>
-      <p>CGPA : 8.06</p>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-content right">
-      <h3>12th CBSE</h3>
-      <p>Geetanjali Olympiad School</p>
-      <p>📅 2020 – 2022</p>
-      <p>86% (12th boards) </p>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-content left">
-      <h3>10th CBSE</h3>
-      <p>DPS EAST</p>
-      <p>📅 2006 – 2020</p>
-      <p>90%(10th boards)</p>
-    </div>
-  </div>
-
+<div class="navbar-custom">
+    <a href="#skills">🛠️ Skills</a>
+    <a href="#experience">💼 Experience</a>
+    <a href="#achievements">🏆 Achievements</a>
+    <a href="#projects">🚀 Projects</a>
 </div>
 """, unsafe_allow_html=True)
 
+# --- HERO SECTION ---
+st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
+col1, col2 = st.columns([3, 2])
+
+with col1:
+    st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
+    st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
+    st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class='intro'>
+        I'm Suhas Venkata, a Computer Science junior at PES University (Electronic City) with a strong interest in machine learning and deep learning. I'm passionate about learning, taking on new challenges, and sharpening my technical skills to make a meaningful impact.
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with col2:
+    st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True) # End of Home section
+
+
+# --- SKILLS SECTION ---
+st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
+st.markdown("---")
+st.header("🛠️ Skills")
+st.write("""
+- **Languages**: Python, Java, C++, C, Rust
+- **Web Development**: HTML, CSS, JavaScript, Streamlit
+- **Database**: MySQL, MongoDB, ChromaDB
+- **AI/ML**: Scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
+- **Tools**: Git, Docker, Kubernetes, VSCode, Jupyter, Colab
+- **Operating Systems**: Windows, Ubuntu, Linux
+""")
+st.markdown("</div>", unsafe_allow_html=True) # End of Skills section
+
+
+# --- EXPERIENCE SECTION ---
+st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
+st.markdown("---")
+st.header("💼 Experience")
+
+st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence) June 2025 – August 2025 ")
+st.write("""
+- Built a career advisory platform leveraging NLP, vector search, and data analytics to identify gaps between user resume skills and target job
+requirements.
+- Recommended personalized online courses (primarily from Coursera) to help users bridge skill gaps and upskill effectively based on job
+description analysis.
+""")
+st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+
+
 # --- ACHIEVEMENTS SECTION ---
+st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("🏆 Achievements")
 
 # Heal-O-Code Hackathon
 st.subheader("🧠 Heal-O-Code Hackathon – March 2025")
 st.write("""
-Top 10 out of 50+ teams in **Heal-O-Code Hackathon**  
+Top 10 out of 50+ teams in **Heal-O-Code Hackathon**
 Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
 """)
 
@@ -309,8 +328,10 @@ st.subheader("🎖️ Distinction Scholarship ")
 st.write("""
 Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2, 3, 4, 5 and 6** at **PES University**.
 """)
+st.markdown("</div>", unsafe_allow_html=True) # End of Achievements section
 
 # --- PROJECTS SECTION ---
+st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("🚀 Projects")
 
@@ -328,9 +349,9 @@ with col1:
     Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **Inter Planetary File System (IPFS)**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
     Key features include:
-    - Analyzing patient histories  
-    - Predict adverse drug reactions  
-    - Recommend personalized treatment plans based on patient's history 
+    - Analyzing patient histories
+    - Predict adverse drug reactions
+    - Recommend personalized treatment plans based on patient's history
 
     **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain, ML
     """)
@@ -355,8 +376,8 @@ with col_right:
     Engineered a **real-time intrusion detection system** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
 
     Key features include:
-    - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.  
-    - Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.  
+    - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
+    - Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
 
     **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
@@ -376,8 +397,8 @@ with col_left:
     Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry.
 
     Key features include:
-    - Analyzed and interpreted mining laws to deliver precise legal responses based on user input.  
-    - Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.  
+    - Analyzed and interpreted mining laws to deliver precise legal responses based on user input.
+    - Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.
     - Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
@@ -404,9 +425,9 @@ with col_right:
     Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
 
     Key features include:
-    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.  
-    - Integrated **SSL certificates** for secure communication between client and server.  
-    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.  
+    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
+    - Integrated **SSL certificates** for secure communication between client and server.
+    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
     - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
 
     **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
@@ -425,10 +446,10 @@ with col_left:
     Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
 
     Features include:
-    - Animated hero section with a circular profile picture and gradient headers  
-    - Skill badges, project showcases with GitHub integration  
-    - A vertical educational timeline  
-    - Downloadable resume and aesthetic contact buttons  
+    - Animated hero section with a circular profile picture and gradient headers
+    - Skill badges, project showcases with GitHub integration
+    - A vertical educational timeline
+    - Downloadable resume and aesthetic contact buttons
 
     The portfolio is fully responsive and easy to maintain, serving as a central hub for professional representation.
 
@@ -438,6 +459,7 @@ with col_left:
 with col_right:
     st.image("portfolio.jpg", caption="Streamlit Portfolio", use_container_width=True)
 
+st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
 
 # --- Custom Footer with Styling ---
 st.markdown("""
@@ -445,8 +467,6 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
-
-
 
 # --- Gradient Button CSS (No underline) ---
 st.markdown("""
@@ -492,6 +512,3 @@ st.markdown("""
     <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">💻 GitHub</a>
 </div>
 """, unsafe_allow_html=True)
-
-
-
