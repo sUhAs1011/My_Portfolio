@@ -153,7 +153,7 @@ st.write("""
 - **Web Development**: HTML, CSS, JavaScript, Streamlit
 - **Database**: MySQL, MongoDB, ChromaDB
 - **AI/ML**: scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
-- **Tools**: Git, Docker, Kubernetes, SQL, VSCode, Jupyter, Colab
+- **Tools**: Git, Docker, Kubernetes, VSCode, Jupyter, Colab
 - **Operating Systems**: Windows, Ubuntu, Linux
 """)
 
@@ -161,7 +161,7 @@ st.write("""
 st.markdown("---")
 st.header("💼 Experience")
 
-st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence)                       June 2025 – August 2025 ")
+st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence) June 2025 – August 2025 ")
 st.write(""" 
  - Built a career advisory platform leveraging NLP, vector search, and data analytics to identify gaps between user resume skills and target job
 requirements. 
@@ -173,7 +173,6 @@ description analysis.
 # --- JOURNEY SECTION ---
 st.markdown("---")
 st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center;'>Here is my personal journey 🧾</p>", unsafe_allow_html=True)
 
 # --- Timeline CSS (alternating vertical style) ---
 st.markdown("""
@@ -263,7 +262,7 @@ st.markdown("""
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
       <p>📅 2022 – Present</p>
-      <p>CGPA: 8.06</p>
+      <p>CGPA:8.06</p>
     </div>
   </div>
 
@@ -272,7 +271,7 @@ st.markdown("""
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
-      <p>86% 12th boards </p>
+      <p>86% (12th boards) </p>
     </div>
   </div>
 
@@ -281,7 +280,7 @@ st.markdown("""
       <h3>10th CBSE</h3>
       <p>DPS EAST</p>
       <p>📅 2006 – 2020</p>
-      <p>90% 10th boards </p>
+      <p>90%(10th boards)</p>
     </div>
   </div>
 
