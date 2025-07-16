@@ -309,42 +309,6 @@ st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True
 st.markdown("---")
 st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
 
-# Timeline Content
-st.markdown("""
-<div class="timeline-container">
-
-    <div class="timeline-item">
-    <div class="timeline-content left">
-        <h3>B.Tech CSE</h3>
-        <p>PES University</p>
-        <p>📅 2022 – Present</p>
-        <p>CGPA : 8.06</p>
-    </div>
-    </div>
-
-    <div class="timeline-item">
-    <div class="timeline-content right">
-        <h3>12th CBSE</h3>
-        <p>Geetanjali Olympiad School</p>
-        <p>📅 2020 – 2022</p>
-        <p>86% (12th boards) </p>
-    </div>
-    </div>
-
-    <div class="timeline-item">
-    <div class="timeline-content left">
-        <h3>10th CBSE</h3>
-        <p>DPS EAST</p>
-        <p>📅 2006 – 2020</p>
-        <p>90%(10th boards)</p>
-    </div>
-    </div>
-
-</div>
-""", unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True) # End of Journey section
-
-
 # --- ACHIEVEMENTS SECTION ---
 st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
