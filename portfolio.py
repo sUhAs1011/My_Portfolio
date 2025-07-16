@@ -317,20 +317,74 @@ st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 
 # --- SKILLS SECTION ---
-st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
-st.header("🛠️ Skills")
-st.write("""
+import streamlit as st
 
-- **Languages:** Python, Java, C++, C, Rust  
-- **Web Development:** HTML, CSS, JavaScript, Streamlit  
-- **Database:** MySQL, MongoDB, ChromaDB  
-- **AI/ML:** Scikit-learn, Pandas, Numpy, NLTK, Spacy, PyTorch  
-- **Tools:** Git, Docker, Kubernetes, VSCode, Jupyter, Colab  
-- **Operating Systems:** Windows, Ubuntu, Linux  
+# --- PAGE CONFIG ---
+st.set_page_config(page_title="Suhas | Skills", page_icon="🛠️", layout="centered")
 
-""")
-st.markdown("</div>", unsafe_allow_html=True) # End of Skills section
+# --- CUSTOM CSS ---
+st.markdown("""
+    <style>
+        .skills-box {
+            background-color: #f0f2f6;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .skill-category {
+            margin-bottom: 20px;
+        }
+        .skill-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .skill-items {
+            font-size: 16px;
+            padding-left: 10px;
+            color: #333;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- SKILLS CONTENT ---
+st.markdown("""
+<div class="skills-box">
+
+    <div class="skill-category">
+        <div class="skill-title">🧠 Languages</div>
+        <div class="skill-items">🐍 Python | ☕ Java | 💻 C++ | 🧮 C | ⚙️ Rust</div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-title">🌐 Web Development</div>
+        <div class="skill-items">🌍 HTML | 🎨 CSS | 📜 JavaScript | 📊 Streamlit</div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-title">🗄️ Databases</div>
+        <div class="skill-items">🐬 MySQL | 🍃 MongoDB | 🧠 ChromaDB</div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-title">🤖 AI/ML</div>
+        <div class="skill-items">📘 Scikit-learn | 🐼 Pandas | 📈 Numpy | 🗣️ NLTK | 🧠 Spacy | 🔥 PyTorch</div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-title">🧰 Tools</div>
+        <div class="skill-items">🐙 Git | 🐳 Docker | ☸️ Kubernetes | 🖥️ VSCode | 📓 Jupyter | 🧪 Colab</div>
+    </div>
+
+    <div class="skill-category">
+        <div class="skill-title">🖥️ Operating Systems</div>
+        <div class="skill-items">🪟 Windows | 🐧 Ubuntu | 🐧 Linux</div>
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
 
 
 # --- EXPERIENCE SECTION ---
