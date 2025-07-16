@@ -321,12 +321,15 @@ st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("🛠️ Skills")
 st.write("""
-🧠 **Languages:** 🐍 Python | ☕ Java | 💻 C++ | 🧮 C | ⚙️ Rust  
-🌐 **Web Dev:** 🌍 HTML | 🎨 CSS | 📜 JavaScript | 📊 Streamlit  
-🗄️ **Databases:** 🐬 MySQL | 🍃 MongoDB | 🧠 ChromaDB  
-🤖 **AI/ML:** 📘 Scikit-learn | 🐼 Pandas | 📈 Numpy | 🗣️ NLTK | 🧠 Spacy | 🔥 PyTorch  
-🧰 **Tools:** 🐙 Git | 🐳 Docker | ☸️ Kubernetes | 🖥️ VSCode | 📓 Jupyter | 🧪 Colab  
-🖥️ **OS:** 🪟 Windows | 🐧 Ubuntu | 🐧 Linux
+🛠️ **Skills**
+
+- **Languages:** Python, Java, C++, C, Rust  
+- **Web Development:** HTML, CSS, JavaScript, Streamlit  
+- **Database:** MySQL, MongoDB, ChromaDB  
+- **AI/ML:** Scikit-learn, Pandas, Numpy, NLTK, Spacy, PyTorch  
+- **Tools:** Git, Docker, Kubernetes, VSCode, Jupyter, Colab  
+- **Operating Systems:** Windows, Ubuntu, Linux  
+
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Skills section
 
