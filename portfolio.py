@@ -304,10 +304,6 @@ description analysis.
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 
-# --- JOURNEY SECTION (Timeline) ---
-st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
-st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
 
 # --- ACHIEVEMENTS SECTION ---
 st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html=True)
