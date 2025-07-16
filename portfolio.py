@@ -308,7 +308,7 @@ Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**,
 # Distinction Scholarship
 st.subheader("🎖️ Distinction Scholarship ")
 st.write("""
-Received **Distinction Scholarship** of ₹ 2000 for achieving above 7.75 SGPA in **Semesters 2, 3, 4, 5 and 6** at **PES University**.
+Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2, 3, 4, 5 and 6** at **PES University**.
 """)
 
 # --- PROJECTS SECTION ---
