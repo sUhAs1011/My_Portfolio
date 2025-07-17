@@ -1,3 +1,4 @@
+
 import streamlit as st
 from PIL import Image
 import base64
@@ -285,7 +286,7 @@ st.markdown("""
 <div class="navbar-custom">
     <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
-    <a href="#journey">🚶‍♂️ Journey</a>
+    <a href="#journey">🚶‍♂️ My Journey</a>
     <a href="#achievements">🏆 Achievements</a>
     <a href="#projects">🚀 Projects</a>
 </div>
@@ -314,55 +315,100 @@ with col2:
         st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
-
-# --- SKILLS SECTION ---
-import streamlit as st
-
-# --- PAGE CONFIG ---
-st.set_page_config(page_title="Suhas | Skills", page_icon="🛠️", layout="centered")
-
-# --- CUSTOM CSS ---
-st.markdown("""
-    <style>
-        .skills-box {
-            background-color: #f0f2f6;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.08);
-            font-family: 'Segoe UI', sans-serif;
-        }
-        .skill-category {
-            margin-bottom: 20px;
-        }
-        .skill-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-        .skill-items {
-            font-size: 16px;
-            padding-left: 10px;
-            color: #333;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# --- SKILLS CONTENT ---
+# --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
-st.header("🛠️ Skills")
-st.write("""
-- **Languages**: Python, Java, C++, C, Rust
-- **Web Development**: HTML, CSS, JavaScript, Streamlit
-- **Database**: MySQL, MongoDB, ChromaDB
-- **AI/ML**: Scikit-learn, Pandas, Numpy, NLTK, Spacy, pytorch
-- **Tools**: Git, Docker, Kubernetes, VSCode, Jupyter, Colab
-- **Operating Systems**: Windows, Ubuntu, Linux
-""")
-st.markdown("</div>", unsafe_allow_html=True) # End of Skills section
+st.markdown("## 🛠️ Skills")
 
+# --- Programming Languages Sub-section ---
+st.markdown("### 👨‍💻 Programming Languages")
+prog_langs = ["Python", "Java", "C++", "C", "Rust"]
+prog_cols = st.columns(3)
+for i, lang in enumerate(prog_langs):
+    with prog_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{lang}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
+# --- Web Development Sub-section ---
+st.markdown("### 🌐 Web Development")
+web_devs = ["HTML", "CSS", "JavaScript", "Streamlit"]
+web_cols = st.columns(3)
+for i, tech in enumerate(web_devs):
+    with web_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{tech}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
+# --- Databases Sub-section ---
+st.markdown("### 🗄️ Databases")
+dbs = ["MySQL", "MongoDB", "ChromaDB"]
+db_cols = st.columns(3)
+for i, db in enumerate(dbs):
+    with db_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{db}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# --- AI/ML Sub-section ---
+st.markdown("### 🤖 AI / ML")
+ml_libs = ["Scikit-learn", "Pandas", "Numpy", "NLTK", "Spacy", "Pytorch"]
+ml_cols = st.columns(3)
+for i, lib in enumerate(ml_libs):
+    with ml_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{lib}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# --- Tools Sub-section ---
+st.markdown("### 🧰 Tools")
+tools = ["Git", "Docker", "Kubernetes", "VSCode", "Jupyter", "Colab"]
+tool_cols = st.columns(3)
+for i, tool in enumerate(tools):
+    with tool_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{tool}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+# --- Operating Systems Sub-section ---
+st.markdown("### 💻 Operating Systems")
+oses = ["Windows", "Ubuntu", "Linux"]
+os_cols = st.columns(3)
+for i, os in enumerate(oses):
+    with os_cols[i % 3]:
+        st.markdown(
+            f"""
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{os}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 # --- EXPERIENCE SECTION ---
 st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
@@ -382,17 +428,17 @@ st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 # --- MY JOURNEY SECTION ---
 st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
-st.markdown("<h2 style='text-align:center;'>🚶‍♂️ My Journey</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
 
 st.markdown("""
 <div class="timeline-container">
 
   <div class="timeline-item">
     <div class="timeline-content left">
-      <h3>B.Tech CSE</h3>
-      <p>PES University</p>
-      <p>📅 2022 – Present</p>
-      <p>CGPA : 8.06</p>
+      <h3>10th CBSE</h3>
+      <p>DPS East</p>
+      <p>📅 2006 – 2020</p>
+      <p>90%</p>
     </div>
   </div>
 
@@ -401,16 +447,16 @@ st.markdown("""
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
       <p>📅 2020 – 2022</p>
-      <p>12th Borads : 86%</p>
+      <p>86%</p>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-content left">
-      <h3>10th CBSE</h3>
-      <p>DPS East</p>
-      <p>📅 2006 – 2020</p>
-      <p>10th Boards : 90%</p>
+      <h3>B.Tech CSE</h3>
+      <p>PES University</p>
+      <p>📅 2022 – Present</p>
+      <p>CGPA: 8.06</p>
     </div>
   </div>
 
@@ -536,7 +582,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using Python and UDP (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
 
     Key features include:
     - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
