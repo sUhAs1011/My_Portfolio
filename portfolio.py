@@ -536,7 +536,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based **cloud storage system** using Python and UDP (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
 
     Key features include:
     - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
