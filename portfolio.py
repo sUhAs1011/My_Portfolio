@@ -336,7 +336,7 @@ for i, lang in enumerate(prog_langs):
         )
 
 # --- Web Development Sub-section ---
-st.markdown("### 🌐 Web Development")
+st.markdown("#### 🌐 Web Development")
 web_devs = ["HTML", "CSS", "JavaScript", "Streamlit"]
 web_cols = st.columns(3)
 for i, tech in enumerate(web_devs):
@@ -351,7 +351,7 @@ for i, tech in enumerate(web_devs):
         )
 
 # --- Databases Sub-section ---
-st.markdown("### 🗄️ Databases")
+st.markdown("#### 🗄️ Databases")
 dbs = ["MySQL", "MongoDB", "ChromaDB"]
 db_cols = st.columns(3)
 for i, db in enumerate(dbs):
@@ -366,7 +366,7 @@ for i, db in enumerate(dbs):
         )
 
 # --- AI/ML Sub-section ---
-st.markdown("### 🤖 AI / ML")
+st.markdown("#### 🤖 AI / ML")
 ml_libs = ["Scikit-learn", "Pandas", "Numpy", "NLTK", "Spacy", "Pytorch"]
 ml_cols = st.columns(3)
 for i, lib in enumerate(ml_libs):
@@ -381,7 +381,7 @@ for i, lib in enumerate(ml_libs):
         )
 
 # --- Tools Sub-section ---
-st.markdown("### 🧰 Tools")
+st.markdown("#### 🧰 Tools")
 tools = ["Git", "Docker", "Kubernetes", "VSCode", "Jupyter", "Colab"]
 tool_cols = st.columns(3)
 for i, tool in enumerate(tools):
@@ -396,7 +396,7 @@ for i, tool in enumerate(tools):
         )
 
 # --- Operating Systems Sub-section ---
-st.markdown("### 💻 Operating Systems")
+st.markdown("#### 💻 Operating Systems")
 oses = ["Windows", "Ubuntu", "Linux"]
 os_cols = st.columns(3)
 for i, os in enumerate(oses):
