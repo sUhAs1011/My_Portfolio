@@ -285,7 +285,7 @@ st.markdown("""
 <div class="navbar-custom">
     <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
-    <a href="#journey">🚶‍♂️ My Journey</a>
+    <a href="#journey">🚶‍♂️ Journey</a>
     <a href="#achievements">🏆 Achievements</a>
     <a href="#projects">🚀 Projects</a>
 </div>
