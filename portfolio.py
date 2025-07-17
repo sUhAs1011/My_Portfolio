@@ -350,9 +350,9 @@ st.markdown("## 🛠️ Skills")
 # --- Programming Languages Sub-section ---
 st.markdown("#### 💻 Programming Languages")
 prog_langs = ["Python", "Java", "C++", "C", "Rust"]
-prog_cols = st.columns(3)
+prog_cols = st.columns(5)
 for i, lang in enumerate(prog_langs):
-    with prog_cols[i % 3]:
+    with prog_cols[i % 5]:
         st.markdown(
             f"""
             <div class='skill-box'>
@@ -395,9 +395,9 @@ for i, db in enumerate(dbs):
 # --- AI/ML Sub-section ---
 st.markdown("#### 🤖 AI / ML")
 ml_libs = ["Scikit-learn", "Pandas", "Numpy", "NLTK", "Spacy", "Pytorch"]
-ml_cols = st.columns(3)
+ml_cols = st.columns(5)
 for i, lib in enumerate(ml_libs):
-    with ml_cols[i % 3]:
+    with ml_cols[i % 5]:
         st.markdown(
             f"""
             <div class='skill-box'>
