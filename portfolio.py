@@ -321,7 +321,7 @@ st.markdown("---")
 st.markdown("## 🛠️ Skills")
 
 # --- Programming Languages Sub-section ---
-st.markdown("### 👨‍💻 Programming Languages")
+st.markdown("#### 👨‍💻 Programming Languages")
 prog_langs = ["Python", "Java", "C++", "C", "Rust"]
 prog_cols = st.columns(3)
 for i, lang in enumerate(prog_langs):
