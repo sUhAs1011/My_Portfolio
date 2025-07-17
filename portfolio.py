@@ -455,7 +455,7 @@ st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 # --- MY JOURNEY SECTION ---
 st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
-st.markdown("<h2 style='text-align:center;'>My Journey</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align:center;'>🚶‍♂️ My Journey</h2>", unsafe_allow_html=True)
 
 st.markdown("""
 <div class="timeline-container">
