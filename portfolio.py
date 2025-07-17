@@ -365,9 +365,9 @@ for i, lang in enumerate(prog_langs):
 # --- Web Development Sub-section ---
 st.markdown("#### 🌐 Web Development")
 web_devs = ["HTML", "CSS", "JavaScript", "Streamlit"]
-web_cols = st.columns(3)
+web_cols = st.columns(4)
 for i, tech in enumerate(web_devs):
-    with web_cols[i % 3]:
+    with web_cols[i % 4]:
         st.markdown(
             f"""
             <div class='skill-box'>
