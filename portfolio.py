@@ -151,7 +151,7 @@ body {
     position: fixed;
     top: 40px;
     width: 100%;
-    left: -2.5%;
+    left: -1.25%;
     z-index: 1000;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
