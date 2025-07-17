@@ -320,16 +320,17 @@ st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.markdown("## 🛠️ Skills")
 
+
 # --- Programming Languages Sub-section ---
-st.markdown("#### 💻 Programming Languages")
+st.markdown("#### 👨‍💻 Programming Languages")
 prog_langs = ["Python", "Java", "C++", "C", "Rust"]
 prog_cols = st.columns(3)
 for i, lang in enumerate(prog_langs):
     with prog_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{lang}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{lang}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -343,8 +344,8 @@ for i, tech in enumerate(web_devs):
     with web_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{tech}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{tech}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -358,8 +359,8 @@ for i, db in enumerate(dbs):
     with db_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{db}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{db}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -373,8 +374,8 @@ for i, lib in enumerate(ml_libs):
     with ml_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{lib}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{lib}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -388,28 +389,27 @@ for i, tool in enumerate(tools):
     with tool_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{tool}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{tool}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
 
 # --- Operating Systems Sub-section ---
-st.markdown("#### 🖥️ Operating Systems")
+st.markdown("#### 💻 Operating Systems")
 oses = ["Windows", "Ubuntu", "Linux"]
 os_cols = st.columns(3)
 for i, os in enumerate(oses):
     with os_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{os}</div>
+            <div style='background-color:#111827; padding:20px; border-radius:10px; text-align:center; margin-bottom:15px'>
+                <div style='font-size:18px; font-weight:bold; color:#ffffff'>{os}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
-
 
 # --- EXPERIENCE SECTION ---
 st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
