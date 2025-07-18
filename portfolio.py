@@ -407,7 +407,7 @@ st.markdown("#### 🗄️ Databases")
 db_icon_map = {
     "MySQL": "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000",
     "MongoDB": "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
-    "ChromaDB": "https://img.icons8.com/?size=100&id=16306&format=png&color=000000"  # Placeholder DB icon
+    "ChromaDB": "https://miro.medium.com/v2/resize:fit:1044/1*d2XUNgrLw7687CDfXx9-Dw.png"  # Placeholder DB icon
 }
 
 db_tools = ["MySQL", "MongoDB", "ChromaDB"]
@@ -424,6 +424,7 @@ for i, tool in enumerate(db_tools):
             """,
             unsafe_allow_html=True
         )
+
 
 # --- AI/ML Sub-section ---
 st.markdown("#### 🤖 AI / ML")
