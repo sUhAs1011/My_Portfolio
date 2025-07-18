@@ -540,7 +540,7 @@ with col1:
     - Predict adverse drug reactions
     - Recommend personalized treatment plans based on patient's history
 
-    **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain, ML
+    **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain
     """)
 
 with col2:
@@ -590,7 +590,7 @@ with col_left:
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI, NLP
+    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI
     """)
 
 with col_right:
@@ -609,7 +609,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using Python and UDP (March 2024), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
 
     Key features include:
     - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
