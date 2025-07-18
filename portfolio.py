@@ -348,14 +348,27 @@ st.markdown("## 🛠️ Skills")
 
 # --- Programming Languages Sub-section ---
 st.markdown("#### 💻 Programming Languages")
+
+# Icon URLs (you can expand for other languages similarly)
+icon_map = {
+    "Python": "https://img.icons8.com/color/48/000000/python--v1.png",
+    "Java": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png",
+    "C++": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
+    "C": "https://img.icons8.com/color/48/000000/c-programming.png",
+    "Rust": "https://img.icons8.com/?size=100&id=haeAxVQEIg0F&format=png&color=000000"
+}
+
 prog_langs = ["Python", "Java", "C++", "C", "Rust"]
 prog_cols = st.columns(3)
+
 for i, lang in enumerate(prog_langs):
     with prog_cols[i % 3]:
+        icon_url = icon_map[lang]
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{lang}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{icon_url}" alt="{lang} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{lang}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -363,29 +376,50 @@ for i, lang in enumerate(prog_langs):
 
 # --- Web Development Sub-section ---
 st.markdown("#### 🌐 Web Development")
-web_devs = ["HTML", "CSS", "JavaScript", "Streamlit"]
-web_cols = st.columns(3)
-for i, tech in enumerate(web_devs):
-    with web_cols[i % 3]:
+
+# Icon URLs for Web Dev
+webdev_icon_map = {
+    "HTML": "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    "CSS3": "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+    "JavaScript": "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    "Streamlit": "https://img.icons8.com/?size=100&id=Rffi8qeb2fK5&format=png&color=000000"
+}
+
+webdev_tools = ["HTML", "CSS3", "JavaScript", "Streamlit"]
+webdev_cols = st.columns(3)
+
+for i, tool in enumerate(webdev_tools):
+    with webdev_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{tech}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{webdev_icon_map[tool]}" alt="{tool} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{tool}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
 
+
 # --- Databases Sub-section ---
-st.markdown("#### 🗄️ Databases")
-dbs = ["MySQL", "MongoDB", "ChromaDB"]
+st.markdown("#### 🗄️ Databases") 
+
+db_icon_map = {
+    "MySQL": "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000",
+    "MongoDB": "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
+    "ChromaDB": "https://img.icons8.com/?size=100&id=16306&format=png&color=000000"  # Placeholder DB icon
+}
+
+db_tools = ["MySQL", "MongoDB", "ChromaDB"]
 db_cols = st.columns(3)
-for i, db in enumerate(dbs):
+
+for i, tool in enumerate(db_tools):
     with db_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{db}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{db_icon_map[tool]}" alt="{tool} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{tool}</div>
             </div>
             """,
             unsafe_allow_html=True
@@ -407,30 +441,52 @@ for i, lib in enumerate(ml_libs):
         )
 
 # --- Tools Sub-section ---
-st.markdown("#### 🧰 Tools")
-tools = ["Git", "Docker", "Kubernetes", "VSCode", "Jupyter", "Colab"]
+st.markdown("#### 🧰 Tools & Platforms")
+
+tool_icon_map = {
+    "Git": "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+    "Docker": "https://img.icons8.com/?size=100&id=22813&format=png&color=000000",
+    "Kubernetes": "https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000",
+    "VSCode": "https://img.icons8.com/?size=100&id=0OQR1FYCuA9f&format=png&color=000000",
+    "Jupyter": "https://img.icons8.com/?size=100&id=J0SgMWzAxqFj&format=png&color=000000",  # Using generic Jupyter icon
+    "Google Colab": "https://img.icons8.com/?size=100&id=lOqoeP2Zy02f&format=png&color=000000"
+}
+
+tools_list = list(tool_icon_map.keys())
 tool_cols = st.columns(3)
-for i, tool in enumerate(tools):
+
+for i, tool in enumerate(tools_list):
     with tool_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{tool}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{tool_icon_map[tool]}" alt="{tool} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{tool}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
 
+
 # --- Operating Systems Sub-section ---
 st.markdown("#### 🖥️ Operating Systems")
-oses = ["Windows", "Ubuntu", "Linux"]
+
+os_icon_map = {
+    "Windows": "https://img.icons8.com/?size=100&id=108792&format=png&color=000000",
+    "Ubuntu": "https://img.icons8.com/?size=100&id=63208&format=png&color=000000",
+    "Linux": "https://img.icons8.com/?size=100&id=m6O2bFdG70gw&format=png&color=000000"
+}
+
+os_list = list(os_icon_map.keys())
 os_cols = st.columns(3)
-for i, os in enumerate(oses):
+
+for i, os in enumerate(os_list):
     with os_cols[i % 3]:
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{os}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{os_icon_map[os]}" alt="{os} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{os}</div>
             </div>
             """,
             unsafe_allow_html=True
