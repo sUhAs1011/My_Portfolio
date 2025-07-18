@@ -427,19 +427,38 @@ for i, tool in enumerate(db_tools):
 
 
 # --- AI/ML Sub-section ---
-st.markdown("#### 🤖 AI / ML")
-ml_libs = ["Scikit-learn", "Pandas", "Numpy", "NLTK", "Spacy", "Pytorch"]
+st.markdown("#### 🤖 AI/ML Library")
+
+
+# Icon and label
+ml_icon_map = {
+    "Scikit-learn": "https://quintagroup.com/cms/python/images/scikit-learn-logo.png",
+    "Pandas":        "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000",
+    "NumPy":         "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000",
+    "NLTK":          "https://miro.medium.com/v2/resize%3Afit%3A592/1%2AYM2HXc7f4v02pZBEO8h-qw.png",
+    "Spacy":         "https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg",
+    "PyTorch":       "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000",
+    "Mathplotlib":   "https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000",
+    "Keras": "https://img.icons8.com/?size=100&id=XcSgtbIpgK6W&format=png&color=000000",
+    "Seaborn": "https://pypi-camo.freetls.fastly.net/189c5d99fbda79b2218f2d4a4fe29415d32c8d8a/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6d7761736b6f6d2f736561626f726e2f6d61737465722f646f632f5f7374617469632f6c6f676f2d776964652d6c6967687462672e737667"
+}
+
+ml_tools = ["Scikit-learn", "Pandas", "NumPy", "NLTK", "Spacy", "PyTorch", "Mathplotlib", "Keras", "Seaborn"]
 ml_cols = st.columns(3)
-for i, lib in enumerate(ml_libs):
+
+for i, tool in enumerate(ml_tools):
     with ml_cols[i % 3]:
+        icon_url = ml_icon_map.get(tool, "")
         st.markdown(
             f"""
-            <div class='skill-box'>
-                <div class='skill-text'>{lib}</div>
+            <div class='skill-box' style="text-align:center; padding:10px;">
+                <img src="{icon_url}" alt="{tool} icon" style="width:40px; height:40px; margin-bottom:10px;" />
+                <div class='skill-text' style="font-weight:bold;">{tool}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
+
 
 # --- Tools Sub-section ---
 st.markdown("#### 🧰 Tools & Platforms")
