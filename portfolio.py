@@ -347,7 +347,7 @@ st.markdown("---")
 st.markdown("## 🛠️ Skills")
 
 # --- Programming Languages Sub-section ---
-st.markdown("#### 💻 Programming Languages")
+st.markdown("#### 👨‍💻 Programming Languages")
 
 # Icon URLs (you can expand for other languages similarly)
 icon_map = {
