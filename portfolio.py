@@ -732,25 +732,68 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- RESUME DOWNLOAD ---
-try:
-    with open("new_resume.pdf", "rb") as file:
-        resume_data = file.read()
-        b64_resume = base64.b64encode(resume_data).decode()
-
-    st.markdown(f"""
-    <div style='text-align: center;'>
-        <a href="data:application/pdf;base64,{b64_resume}" download="Suhas_Resume.pdf" class="contact-button">📄 Resume</a>
-    </div>
-    """, unsafe_allow_html=True)
-except FileNotFoundError:
-    st.warning("Resume file 'new_resume.pdf' not found. Download button will not appear.")
-
-# --- Centered Contact Buttons ---
+# --- Custom Footer with Styling ---
 st.markdown("""
-<div style='text-align: center; margin-top: 20px;'>
-    <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">📧 Email</a>
-    <a href="https://www.linkedin.com/in/suhas-venkata-b78750348/" target="_blank" class="contact-button">🔗 LinkedIn</a>
-    <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">💻 GitHub</a>
-</div>
+    <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
+        Made by Suhas Venkata
+    </div>
 """, unsafe_allow_html=True)
+
+
+# --- STYLE FOR CONTACT BUTTONS ---
+st.markdown("""
+<style>
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  background-color: #111827;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background-color: #1f2937;
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Build buttons HTML
+buttons_html = """
+<div class="button-row">
+  <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
+    <img src="https://img.icons8.com/?size=100&id=32541&format=png&color=000000" class="contact-icon">Resume
+  </a>
+  <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">
+    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" class="contact-icon">Email
+  </a>
+  <a href="https://www.linkedin.com/in/suhas-venkata-b78750348/" target="_blank" class="contact-button">
+    <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" class="contact-icon">LinkedIn
+  </a>
+  <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">
+    <img src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000" class="contact-icon">GitHub
+  </a>
+</div>
+""".format(resume_b64=b64 if (b64 := base64.b64encode(open("new_resume.pdf","rb").read()).decode()) else "")
+st.markdown(buttons_html, unsafe_allow_html=True)
+
