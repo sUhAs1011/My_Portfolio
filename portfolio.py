@@ -537,10 +537,10 @@ st.markdown("""
 
   <div class="timeline-item">
     <div class="timeline-content left">
-      <h3>10th CBSE</h3>
-      <p>DPS East</p>
-      <p>📅 2006 – 2020</p>
-      <p>90%</p>
+      <h3>B.Tech CSE</h3>
+      <p>PES University</p>
+      <p>📅 2022 – Present</p>
+      <p>CGPA : 8.06</p>
     </div>
   </div>
 
@@ -555,10 +555,10 @@ st.markdown("""
 
   <div class="timeline-item">
     <div class="timeline-content left">
-      <h3>B.Tech CSE</h3>
-      <p>PES University</p>
-      <p>📅 2022 – Present</p>
-      <p>CGPA: 8.06</p>
+      <h3>10th CBSE</h3>
+      <p>DPS East</p>
+      <p>📅 2006 – 2020</p>
+      <p>90%</p>
     </div>
   </div>
 
