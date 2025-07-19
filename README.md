@@ -10,7 +10,8 @@
 <img width="696" height="453" alt="image" src="https://github.com/user-attachments/assets/5af34bb3-31c3-451f-a78d-6f030377db90" />
 
 ### Web Interface of My Portfolio
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5d9eddd-84f8-4233-a786-d0b2f6535aaa" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3994f914-4740-45e8-9fca-384db46ee0b4" />
+
 
 
 
