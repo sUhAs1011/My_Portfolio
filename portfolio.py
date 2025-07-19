@@ -732,14 +732,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- Custom Footer with Styling ---
-st.markdown("""
-    <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
-        Made by Suhas Venkata
-    </div>
-""", unsafe_allow_html=True)
-
-
 # --- STYLE FOR CONTACT BUTTONS ---
 st.markdown("""
 <style>
