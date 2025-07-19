@@ -440,7 +440,7 @@ ml_icon_map = {
     "PyTorch":       "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000",
     "Mathplotlib":   "https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000",
     "Keras": "https://img.icons8.com/?size=100&id=XcSgtbIpgK6W&format=png&color=000000",
-    "Seaborn": "https://miro.medium.com/v2/resize:fit:1400/1*Zdo6-c6qojz16dCYS6TSmg.png"
+    "Seaborn": "https://cdn.worldvectorlogo.com/logos/seaborn-1.svg"
 }
 
 ml_tools = ["Scikit-learn", "Pandas", "NumPy", "NLTK", "Spacy", "PyTorch", "Mathplotlib", "Keras", "Seaborn"]
