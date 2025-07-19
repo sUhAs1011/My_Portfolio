@@ -386,7 +386,7 @@ webdev_icon_map = {
     "SpringBoot": "https://img.icons8.com/?size=100&id=90519&format=png&color=000000"
 }
 
-webdev_tools = ["HTML", "CSS3", "JavaScript", "Streamlit","SpringBoot"]
+webdev_tools = ["HTML", "CSS", "JavaScript", "Streamlit","SpringBoot"]
 webdev_cols = st.columns(3)
 
 for i, tool in enumerate(webdev_tools):
