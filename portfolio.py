@@ -316,7 +316,7 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- ABOUT ME ---
-st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
+st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("📝 About Me")
 
