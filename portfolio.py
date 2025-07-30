@@ -164,9 +164,9 @@ body {
     text-align: center;
     padding: 8px 15px; /* Adjust padding for button size */
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: color 0.3s, background-color 0.3s;
-    margin-left: 15px; /* Space between links */
+    margin-left: 12px; /* Space between links */
 }
 
 .navbar-custom a:hover {
