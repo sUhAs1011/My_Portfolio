@@ -283,6 +283,7 @@ st.markdown("""
 # --- NAVIGATION BAR ---
 st.markdown("""
 <div class="navbar-custom">
+    <a href="#about">📝 About Me</a>
     <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
     <a href="#journey">🚶‍♂️ My Journey</a>
@@ -314,6 +315,21 @@ with col2:
         st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
+# --- ABOUT ME ---
+st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
+st.markdown("---")
+st.header("📝 About Me")
+
+st.write("""
+Hi, I’m **Suhas**, a backend and AI/ML engineer passionate about building scalable systems and predictive pipelines.  
+Over the last few years, I’ve worked with tools like **Kafka**, **Redis**, and **PyTorch** to build real-time and intelligent solutions.  
+I believe clean architecture and data-driven design unlock powerful possibilities.
+
+When I'm not coding, I enjoy exploring **code art**, machine learning experiments, and diving into sci-fi novels.  
+Feel free to explore my **projects below**, or reach out to connect!
+""")
+st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+
 # --- Skills Section ---
 st.markdown("""
     <style>
@@ -340,6 +356,8 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+
 
 # --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
