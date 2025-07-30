@@ -303,11 +303,6 @@ with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
     st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
-    st.markdown("""
-    <div class='intro'>
-        I'm Suhas Venkata, a Computer Science junior at PES University (Electronic City) with a strong interest in machine learning and deep learning. I'm passionate about learning, taking on new challenges, and sharpening my technical skills to make a meaningful impact.
-    </div>
-    """, unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
