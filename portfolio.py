@@ -749,13 +749,15 @@ with col_right:
     )
     st.write("""
     Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across sectors.
+    
     Key features include:
-    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
-    - Integrated **SSL certificates** for secure communication between client and server.
-    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
-    - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
+    
+- Developed a Deep Structured Semantic Model (DSSM) for learning refined semantic similarity between job and course descriptions, improving matching accuracy for skill recommendations.
+- Utilized a client-server architecture where model_training.py trains the backend DSSM, and testing.py provides a Streamlit web application for user interaction, integrating ChromaDB for efficient embedding storage and retrieval.
+- Implemented dynamic generation of positive and negative job-course pairs during training, crucial for teaching the DSSM to effectively distinguish between relevant and irrelevant matches, and performed comprehensive model evaluation using metrics like Precision, Recall, F1-Score, AUC-ROC, and NDCG.
+- Provided a user-friendly web interface with testing.py enabling resume upload (PDF/DOCX parsing), desired job title input, automated skill gap analysis, and tailored course recommendations to bridge identified gaps.
 
-    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM
+    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit
     """)
 
 st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
