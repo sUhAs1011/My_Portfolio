@@ -749,13 +749,13 @@ with col_right:
     )
     st.write("""
     Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across sectors.
+
+    Features include:
+    - Used all-MiniLM-L6-v2 for pushing the job and course embeddings into ChromaDB/
+    - Used DSSM for training the model for enhanced skill identification
+    - USed Streamlit as frontend for user friendly interaction
+    - Suggests the relevant courses based on the skill gap
     
-    Key features include:
-    
-- Developed a Deep Structured Semantic Model (DSSM) for learning refined semantic similarity between job and course descriptions, improving matching accuracy for skill recommendations.
-- Utilized a client-server architecture where model_training.py trains the backend DSSM, and testing.py provides a Streamlit web application for user interaction, integrating ChromaDB for efficient embedding storage and retrieval.
-- Implemented dynamic generation of positive and negative job-course pairs during training, crucial for teaching the DSSM to effectively distinguish between relevant and irrelevant matches, and performed comprehensive model evaluation using metrics like Precision, Recall, F1-Score, AUC-ROC, and NDCG.
-- Provided a user-friendly web interface with testing.py enabling resume upload (PDF/DOCX parsing), desired job title input, automated skill gap analysis, and tailored course recommendations to bridge identified gaps.
 
     **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit
     """)
