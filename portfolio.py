@@ -735,6 +735,29 @@ with col_left:
 with col_right:
     st.image("portfolio.jpg", caption="Streamlit Portfolio", use_container_width=True)
 
+# Analyzing job posting trends, skill gaps, and recommend reskilling programs in  employment sectors
+st.markdown("---")
+col_left, col_right = st.columns([1, 2])
+
+with col_left:
+    st.image("career.jpg", caption="Analyzing job posting trends, skill gaps, and recommend reskilling programs in  employment sectors", use_container_width=True)
+
+with col_right:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 AI‑Powered Job Market Analyzer: </a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across sectors.
+    Key features include:
+    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
+    - Integrated **SSL certificates** for secure communication between client and server.
+    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
+    - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
+
+    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM
+    """)
+
 st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
 
 # --- Custom Footer with Styling ---
