@@ -744,7 +744,7 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 AI‑Powered Job Market Analyzer: </a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 NLP-Powered Job Market Analyzer: </a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
@@ -753,8 +753,8 @@ with col_right:
     Features include:
     - Used all-MiniLM-L6-v2 for pushing the job and course embeddings into ChromaDB/
     - Used DSSM for training the model for enhanced skill identification
-    - USed Streamlit as frontend for user friendly interaction
-    - Suggests the relevant courses based on the skill gap
+    - Used Streamlit as frontend interface for user friendly interaction
+    - Suggests the relevant courses based on the skill gap for that job position
     
 
     **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit
