@@ -744,13 +744,13 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 NLP-Powered Job Market Analyzer: </a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 AI-Powered Skill Gap Analysis & Reskilling for Employment Trends </a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
     Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across sectors.
 
-    Features include:
+    Key features include:
     - Utilized all-MiniLM-L6-v2 to generate and push refined job and course embeddings into ChromaDB for efficient semantic search.
     - Employed a Deep Structured Semantic Model (DSSM) for training to learn enhanced semantic relationships.
     - Developed a Streamlit web application as a user-friendly frontend interface, facilitating interactive skill gap analysis and course recommendations.
