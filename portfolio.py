@@ -744,7 +744,7 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/C3I' target='_blank' style='text-decoration: none; color: white;'>🤖 AI-Powered Skill Gap Analysis & Reskilling for Employment Trends </a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/AI-Powered-Skill-Gap-Analysis-Reskilling-for-Employment-Trends' target='_blank' style='text-decoration: none; color: white;'>🤖 AI-Powered Skill Gap Analysis & Reskilling for Employment Trends </a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
