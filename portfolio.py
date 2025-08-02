@@ -316,10 +316,9 @@ st.markdown("---")
 st.header("📝 About Me")
 
 st.write("""
-Hi, I’m **Suhas**, a Senior at PES University pursuing a Bachelor's degree in Computer Science and Engineering.
-Over the last few years, I’ve worked with tools like **PyTorch**, **NLTK**, and **Spacy** to build real-time and intelligent solutions.  
-
-I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
+Hi, I’m **Suhas**, a Senior at PES University pursuing a Bachelor's degree in Computer Science and Engineering.Over the last few years, I’ve worked with tools like **PyTorch**, **NLTK**, and **Spacy** 
+to build real-time and intelligent solutions.My fields of interest are NLP and ML and I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills 
+to contribute meaningfully to the field.
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 
