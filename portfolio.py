@@ -311,14 +311,19 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- ABOUT ME ---
-st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
-st.header("📝 About Me")
+col1, col2 = st.columns([1, 2])  # 1/3 for image, 2/3 for text
 
-st.write("""
-Hi, I’m Suhas, a Computer Science & Engineering undergraduate at PES University with a passion for NLP and Machine Learning. I’ve built lightweight, real-time NLP tools using PyTorch, spaCy, and NLTK, which I deploy via Streamlit Cloud. I love tackling new challenges, learning new tools, and applying AI to solve practical problems.
-""")
-st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+with col1:
+    st.image("linkedin.jpg", use_column_width=True)
+
+with col2:
+    st.markdown("""
+    ### 📝 About Me
+    Hi, I’m **Suhas**, a Senior at PES University pursuing a Bachelor's degree in **Computer Science and Engineering**.  
+    I work with **PyTorch, NLTK, and Spacy** to build real-time intelligent solutions.  
+    My interests are **NLP** and **ML**, and I love learning and solving new challenges.
+    """)
+
 
 # --- Skills Section ---
 st.markdown("""
