@@ -316,12 +316,10 @@ st.markdown("---")
 st.header("📝 About Me")
 
 st.write("""
-Hi, I’m **Suhas**, a backend and AI/ML engineer passionate about building scalable systems and predictive pipelines.  
-Over the last few years, I’ve worked with tools like **Kafka**, **Redis**, and **PyTorch** to build real-time and intelligent solutions.  
-I believe clean architecture and data-driven design unlock powerful possibilities.
+Hi, I’m **Suhas**, a Senior at PES University pursuing a Bachelor's degree in Computer Science and Engineering.
+Over the last few years, I’ve worked with tools like **PyTorch**, **NLTK**, and **Spacy** to build real-time and intelligent solutions.  
 
-When I'm not coding, I enjoy exploring **code art**, machine learning experiments, and diving into sci-fi novels.  
-Feel free to explore my **projects below**, or reach out to connect!
+I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 
