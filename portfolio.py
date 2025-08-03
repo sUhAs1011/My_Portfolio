@@ -530,16 +530,16 @@ st.header("💼 Experience")
 st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence)")
 st.markdown("<div class='subtitle'>Machine Learning Research Intern | June 2025 – August 2025</div>", unsafe_allow_html=True)
 st.write("""
-- Architected and deployed* a comprehensive career advisory system using Deep Structured Semantic Model (DSSM) with dual-tower neural networks for intelligent job-course matching.
+- Architected and deployed a comprehensive career advisory system using Deep Structured Semantic Model (DSSM) with dual-tower neural networks for intelligent job-course matching.
 
-- *Developed advanced NLP pipeline* for multi-format resume processing (PDF, DOCX, images via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a
+- Developed advanced NLP pipeline for multi-format resume processing (PDF, DOCX, images via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a
  resume.
  
-- Implemented vector database solution* using ChromaDB for efficient storage and retrieval of 50,000+ job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
+- Implemented vector database solution using ChromaDB for efficient storage and retrieval of 50,000+ job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
 
-- *Built interactive Streamlit application* with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching
+- Built interactive Streamlit application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching
 
-- Optimized system performance* through memory-efficient negative sampling, batch processing, and embedding normalization, handling 10,000+ job-course pairs while maintaining sub-second response times
+- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling 10,000+ job-course pairs while maintaining sub-second response times
 
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
