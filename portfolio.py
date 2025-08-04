@@ -527,7 +527,7 @@ st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=T
 st.markdown("---")
 st.header("💼 Experience")
 
-st.subheader("C3I(Centre of Cognitive Computing and Computational Intelligence)")
+st.subheader("Centre of Cognitive Computing and Computational Intelligence")
 st.markdown("<div class='subtitle'>Machine Learning Research Intern | June 2025 – August 2025</div>", unsafe_allow_html=True)
 st.write("""
 - Architected and deployed a comprehensive career advisory system using Deep Structured Semantic Model (DSSM) with dual-tower neural networks for intelligent job-course matching.
