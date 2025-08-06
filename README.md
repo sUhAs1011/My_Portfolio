@@ -17,6 +17,11 @@
 ### Commands to run the streamlit code
 <img width="696" height="453" alt="image" src="https://github.com/user-attachments/assets/5af34bb3-31c3-451f-a78d-6f030377db90" />
 
+- **Frontend:**
+   ```shell
+   streamlit run portfolio.py
+   ```
+
 ### Web Interface of My Portfolio
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f072f15-2dcf-4151-9932-2ff5f4c982bd" />
 
