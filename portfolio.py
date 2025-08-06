@@ -625,7 +625,7 @@ st.header("🏆 Achievements")
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🧠 Heal-O-Code Hackathon</h3>
-    <div style="font-size: 22px;">March 2025</div>
+    <div style="font-size: 24px;">March 2025</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
@@ -636,7 +636,7 @@ Top 10 out of 50+ teams in *Heal-O-Code Hackathon*. Built a healthcare decision 
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
-    <div style="font-size: 22px;">March 2023</div>
+    <div style="font-size: 24px;">March 2023</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
@@ -647,7 +647,7 @@ Awarded the prestigious *MRD Scholarship* in Semester 1 by **PES University**, r
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🏅 DAC Scholarship</h3>
-    <div style="font-size: 22px;">February 2025</div>
+    <div style="font-size: 24px;">February 2025</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
