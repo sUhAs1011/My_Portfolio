@@ -602,6 +602,7 @@ st.header("🏆 Achievements")
 
 # Heal-O-Code Hackathon
 st.subheader("🧠 Heal-O-Code Hackathon – March 2025")
+<div style="text-align: right; font-size: 1.5rem;"> March 2025</div>
 st.write("""
 Top 10 out of 50+ teams in *Heal-O-Code Hackathon*
 Built a healthcare decision support tool using *Multi-Chain Blockchain* and *Ollama* for better drug recommendation.
