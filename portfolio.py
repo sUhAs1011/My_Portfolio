@@ -593,49 +593,80 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
+# --- Custom CSS ---
+st.markdown("""
+<style>
+.achievement-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.achievement-left {
+    font-size: 18px;
+    font-weight: bold;
+}
+.achievement-description {
+    font-size: 16px;
+}
+.achievement-date {
+    font-size: 16px;
+    color: #bbb;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # --- ACHIEVEMENTS SECTION ---
 st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("🏆 Achievements")
 
-# Heal‑O‑Code Hackathon – March 2025
+# Heal-O-Code Hackathon
 st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size:20px; font-weight:bold;">🧠 Heal‑O‑Code Hackathon</div>
-  <div style="font-size:16px; font-weight:normal; text-align:right;">March 2025</div>
+<div class="achievement-container">
+    <div class="achievement-left">
+        🧠 Heal-O-Code Hackathon
+        <div class="achievement-description">
+            Top 10 out of 50+ teams in Heal-O-Code Hackathon. 
+            Built a healthcare decision support tool using 
+            <b>Multi-Chain Blockchain</b> and <b>Ollama</b> 
+            for intelligent drug recommendations.
+        </div>
+    </div>
+    <div class="achievement-date">March 2025</div>
 </div>
-<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
-  Top 10 out of 50+ teams in Heal‑O‑Code Hackathon. Built a healthcare decision support tool using
-  <b>Multi‑Chain Blockchain</b> and <b>Ollama</b> for intelligent drug recommendations.
-</p>
 """, unsafe_allow_html=True)
 
-# MRD Scholarship – March 2023
+# MRD Scholarship
 st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size:20px; font-weight:bold;">🎓 MRD Scholarship</div>
-  <div style="font-size:16px; font-weight:normal; text-align:right;">March 2023</div>
+<div class="achievement-container">
+    <div class="achievement-left">
+        🎓 MRD Scholarship
+        <div class="achievement-description">
+            Awarded the prestigious <b>MRD Scholarship</b> by <b>PES University</b>, 
+            receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+        </div>
+    </div>
+    <div class="achievement-date">March 2023</div>
 </div>
-<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
-  Awarded the prestigious <b>MRD Scholarship</b> by PES University (Semester 1), receiving 20% tuition
-  reimbursement for academic excellence.
-</p>
 """, unsafe_allow_html=True)
 
-# DAC Scholarship – February 2025
+# DAC Scholarship
 st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="font-size:20px; font-weight:bold;">🎖 DAC Scholarship</div>
-  <div style="font-size:16px; font-weight:normal; text-align:right;">February 2025</div>
+<div class="achievement-container">
+    <div class="achievement-left">
+        🎖 DAC Scholarship
+        <div class="achievement-description">
+            Received <b>Distinction Scholarship</b> of ₹ 2000 for maintaining 
+            SGPA above <b>7.75</b> in Semesters 2–6 at <b>PES University</b>.
+        </div>
+    </div>
+    <div class="achievement-date">February 2025</div>
 </div>
-<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
-  Received Distinction Scholarship of ₹ 2000 for maintaining SGPA above 7.75 in Semesters 2–6 at PES University.
-</p>
 """, unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)  # End of Achievements section
+st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
