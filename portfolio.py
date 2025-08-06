@@ -527,22 +527,32 @@ st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=T
 st.markdown("---")
 st.header("💼 Experience")
 
-st.subheader("Centre of Cognitive Computing and Computational Intelligence")
-st.markdown("<div class='subtitle'>Machine Learning Research Intern | June 2025 – August 2025</div>", unsafe_allow_html=True)
+# --- Company and Date with Location on the right ---
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+        <h3>Centre of Cognitive Computing and Computational Intelligence</h3>
+        <div class='subtitle'>Machine Learning Research Intern | June 2025 – August 2025</div>
+    </div>
+    <div style="text-align: right;">Bengaluru, Karnataka</div>
+</div>
+""", unsafe_allow_html=True)
+
+# --- Experience Details ---
 st.write("""
 - Architected and deployed a comprehensive career advisory system using Deep Structured Semantic Model (DSSM) with dual-tower neural networks for intelligent job-course matching.
 
-- Developed advanced NLP pipeline for multi-format resume processing (PDF, DOCX, images via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a
- resume.
+- Developed advanced NLP pipeline for multi-format resume processing (PDF, DOCX, images via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.
  
 - Implemented vector database solution using ChromaDB for efficient storage and retrieval of 50,000+ job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
 
-- Built interactive Streamlit application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching
+- Built interactive Streamlit application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching.
 
-- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling 10,000+ job-course pairs while maintaining sub-second response times
-
+- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling 10,000+ job-course pairs while maintaining sub-second response times.
 """)
-st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+
+st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
+
 
 
 # --- MY JOURNEY SECTION ---
