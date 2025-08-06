@@ -600,25 +600,43 @@ st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html
 st.markdown("---")
 st.header("🏆 Achievements")
 
-# Heal-O-Code Hackathon
-st.subheader("🧠 Heal-O-Code Hackathon – March 2025")
-st.write("""
-Top 10 out of 50+ teams in *Heal-O-Code Hackathon*
-Built a healthcare decision support tool using *Multi-Chain Blockchain* and *Ollama* for better drug recommendation.
-""")
+# Heal‑O‑Code Hackathon – March 2025
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size:20px; font-weight:bold;">🧠 Heal‑O‑Code Hackathon</div>
+  <div style="font-size:16px; font-weight:normal; text-align:right;">March 2025</div>
+</div>
+<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
+  Top 10 out of 50+ teams in Heal‑O‑Code Hackathon. Built a healthcare decision support tool using
+  <b>Multi‑Chain Blockchain</b> and <b>Ollama</b> for intelligent drug recommendations.
+</p>
+""", unsafe_allow_html=True)
 
-# MRD Scholarship
-st.subheader("🎓 MRD Scholarship – March 2023")
-st.write("""
-Awarded the prestigious *MRD Scholarship* in Semester 1 by *PES University*, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
-""")
+# MRD Scholarship – March 2023
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size:20px; font-weight:bold;">🎓 MRD Scholarship</div>
+  <div style="font-size:16px; font-weight:normal; text-align:right;">March 2023</div>
+</div>
+<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
+  Awarded the prestigious <b>MRD Scholarship</b> by PES University (Semester 1), receiving 20% tuition
+  reimbursement for academic excellence.
+</p>
+""", unsafe_allow_html=True)
 
-# Distinction Scholarship
-st.subheader("🎖 DAC Scholarship - February 2025")
-st.write("""
-Received *Distinction Scholarship* of ₹ 2000 for achieving SGPA above *7.75* in *Semesters 2, 3, 4, 5 and 6* at *PES University*.
-""")
-st.markdown("</div>", unsafe_allow_html=True) # End of Achievements section
+# DAC Scholarship – February 2025
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="font-size:20px; font-weight:bold;">🎖 DAC Scholarship</div>
+  <div style="font-size:16px; font-weight:normal; text-align:right;">February 2025</div>
+</div>
+<p style="margin-top:-8px; margin-bottom:12px; font-size:14px;">
+  Received Distinction Scholarship of ₹ 2000 for maintaining SGPA above 7.75 in Semesters 2–6 at PES University.
+</p>
+""", unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)  # End of Achievements section
+
 
 
 # --- PROJECTS SECTION ---
