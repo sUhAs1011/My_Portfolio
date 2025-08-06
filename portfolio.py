@@ -623,49 +623,38 @@ st.header("🏆 Achievements")
 
 # Heal-O-Code Hackathon
 st.markdown("""
-<div class="achievement-container">
-    <div class="achievement-left">
-        🧠 Heal-O-Code Hackathon
-        <div class="achievement-description">
-            Top 10 out of 50+ teams in Heal-O-Code Hackathon. 
-            Built a healthcare decision support tool using 
-            <b>Multi-Chain Blockchain</b> and <b>Ollama</b> 
-            for intelligent drug recommendations.
-        </div>
-    </div>
-    <div class="achievement-date">March 2025</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🧠 Heal-O-Code Hackathon</h3>
+    <div style="font-size: 20px;">March 2025</div>
 </div>
 """, unsafe_allow_html=True)
+st.write("""
+Top 10 out of 50+ teams in *Heal-O-Code Hackathon*. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+""")
 
 # MRD Scholarship
 st.markdown("""
-<div class="achievement-container">
-    <div class="achievement-left">
-        🎓 MRD Scholarship
-        <div class="achievement-description">
-            Awarded the prestigious <b>MRD Scholarship</b> by <b>PES University</b>, 
-            receiving a 20% tuition fee reimbursement in recognition of academic excellence.
-        </div>
-    </div>
-    <div class="achievement-date">March 2023</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
+    <div style="font-size: 20px;">March 2023</div>
 </div>
 """, unsafe_allow_html=True)
+st.write("""
+Awarded the prestigious *MRD Scholarship* in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+""")
 
 # DAC Scholarship
 st.markdown("""
-<div class="achievement-container">
-    <div class="achievement-left">
-        🎖 DAC Scholarship
-        <div class="achievement-description">
-            Received <b>Distinction Scholarship</b> of ₹ 2000 for maintaining 
-            SGPA above <b>7.75</b> in Semesters 2–6 at <b>PES University</b>.
-        </div>
-    </div>
-    <div class="achievement-date">February 2025</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🎖 DAC Scholarship</h3>
+    <div style="font-size: 20px;">February 2025</div>
 </div>
 """, unsafe_allow_html=True)
-
+st.write("""
+Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2–6** at **PES University**.
+""")
 st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
