@@ -316,7 +316,7 @@ st.markdown("---")
 st.header("📝 About Me")
 
 st.write("""
-Hi, I’m Suhas, a Computer Science & Engineering undergraduate at PES University with a passion for NLP and Machine Learning. I’ve built lightweight, real-time NLP tools using PyTorch, spaCy, and NLTK, which I deploy via Streamlit Cloud. I love tackling new challenges, learning new tools, and applying AI to solve practical problems.
+I am Suhas Venkata, a Senior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering. My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
 """)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 
