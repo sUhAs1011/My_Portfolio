@@ -774,7 +774,7 @@ with col_left:
     st.write("""
     Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
 
-    Features include:
+    Key features include:
     - Animated hero section with a circular profile picture and gradient headers
     - Skill badges, project showcases with GitHub integration
     - A vertical educational timeline
