@@ -531,7 +531,11 @@ st.header("💼 Experience")
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div>
-        <h3>Centre of Cognitive Computing and Computational Intelligence</h3>
+        <h3>
+            <a href="https://research.pes.edu/centre-of-cognitive-computing-and-computational-intelligence-c3i/" target="_blank" style="text-decoration: none; color: inherit;">
+                Centre of Cognitive Computing and Computational Intelligence
+            </a>
+        </h3>
         <div class='subtitle'>Summer Research Intern | June 2025 – August 2025</div>
     </div>
      <div style="text-align: right; font-size: 1.5rem;">Bengaluru, Karnataka</div>
