@@ -647,7 +647,7 @@ Awarded the prestigious *MRD Scholarship* in Semester 1 by **PES University**, r
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🏅 DAC Scholarship</h3>
-    <div style="font-size: 24px;font-weight:bold;">February 2025</div>
+    <div style="font-size: 24px;font-weight:bold;">August 2025</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
