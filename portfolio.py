@@ -296,18 +296,6 @@ st.markdown("""
 # st.markdown("<br>", unsafe_allow_html=True) # You can add one or two if needed
 
 # --- HERO SECTION ---
-
-st.title("🚀 Welcome to My Portfolio")
-
-# --- Intro Typewriter Effect ---
-def intro_words():
-    text = "Hi, I'm Suhas — studying CSE at PES University, passionate about NLP & ML."
-    for word in text.split(" "):
-        yield word + " "
-        time.sleep(0.1)
-
-st.write_stream(intro_words())
-
 st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
 col1, col2 = st.columns([3, 2])
 
