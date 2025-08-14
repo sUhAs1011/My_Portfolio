@@ -532,7 +532,7 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div>
         <h3>Centre of Cognitive Computing and Computational Intelligence</h3>
-        <div class='subtitle'>Machine Learning Research Intern | June 2025 – August 2025</div>
+        <div class='subtitle'>Summer Research Intern | June 2025 – August 2025</div>
     </div>
      <div style="text-align: right; font-size: 1.5rem;">Bengaluru, Karnataka</div>
 </div>
