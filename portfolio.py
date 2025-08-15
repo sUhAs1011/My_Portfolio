@@ -82,7 +82,7 @@ body {
     height: 300px;
     object-fit: cover;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transform: translateX(100px);
+    transform: translateX(150px);
 }
 
 .hero-container {
