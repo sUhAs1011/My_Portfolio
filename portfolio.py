@@ -316,10 +316,11 @@ st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("👤 About Me")
-
-st.write("""
+st.markdown("""
+<p style='font-size:18px; line-height:1.6;'>
 I am Suhas Venkata, a Senior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering. My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
-""")
+</p>
+""", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
 
 
