@@ -702,7 +702,7 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-ALARM-BURGLAR-SYSTEM' target='_blank' style='text-decoration: none; color: white;'>🔐 Alarm Burglar System with Arduino</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-ALARM-BURGLAR-SYSTEM' target='_blank' style='text-decoration: none; color: white;'>🚨 Alarm Burglar System with Arduino</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
