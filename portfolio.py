@@ -297,6 +297,9 @@ with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
     st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
+    st.write("""
+    I'm a final-year Computer Science student at PES University, passionate about building beautiful, functional web apps. I recently interned in Abu Dhabi, UAE, gaining international exposure and hands-on experience. Exploring software engineering and always open to new challenges.
+    """)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
