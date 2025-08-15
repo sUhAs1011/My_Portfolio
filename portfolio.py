@@ -298,9 +298,13 @@ with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
     st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
-    st.write("""
-    I'm a final-year Computer Science student at PES University, passionate about Machine Learning and Natural Language Prcoessing. I recently interned in C3I, gaining ML exposure and hands-on experience. Exploring software engineering and always open to new challenges.
-    """)
+    st.markdown("""
+<p style='font-size:18px; line-height:1.6;'>
+I'm a final-year Computer Science student at PES University, passionate about Machine Learning and Natural Language Processing. 
+I recently interned in C3I, gaining ML exposure and hands-on experience. 
+Exploring software engineering and always open to new challenges.
+</p>
+""", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
