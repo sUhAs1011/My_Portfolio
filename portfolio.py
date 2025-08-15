@@ -644,7 +644,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Awarded the prestigious *MRD Scholarship* in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
 """)
 
 # DAC Scholarship
