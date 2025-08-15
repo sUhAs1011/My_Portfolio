@@ -80,7 +80,7 @@ body {
 
 .profile-pic {
     border-radius: 50%;
-    width: 280px;
+    width: 260px;
     height: 280px;
     object-fit: cover;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
