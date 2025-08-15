@@ -544,7 +544,7 @@ st.markdown("""
 
 # --- Experience Details ---
 st.write("""
-- Architected and deployed a comprehensive career advisory system using Deep Structured Semantic Model (DSSM) with dual-tower neural networks for intelligent job-course matching.
+- Architected and deployed a comprehensive career advisory system using **Deep Structured Semantic Model (DSSM)** with dual-tower neural networks for intelligent job-course matching.
 
 - Developed advanced NLP pipeline for multi-format resume processing (PDF & DOCX, via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.
  
@@ -633,7 +633,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Top 10 out of 50+ teams in *Heal-O-Code Hackathon*. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+Top 10 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
 """)
 
 # MRD Scholarship
