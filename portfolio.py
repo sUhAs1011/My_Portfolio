@@ -7,8 +7,6 @@ from io import BytesIO
 st.set_page_config(page_title="Suhas Venkata · Portfolio", page_icon="🌐", layout="wide")
 
 # --- LOAD IMAGE ---
-# Assuming 'profile.jpg' is in the same directory as your script
-# Function to safely load and convert images to base64 for inline HTML
 def load_and_base64_image(file_path):
     try:
         img = Image.open(file_path)
@@ -291,10 +289,6 @@ st.markdown("""
     <a href="#projects">🚀 Projects</a>
 </div>
 """, unsafe_allow_html=True)
-# Removed excessive <br> tags. The content-section padding-top should handle spacing.
-# If more space is still needed, adjust the padding-top in .content-section CSS or add fewer <br> tags.
-# st.markdown("<br>", unsafe_allow_html=True) # You can add one or two if needed
-
 # --- HERO SECTION ---
 st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
 col1, col2 = st.columns([3, 2])
@@ -306,7 +300,7 @@ with col1:
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    if img_b64: # Only render if image was loaded successfully
+    if img_b64: 
         st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
