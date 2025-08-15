@@ -817,7 +817,7 @@ with col_right:
     - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging both pre-computed mappings and the trained DSSM.
     
 
-    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit
+    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
     """)
 
 st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
