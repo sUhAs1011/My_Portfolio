@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter
 import base64
 from io import BytesIO
 
@@ -322,6 +322,11 @@ col1, col2 = st.columns([1, 2])
 with col1:
     from PIL import Image
     img = Image.open("linked.jpg")
+    img = ImageEnhance.Sharpness(img).enhance(1.8)
+    img = ImageEnhance.Contrast(img).enhance(1.4)
+    img = ImageEnhance.Color(img).enhance(1.2)
+    img = img.filter(ImageFilter.SHARPEN)
+
     st.image(img, width=500)  # ensures correct rendering for local file
 
 with col2:
