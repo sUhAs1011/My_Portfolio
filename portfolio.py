@@ -318,38 +318,24 @@ st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("👤 About Me")
 
-# Create two columns: 1/3 for image, 2/3 for text
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.markdown("""
-    <div style="text-align: left;">
-        <img
-            src="linked.jpg"
-            alt="profile picture"
-            style="
-                width: 250px;
-                height: 250px;
-                object-fit: cover;
-                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-                /* Keeping it square, no border-radius to keep edges crisp */
-                /* Add slight left padding if needed */
-                margin-left: 10px;
-            "
-        >
-    </div>
-    """, unsafe_allow_html=True)
+    from PIL import Image
+    img = Image.open("linked.jpg")
+    st.image(img, width=250)  # ensures correct rendering for local file
 
 with col2:
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
         I am <strong>Suhas Venkata</strong>, a Senior studying Computer Science & Engineering at PES University, Electronic City.
         I’m deeply passionate about machine learning and deep learning and enjoy exploring cutting-edge tech to solve meaningful problems.
-        I embrace new challenges and am continuously refining my skills to create real-world impact.
+        I embrace new challenges and continuously refine my skills to create real-world impact.
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown("</div>", unsafe_allow_html=True)  # End of About Me section
+st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
