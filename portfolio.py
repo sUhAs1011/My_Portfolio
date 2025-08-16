@@ -341,7 +341,7 @@ with col2:
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        ver the past year, I’ve interned with the Centre for Cognitive Computing Intelligence (C3I), where I devised and deployed an end-to-end career advisory system leveraging dual-tower Deep Structured Semantic Models and ChromaDB for highly accurate job–course matching.
+        The last 2 months, I’ve interned with the Centre for Cognitive Computing Intelligence (C3I), where I devised and deployed an end-to-end career advisory system leveraging dual-tower Deep Structured Semantic Models and ChromaDB for highly accurate job–course matching.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
