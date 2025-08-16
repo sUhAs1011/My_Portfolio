@@ -341,7 +341,7 @@ with col2:
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I'm always open to challenges, collaboration, and learning—if you're exploring projects in NLP, CV, or AI ethics, let's connect and build something meaningful together.
+        I'm always open to challenges, collaboration, and learning—if you're exploring projects in NLP, Machine Learning, or AI, let's connect and build something meaningful together.
     </div>    
     """, unsafe_allow_html=True)
 
