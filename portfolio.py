@@ -313,16 +313,17 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- ABOUT ME ---
+# --- ABOUT ME ---
 st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("👤 About Me")
 
-# Create two columns: image takes 1/3rd, text takes 2/3rd
+# Create two columns: 1/3 for image, 2/3 for text
 col1, col2 = st.columns([1, 2])
 
 with col1:
     st.markdown("""
-    <div style="display: flex; justify-content: flex-start;">
+    <div style="text-align: left;">
         <img
             src="linked.jpg"
             alt="profile picture"
@@ -331,7 +332,9 @@ with col1:
                 height: 250px;
                 object-fit: cover;
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-                /* Remove border-radius to keep it square */
+                /* Keeping it square, no border-radius to keep edges crisp */
+                /* Add slight left padding if needed */
+                margin-left: 10px;
             "
         >
     </div>
@@ -340,9 +343,9 @@ with col1:
 with col2:
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I am <strong>Suhas Venkata</strong>, a Senior at PES University, Electronic City, pursuing a Bachelor's in Computer Science & Engineering.
-        My journey is driven by my passion for machine learning and deep learning. I thrive on exploring innovative solutions and staying on the cutting edge.
-        I’m always eager to learn new things, tackle challenging problems, and contribute meaningfully to the field.
+        I am <strong>Suhas Venkata</strong>, a Senior studying Computer Science & Engineering at PES University, Electronic City.
+        I’m deeply passionate about machine learning and deep learning and enjoy exploring cutting-edge tech to solve meaningful problems.
+        I embrace new challenges and am continuously refining my skills to create real-world impact.
     </div>
     """, unsafe_allow_html=True)
 
