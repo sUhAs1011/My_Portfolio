@@ -316,7 +316,6 @@ st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 # --- ABOUT ME ---
 st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
-st.header("👤 About Me")
 
 col1, col2 = st.columns([1, 2])
 
@@ -326,6 +325,7 @@ with col1:
     st.image(img, width=500)  # ensures correct rendering for local file
 
 with col2:
+    st.header("👤 About Me")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
         I am <strong>Suhas Venkata</strong>, a Senior studying Computer Science & Engineering at PES University, Electronic City.
