@@ -337,6 +337,11 @@ with col2:
         I’m deeply passionate about machine learning and deep learning and enjoy exploring cutting-edge tech to solve meaningful problems.
         I embrace new challenges and continuously refine my skills to create real-world impact.
     </div>
+
+     <div style="font-size:18px; line-height:1.6; text-align: left;">
+        I'm always open to challenges, collaboration, and learning—if you're exploring projects in NLP, ML, or AI ethics, let's connect and build something meaningful together.
+    </div>
+    
     """, unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
