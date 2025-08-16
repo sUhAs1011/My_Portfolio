@@ -663,7 +663,7 @@ st.header("🏆 Achievements")
 # Heal-O-Code Hackathon
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">🧠 Heal-O-Code Hackathon</h3>
+    <h3 style="margin: 0;">🩺 Heal-O-Code Hackathon</h3>
     <div style="font-size: 24px;font-weight:bold;">March 2025</div>
 </div>
 """, unsafe_allow_html=True)
