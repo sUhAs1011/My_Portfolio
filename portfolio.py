@@ -313,15 +313,39 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- ABOUT ME ---
+# --- ABOUT ME ---
 st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("👤 About Me")
-st.markdown("""
-<p style='font-size:18px; line-height:1.6;'>
-I am Suhas Venkata, a Senior at PES University, Electronic City, currently pursuing a Bachelor's degree in Computer Science and Engineering. My academic journey is driven by a deep interest in machine learning and deep learning, where I explore innovative solutions and cutting-edge technologies. I am always eager to expand my knowledge, embrace new challenges, and refine my technical skills to contribute meaningfully to the field.
-</p>
-""", unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True) # End of Experience section
+
+# Two-column layout: image on the left, text on the right
+col1, col2 = st.columns([1, 2])
+
+with col1:
+    st.markdown("""
+    <div style="display: flex; justify-content: center; padding-left: 20px;">
+        <img 
+            src="linked.jpg" 
+            class="profile-pic" 
+            style="
+                border-radius: 50%;
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+                margin-left: 20px;
+            ">
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div style='font-size:18px; line-height:1.6;'>
+        I am <strong>Suhas Venkata</strong>, a Senior at PES University, Electronic City, pursuing a Bachelor's degree in Computer Science & Engineering. My journey is driven by a passion for machine learning and deep learning, and I regularly explore innovative solutions using cutting-edge technologies. I thrive on new challenges and continuously refine my skills to make meaningful contributions to the field.
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)  # End of About Me section
 
 
 # --- Skills Section ---
