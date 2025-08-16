@@ -596,7 +596,7 @@ st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
 
 # --- MY JOURNEY SECTION ---
 st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
-st.markdown("   ")
+st.markdown("    ")
 st.markdown("<h2 style='text-align:center;'>🚶‍♂️ My Journey</h2>", unsafe_allow_html=True)
 
 st.markdown("""
@@ -700,7 +700,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # --- PROJECTS SECTION ---
 st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
+st.markdown("    ")
 st.header("🚀 Projects")
 
 
@@ -729,7 +729,7 @@ with col2:
 
 
 # Alarm Burglar System with image on the left and content on the right
-st.markdown("---")
+st.markdown("    ")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
@@ -753,7 +753,7 @@ with col_right:
 
 
 # LegalBot with image on the right and content on the left
-st.markdown("---")
+st.markdown("    ")
 col_left, col_right = st.columns([2, 1])
 
 with col_left:
@@ -778,7 +778,7 @@ with col_right:
     st.image("chatbot.jpg", caption="LegalBot - AI Chatbot for Mining Compliance", use_container_width=True)
 
 # Cloud Storage with image on the left and content on the right
-st.markdown("---")
+st.markdown("    ")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
@@ -802,7 +802,7 @@ with col_right:
     """)
 
 # Portfolio Project with image on the right and content on the left
-st.markdown("---")
+st.markdown("   ")
 col_left, col_right = st.columns([2, 1])
 
 with col_left:
@@ -828,7 +828,7 @@ with col_right:
     st.image("portfolio.jpg", caption="Streamlit Portfolio", use_container_width=True)
 
 # Analyzing job posting trends, skill gaps, and recommend reskilling programs in  employment sectors
-st.markdown("---")
+st.markdown("   ")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
