@@ -700,7 +700,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # --- PROJECTS SECTION ---
 st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
-st.markdown("    ")
+st.markdown("---")
 st.header("🚀 Projects")
 
 
