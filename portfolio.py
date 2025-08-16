@@ -282,7 +282,7 @@ st.markdown("""
 # --- NAVIGATION BAR ---
 st.markdown("""
 <div class="navbar-custom">
-    <a href="#about">👤 About Me</a>
+    <a href="#about">👨‍💼 About Me</a>
     <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
     <a href="#journey">🚶‍♂️ My Journey</a>
@@ -330,7 +330,7 @@ with col1:
     st.image(img, width=500)  # ensures correct rendering for local file
 
 with col2:
-    st.header("👤 About Me")
+    st.header("👨‍💼 About Me")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
         I am <strong>Suhas Venkata</strong>, a Senior studying Computer Science & Engineering at PES University, Electronic City.
