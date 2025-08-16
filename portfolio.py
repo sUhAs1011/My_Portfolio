@@ -323,7 +323,7 @@ col1, col2 = st.columns([1, 2])
 with col1:
     from PIL import Image
     img = Image.open("linked.jpg")
-    st.image(img, width=300)  # ensures correct rendering for local file
+    st.image(img, width=500)  # ensures correct rendering for local file
 
 with col2:
     st.markdown("""
