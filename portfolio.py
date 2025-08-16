@@ -313,39 +313,41 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- ABOUT ME ---
-# --- ABOUT ME ---
 st.markdown("<div id='about' class='content-section'>", unsafe_allow_html=True)
 st.markdown("---")
 st.header("👤 About Me")
 
-# Two-column layout: image on the left, text on the right
+# Create two columns: image takes 1/3rd, text takes 2/3rd
 col1, col2 = st.columns([1, 2])
 
 with col1:
     st.markdown("""
-    <div style="display: flex; justify-content: center; padding-left: 20px;">
-        <img 
-            src="linked.jpg" 
-            class="profile-pic" 
+    <div style="display: flex; justify-content: flex-start;">
+        <img
+            src="linked.jpg"
+            alt="profile picture"
             style="
-                border-radius: 50%;
-                width: 300px;
-                height: 300px;
+                width: 250px;
+                height: 250px;
                 object-fit: cover;
                 box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-                margin-left: 20px;
-            ">
+                /* Remove border-radius to keep it square */
+            "
+        >
     </div>
     """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
-    <div style='font-size:18px; line-height:1.6;'>
-        I am <strong>Suhas Venkata</strong>, a Senior at PES University, Electronic City, pursuing a Bachelor's degree in Computer Science & Engineering. My journey is driven by a passion for machine learning and deep learning, and I regularly explore innovative solutions using cutting-edge technologies. I thrive on new challenges and continuously refine my skills to make meaningful contributions to the field.
+    <div style="font-size:18px; line-height:1.6; text-align: left;">
+        I am <strong>Suhas Venkata</strong>, a Senior at PES University, Electronic City, pursuing a Bachelor's in Computer Science & Engineering.
+        My journey is driven by my passion for machine learning and deep learning. I thrive on exploring innovative solutions and staying on the cutting edge.
+        I’m always eager to learn new things, tackle challenging problems, and contribute meaningfully to the field.
     </div>
     """, unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)  # End of About Me section
+
 
 
 # --- Skills Section ---
