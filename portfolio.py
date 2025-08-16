@@ -387,7 +387,7 @@ st.markdown("""
 
 # --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
+st.markdown("   ")
 st.markdown("## 🛠️ Skills")
 
 # --- Programming Languages Sub-section ---
@@ -559,7 +559,7 @@ for i, os in enumerate(os_list):
 
 # --- EXPERIENCE SECTION ---
 st.markdown("<div id='experience' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
+st.markdown("    ")
 st.header("💼 Experience")
 
 # --- Company and Date with Location on the right ---
@@ -596,7 +596,7 @@ st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
 
 # --- MY JOURNEY SECTION ---
 st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
+st.markdown("   ")
 st.markdown("<h2 style='text-align:center;'>🚶‍♂️ My Journey</h2>", unsafe_allow_html=True)
 
 st.markdown("""
@@ -657,7 +657,7 @@ st.markdown("""
 
 # --- ACHIEVEMENTS SECTION ---
 st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html=True)
-st.markdown("---")
+st.markdown("   ")
 st.header("🏆 Achievements")
 
 # Heal-O-Code Hackathon
