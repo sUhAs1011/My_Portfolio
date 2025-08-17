@@ -312,6 +312,44 @@ with col2:
         st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
+# --- STYLE FOR CONTACT BUTTONS ---
+st.markdown("""
+<style>
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  background-color: #111827;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
+}
+
+.contact-button:hover {
+  background-color: #1f2937;
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 buttons_html = """
 <div class="button-row">
   <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
@@ -878,43 +916,5 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-
-# --- STYLE FOR CONTACT BUTTONS ---
-st.markdown("""
-<style>
-.button-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 0;
-  background-color: #111827;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-  width: 100%;
-}
-
-.contact-button:hover {
-  background-color: #1f2937;
-  transform: translateY(-2px);
-}
-
-.contact-icon {
-  width: 24px;
-  height: 24px;
-}
-</style>
-""", unsafe_allow_html=True)
 
 
