@@ -917,22 +917,4 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Build buttons HTML
-buttons_html = """
-<div class="button-row">
-  <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=32541&format=png&color=000000" class="contact-icon">Resume
-  </a>
-  <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" class="contact-icon">Email
-  </a>
-  <a href="https://www.linkedin.com/in/suhas-venkata-b78750348/" target="_blank" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" class="contact-icon">LinkedIn
-  </a>
-  <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000" class="contact-icon">GitHub
-  </a>
-</div>
-""".format(resume_b64=b64 if (b64 := base64.b64encode(open("new_resume.pdf","rb").read()).decode()) else "")
-st.markdown(buttons_html, unsafe_allow_html=True)
 
