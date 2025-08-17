@@ -312,16 +312,14 @@ with col2:
         st.markdown(f"<img src='data:image/png;base64,{img_b64}' class='profile-pic'/>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
-# --- STYLE FOR CONTACT BUTTONS ---
-# --- STYLE FOR CONTACT BUTTONS ---
 st.markdown("""
 <style>
 .button-row {
-  display: flex;
-  justify-content: center;   /* Center align */
-  gap: 16px;
-  margin-top: 20px;
-  flex-wrap: wrap;           /* Responsive wrap */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-button {
@@ -329,49 +327,45 @@ st.markdown("""
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 0;
-  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue gradient */
+  padding: 12px 0;
+  background-color: #111827;
   border-radius: 8px;
   text-decoration: none;
   color: white;
   font-weight: 600;
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
-  width: 160px;        /* Fixed equal width */
-  height: 45px;        /* Consistent height */
-  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  width: 100%;
 }
 
 .contact-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  background-color: #1f2937;
+  transform: translateY(-2px);
 }
 
 .contact-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-import base64
 buttons_html = """
 <div class="button-row">
   <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=32541&format=png&color=FFFFFF" class="contact-icon">Resume
+    <img src="https://img.icons8.com/?size=100&id=32541&format=png&color=000000" class="contact-icon">Resume
   </a>
   <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=FFFFFF" class="contact-icon">Email
+    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" class="contact-icon">Email
   </a>
   <a href="https://www.linkedin.com/in/suhas-venkata-b78750348/" target="_blank" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=FFFFFF" class="contact-icon">LinkedIn
+    <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" class="contact-icon">LinkedIn
   </a>
   <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=FFFFFF" class="contact-icon">GitHub
+    <img src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000" class="contact-icon">GitHub
   </a>
 </div>
-""".format(resume_b64=base64.b64encode(open("new_resume.pdf","rb").read()).decode())
+""".format(resume_b64=b64 if (b64 := base64.b64encode(open("new_resume.pdf","rb").read()).decode()) else "")
 st.markdown(buttons_html, unsafe_allow_html=True)
-
 
 
 # --- ABOUT ME ---
