@@ -327,7 +327,7 @@ st.markdown("""
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   padding: 12px 20px;
   background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue gradient */
   border-radius: 8px;
