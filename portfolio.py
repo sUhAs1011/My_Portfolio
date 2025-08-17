@@ -335,7 +335,7 @@ st.markdown("""
   color: white;
   font-weight: 600;
   width: 140px;   /* 🔹 Equal width for all buttons */
-  height: 50px;   /* 🔹 Equal height */
+  height: 55px;   /* 🔹 Equal height */
   transition: transform 0.15s ease, box-shadow 0.2s ease;
 }
 
