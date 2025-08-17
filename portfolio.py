@@ -320,7 +320,7 @@ st.markdown("""
   justify-content: flex-start;  /* Align to the left */
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;  /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap;  /* Wrap for smaller screens */
 }
 
 .contact-button {
@@ -328,13 +328,16 @@ st.markdown("""
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 12px 0;
   background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue gradient */
   border-radius: 8px;
   text-decoration: none;
   color: white;
   font-weight: 600;
   transition: transform 0.15s ease, box-shadow 0.2s ease;
+  flex: 1;                /* Equal flexible size */
+  min-width: 140px;       /* Ensure all have same min width */
+  text-align: center;
 }
 
 .contact-button:hover {
@@ -349,7 +352,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
+import base64
 buttons_html = """
 <div class="button-row">
   <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
