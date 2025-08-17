@@ -313,14 +313,15 @@ with col2:
 st.markdown("</div>", unsafe_allow_html=True) # End of Home section
 
 # --- STYLE FOR CONTACT BUTTONS ---
+# --- STYLE FOR CONTACT BUTTONS ---
 st.markdown("""
 <style>
 .button-row {
   display: flex;
-  justify-content: flex-start;  /* Align to the left */
-  gap: 20px;
+  justify-content: center;   /* Center align */
+  gap: 16px;
   margin-top: 20px;
-  flex-wrap: wrap;  /* Wrap for smaller screens */
+  flex-wrap: wrap;           /* Responsive wrap */
 }
 
 .contact-button {
@@ -328,15 +329,15 @@ st.markdown("""
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 0;
+  padding: 10px 0;
   background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue gradient */
   border-radius: 8px;
   text-decoration: none;
   color: white;
   font-weight: 600;
   transition: transform 0.15s ease, box-shadow 0.2s ease;
-  flex: 1;                /* Equal flexible size */
-  min-width: 140px;       /* Ensure all have same min width */
+  width: 160px;        /* Fixed equal width */
+  height: 45px;        /* Consistent height */
   text-align: center;
 }
 
@@ -346,8 +347,8 @@ st.markdown("""
 }
 
 .contact-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -370,6 +371,7 @@ buttons_html = """
 </div>
 """.format(resume_b64=base64.b64encode(open("new_resume.pdf","rb").read()).decode())
 st.markdown(buttons_html, unsafe_allow_html=True)
+
 
 
 # --- ABOUT ME ---
