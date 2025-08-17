@@ -324,7 +324,7 @@ st.markdown("""
 
 .contact-button {
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 12px 0;
