@@ -343,8 +343,8 @@ st.markdown("""
 }
 
 .contact-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 </style>
 """, unsafe_allow_html=True)
