@@ -329,42 +329,21 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: #111827;   /* Same as background color */
-  border: 2px solid transparent;
+  background-color: #111827;   /* Same as background */
+  border: 2px solid #3b82f6;   /* Default outline (blue) */
   border-radius: 8px;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-weight: 600;
   width: 140px;
   height: 55px;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Outline gradient */
-.contact-button::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 8px;
-  padding: 2px;
-  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue */
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  z-index: -1;
-}
-
-/* Hover effect = fill with gradient */
+/* Hover effect = gradient fill */
 .contact-button:hover {
-  background: linear-gradient(90deg, #9333ea, #3b82f6);
+  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue */
+  border-color: transparent;
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
