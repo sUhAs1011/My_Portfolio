@@ -362,6 +362,9 @@ buttons_html = """
   <a href="data:application/pdf;base64,{resume_b64}" download="Suhas_Resume.pdf" class="contact-button">
     <img src="https://img.icons8.com/?size=100&id=32541&format=png&color=FFFFFF" class="contact-icon">Resume
   </a>
+  <a href="mailto:suhas.karamalaputti@gmail.com" class="contact-button">
+    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=FFFFFF" class="contact-icon">Email
+  </a>
   <a href="https://www.linkedin.com/in/suhas-venkata-b78750348/" target="_blank" class="contact-button">
     <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=FFFFFF" class="contact-icon">LinkedIn
   </a>
