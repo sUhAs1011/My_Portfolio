@@ -317,10 +317,10 @@ st.markdown("""
 <style>
 .button-row {
   display: flex;
-  justify-content: flex-start;  /* Align to the left */
+  justify-content: flex-start;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap;  /* Ensures wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .contact-button {
@@ -329,17 +329,20 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue gradient */
+  background-color: transparent;   /* Transparent background */
+  border: 2px solid #9333ea;       /* Outline color (purple) */
   border-radius: 8px;
   text-decoration: none;
-  color: white;
+  color: #ffffff;                  /* Text white */
   font-weight: 600;
-  width: 140px;   /* 🔹 Equal width for all buttons */
-  height: 55px;   /* 🔹 Equal height */
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  width: 140px;
+  height: 55px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-button:hover {
+  background: linear-gradient(90deg, #9333ea, #3b82f6);  /* Hover fill gradient */
+  border-color: transparent;  /* Remove outline on hover */
   transform: translateY(-3px);
   box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 }
@@ -350,6 +353,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 import base64
 buttons_html = """
