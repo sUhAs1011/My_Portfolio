@@ -329,7 +329,7 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: 000000;   /* Same as background */
+  background-color: #3b82f6;   /* Same as background */
   border: 2px solid #3b82f6;   /* Default outline (blue) */
   border-radius: 8px;
   text-decoration: none;
