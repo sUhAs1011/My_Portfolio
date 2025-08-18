@@ -329,20 +329,43 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: transparent;   /* Transparent background */
-  border: 2px solid #9333ea;       /* Outline color (purple) */
+  background-color: #111827;   /* Same as background color */
+  border: 2px solid transparent;
   border-radius: 8px;
   text-decoration: none;
-  color: #ffffff;                  /* Text white */
+  color: #ffffff;
   font-weight: 600;
   width: 140px;
   height: 55px;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, color 0.3s ease;
 }
 
+/* Outline gradient */
+.contact-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Hover effect = fill with gradient */
 .contact-button:hover {
-  background: linear-gradient(90deg, #9333ea, #3b82f6);  /* Hover fill gradient */
-  border-color: transparent;  /* Remove outline on hover */
+  background: linear-gradient(90deg, #9333ea, #3b82f6);
+  color: #fff;
   transform: translateY(-3px);
   box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 }
@@ -353,7 +376,6 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
 
 import base64
 buttons_html = """
@@ -370,6 +392,7 @@ buttons_html = """
 </div>
 """.format(resume_b64=base64.b64encode(open("new_resume.pdf","rb").read()).decode())
 st.markdown(buttons_html, unsafe_allow_html=True)
+
 
 
 # --- ABOUT ME ---
