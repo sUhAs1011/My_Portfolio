@@ -631,6 +631,36 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div>
         <h3>
+            <a href="https://research.pes.edu/centre-of-data-modelling-analytics-and-visualization-codmav/" target="_blank" style="text-decoration: none; color: inherit;">
+                Center for Data Modelling, Analytics and Visualization
+            </a>
+        </h3>
+        <div class='subtitle'>Summer Research Intern | June 2024 – August 2024</div>
+    </div>
+     <div style="text-align: right; font-size: 1.5rem;">Bengaluru, Karnataka</div>
+</div>
+""", unsafe_allow_html=True)
+
+# --- Experience Details ---
+st.write("""
+- Developed an enhanced cricket batting shot classification system.
+
+- Utilized advanced computer vision and machine learning techniques.
+
+- Designed the model for applications in sports analytics.
+
+- Enabled potential integration with smart bowling machines.
+
+-Provides key insights into player performances.
+""")
+
+st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
+
+
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+        <h3>
             <a href="https://research.pes.edu/centre-of-cognitive-computing-and-computational-intelligence-c3i/" target="_blank" style="text-decoration: none; color: inherit;">
                 Centre of Cognitive Computing and Computational Intelligence
             </a>
