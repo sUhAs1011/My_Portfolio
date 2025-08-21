@@ -369,7 +369,7 @@ buttons_html = """
     <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=FFFFFF" class="contact-icon">LinkedIn
   </a>
   <a href="https://github.com/sUhAs1011" target="_blank" class="contact-button">
-    <img src="https://img.icons8.com/?size=100&id=bVGqATNwfhYq&format=png&color=000000" class="contact-icon">GitHub
+    <img src="https://img.icons8.com/?size=100&id=SzgQDfObXUbA&format=png&color=000000" class="contact-icon">GitHub
   </a>
 </div>
 """.format(resume_b64=base64.b64encode(open("new_resume.pdf","rb").read()).decode())
