@@ -301,7 +301,7 @@ with col1:
     st.markdown("""
 <p style='font-size:18px; line-height:1.6;'>
 I'm a final-year Computer Science student at PES University, passionate about Machine Learning and Natural Language Processing. 
-I recently interned in C3I, gaining ML exposure and hands-on experience. 
+I recently interned at C3I, gaining ML exposure and hands-on experience. 
 Exploring software engineering and always open to new challenges.
 </p>
 """, unsafe_allow_html=True)
@@ -417,9 +417,6 @@ with col2:
 
 st.markdown("</div>", unsafe_allow_html=True)
 
-
-
-
 # --- Skills Section ---
 st.markdown("""
     <style>
@@ -446,8 +443,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
-
 
 # --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
@@ -652,9 +647,7 @@ st.write("""
 
 - Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling **25,000+** job-course pairs while maintaining sub-second response times.
 """)
-
 st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
-
 
 
 # --- MY JOURNEY SECTION ---
@@ -669,7 +662,7 @@ st.markdown("""
     <div class="timeline-content left">
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
-      <p>📅 2022 – Present</p>
+      <p>🗓️ 2022 – Present</p>
       <p>CGPA : 8.06</p>
     </div>
   </div>
@@ -678,7 +671,7 @@ st.markdown("""
     <div class="timeline-content right">
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
-      <p>📅 2020 – 2022</p>
+      <p>🗓️ 2020 – 2022</p>
       <p>12th Boards : 86%</p>
     </div>
   </div>
@@ -687,7 +680,7 @@ st.markdown("""
     <div class="timeline-content left">
       <h3>10th CBSE</h3>
       <p>DPS East</p>
-      <p>📅 2006 – 2020</p>
+      <p>🗓️ 2006 – 2020</p>
       <p>10th Boards : 90%</p>
     </div>
   </div>
