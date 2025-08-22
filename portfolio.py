@@ -591,7 +591,7 @@ ml_icon_map = {
     "Mathplotlib":   "https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000",
     "Keras": "https://img.icons8.com/?size=100&id=XcSgtbIpgK6W&format=png&color=000000",
     "Seaborn": "https://cdn.worldvectorlogo.com/logos/seaborn-1.svg",
-    "Selenium:" "https://img.icons8.com/?size=100&id=38553&format=png&color=000000"
+    "Selenium" : "https://img.icons8.com/?size=100&id=38553&format=png&color=000000"
 }
 
 ml_tools = ["Scikit-learn", "Pandas", "NumPy", "NLTK", "Spacy", "PyTorch", "Mathplotlib", "Keras", "Seaborn", "Selenium"]
