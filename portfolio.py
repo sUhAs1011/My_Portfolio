@@ -684,15 +684,15 @@ st.markdown("""
 
 # --- Experience Details ---
 st.write("""
-- Architected and deployed a comprehensive career advisory system using *Deep Structured Semantic Model (DSSM)* with dual-tower neural networks for intelligent job-course matching.
+- Architected and deployed a comprehensive career advisory system using **Deep Structured Semantic Model (DSSM)** with dual-tower neural networks for intelligent job-course matching.
 
 - Developed advanced NLP pipeline for multi-format resume processing (PDF & DOCX, via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.
  
-- Implemented vector database solution using ChromaDB for efficient storage and retrieval of *1,00,000+* job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
+- Implemented vector database solution using ChromaDB for efficient storage and retrieval of **1,00,000+** job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
 
 - Built interactive Streamlit application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching.
 
-- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling *25,000+* job-course pairs while maintaining sub-second response times.
+- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling **25,000+** job-course pairs while maintaining sub-second response times.
 """)
 st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
 
@@ -771,7 +771,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Top 10 out of 50+ teams in *Heal-O-Code Hackathon. Built a healthcare decision support tool using **Multi-Chain Blockchain* and *Ollama* for better drug recommendation.
+Top 10 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
 """)
 
 # MRD Scholarship
@@ -782,7 +782,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Awarded the prestigious *MRD Scholarship* in Semester 1 by *PES University*, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
 """)
 
 # DAC Scholarship
@@ -793,7 +793,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Received *Distinction Scholarship* of ₹ 2000 for achieving SGPA above *7.75* in *Semesters 2–6* at *PES University*.
+Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2–6** at **PES University**.
 """)
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -817,7 +817,7 @@ with col1:
     )
 
     st.write("""
-    Designed and developed a secure, scalable system to extract actionable insights from *Electronic Health Records (EHRs)* stored in *Inter Planetary File System (IPFS), with unique identifiers maintained on a **multi-chain blockchain* to ensure end-to-end data integrity and traceability.
+    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in *Inter Planetary File System (IPFS), with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
 
     Key features include:
     - Analyzing patient histories
@@ -844,11 +844,11 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Engineered a *real-time intrusion detection system* using Arduino, designed to enhance home security through automated alerts and physical deterrents.
+    Engineered a **real-time intrusion detection system** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
 
     Key features include:
-    - Utilized an *ultrasonic sensor* to detect unauthorized entry, triggering a red LED, buzzer alarm, and *GSM-based alert notifications*.
-    - Programmed using *C++* with SoftwareSerial.h to manage GSM module communication.
+    - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and *GSM-based alert notifications*.
+    - Programmed using **C++** with SoftwareSerial.h to manage GSM module communication.
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
 
     *Tech Stack*: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
@@ -865,11 +865,11 @@ with col_left:
         unsafe_allow_html=True
     )
     st.write("""
-    Developed an intelligent legal chatbot to respond to text-based queries related to *Acts, Rules, and Regulations* in the mining industry.
+    Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry.
 
     Key features include:
     - Analyzed and interpreted mining laws to deliver precise legal responses based on user input.
-    - Utilized *Sentence Transformer models* and *cosine similarity* to match user queries with the most relevant legal provisions.
+    - Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.
     - Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
@@ -893,12 +893,12 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based *cloud storage system* using *Python* and *UDP* (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
 
     Key features include:
-    - Developed a *client-server architecture* using Python *socket programming* for file upload, download, and listing operations.
-    - Integrated *SSL certificates* for secure communication between client and server.
-    - Implemented *dynamic IP handling* to support both localhost and distributed multi-system deployments.
+    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
+    - Integrated **SSL certificates** for secure communication between client and server.
+    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
     - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
 
     *Tech Stack*: Python, UDP, Socket Programming, SSL, File Handling
