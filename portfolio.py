@@ -444,21 +444,20 @@ with col2:
     st.header("👨‍💼 About Me")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I am <strong>Suhas Venkata</strong>, a Senior studying Computer Science & Engineering at PES University, Electronic City.
-        I’m deeply passionate about machine learning and deep learning and enjoy exploring cutting-edge tech to solve meaningful problems.
-        I embrace new challenges and continuously refine my skills to create real-world impact.
+        I’m <strong>Suhas Venkata</strong>, a Senior in Computer Science & Engineering at PES University, Electronic City. My passion lies in machine learning and deep learning, 
+        and I thrive on solving real-world problems through cutting-edge technologies.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        In the summer of 2025, I’ve interned with the Centre for Cognitive Computing Intelligence (C3I), where I devised and deployed an end-to-end career advisory system leveraging dual-tower Deep Structured Semantic Models and ChromaDB for highly accurate job–course matching.
+        During my internship at the Centre for Cognitive Computing Intelligence (C3I) in Summer 2025, I designed and deployed an end-to-end career advisory system using dual-tower Deep Structured Semantic Models and ChromaDB—achieving highly accurate job–course matching.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I'm always open to challenges, collaboration, and learning—if you're exploring projects in NLP, Machine Learning, or AI, let's connect and build something meaningful together.
+        I’m always eager to take on new challenges, collaborate across disciplines, and keep learning. If you're working on NLP, Machine Learning, or AI-driven projects, I’d love to connect and build something impactful together.
     </div>    
     """, unsafe_allow_html=True)
 
