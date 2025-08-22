@@ -826,7 +826,7 @@ with col1:
     - Predict adverse drug reactions
     - Recommend personalized treatment plans based on patient's history
 
-    *Tech Stack*: Python, Streamlit, IPFS, Multi-Chain Blockchain
+    **Tech Stack**: Python, Streamlit, IPFS, Multi-Chain Blockchain
     """)
 
 with col2:
@@ -853,7 +853,7 @@ with col_right:
     - Programmed using **C++** with SoftwareSerial.h to manage GSM module communication.
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
 
-    *Tech Stack*: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
+    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
     """)
 
 
@@ -876,7 +876,7 @@ with col_left:
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-    *Tech Stack*: Sentence Transformers, Python, MongoDB, Tkinter GUI
+    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI
     """)
 
 with col_right:
@@ -903,7 +903,7 @@ with col_right:
     - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
     - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
 
-    *Tech Stack*: Python, UDP, Socket Programming, SSL, File Handling
+    **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
     """)
 
 # Portfolio Project with image on the right and content on the left
@@ -926,7 +926,7 @@ with col_left:
 
     The portfolio is fully responsive and easy to maintain, serving as a central hub for professional representation.
 
-    *Tech Stack*: Streamlit, Python, HTML/CSS, PIL
+    **Tech Stack**: Streamlit, Python, HTML/CSS, PIL
     """)
 
 with col_right:
@@ -954,7 +954,7 @@ with col_right:
     - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging both pre-computed mappings and the trained DSSM.
     
 
-    *Tech Stack*: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
+    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
     """)
 
 st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
