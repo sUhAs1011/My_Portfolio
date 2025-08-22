@@ -553,7 +553,7 @@ for i, tool in enumerate(webdev_tools):
 
 
 # --- Databases Sub-section ---
-st.markdown("#### 🗄 Databases") 
+st.markdown("#### 🗄️ Databases") 
 
 db_icon_map = {
     "MySQL": "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000",
@@ -640,7 +640,7 @@ for i, tool in enumerate(tools_list):
 
 
 # --- Operating Systems Sub-section ---
-st.markdown("#### 🖥 Operating Systems")
+st.markdown("#### 🖥️ Operating Systems")
 
 os_icon_map = {
     "Windows": "https://img.icons8.com/?size=100&id=108792&format=png&color=000000",
