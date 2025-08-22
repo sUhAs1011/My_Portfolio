@@ -330,7 +330,7 @@ st.markdown("""
 st.markdown("""
 <div class="navbar-custom">
     <a href="#about">👨‍💼 About Me</a>
-    <a href="#skills">🛠 Skills</a>
+    <a href="#skills">🛠️ Skills</a>
     <a href="#experience">💼 Experience</a>
     <a href="#journey">🚶‍♂ My Journey</a>
     <a href="#achievements">🏆 Achievements</a>
@@ -494,7 +494,7 @@ st.markdown("""
 # --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
 st.markdown("   ")
-st.markdown("## 🛠 Skills")
+st.markdown("## 🛠️ Skills")
 
 # --- Programming Languages Sub-section ---
 st.markdown("#### 👨‍💻 Programming Languages")
