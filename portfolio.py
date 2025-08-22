@@ -10,8 +10,46 @@ st.set_page_config(page_title="Suhas Venkata · Portfolio", page_icon="🌐", la
 def load_and_base64_image(file_path):
     try:
         img = Image.open(file_path)
+        
+        # Enhance the profile image with better quality while keeping original size
+        if "profile.jpg" in file_path:
+            # Apply subtle image enhancements without resizing
+            from PIL import ImageEnhance
+            
+            # Very subtle sharpness enhancement
+            img = ImageEnhance.Sharpness(img).enhance(1.05)
+            
+            # Very subtle contrast enhancement
+            img = ImageEnhance.Contrast(img).enhance(1.03)
+            
+            # Very subtle brightness enhancement
+            img = ImageEnhance.Brightness(img).enhance(1.01)
+            
+            # Very subtle color enhancement
+            img = ImageEnhance.Color(img).enhance(1.02)
+        
+        # Enhance the LinkedIn image with better quality while keeping original size
+        elif "linked.jpg" in file_path:
+            # Apply professional image enhancements without resizing
+            from PIL import ImageEnhance, ImageFilter
+            
+            # Enhance sharpness for professional look
+            img = ImageEnhance.Sharpness(img).enhance(1.08)
+            
+            # Enhance contrast for better definition
+            img = ImageEnhance.Contrast(img).enhance(1.06)
+            
+            # Slight brightness boost for professional appearance
+            img = ImageEnhance.Brightness(img).enhance(1.03)
+            
+            # Enhance color vibrancy
+            img = ImageEnhance.Color(img).enhance(1.05)
+            
+            # Apply very subtle smoothing for polished look
+            img = img.filter(ImageFilter.SMOOTH)
+        
         buffered = BytesIO()
-        img.save(buffered, format="PNG") # Use PNG for transparency if needed
+        img.save(buffered, format="PNG", quality=95) # Use PNG for transparency if needed
         return base64.b64encode(buffered.getvalue()).decode()
     except FileNotFoundError:
         st.error(f"Error: {file_path} not found. Please ensure the image is in the correct directory.")
@@ -81,8 +119,17 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 25px rgba(0, 198, 251, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
     transform: translateX(150px);
+    border: 4px solid rgba(0, 198, 251, 0.3);
+    transition: all 0.3s ease;
+    filter: brightness(1.02) contrast(1.05);
+}
+
+.profile-pic:hover {
+    transform: translateX(150px) scale(1.02);
+    box-shadow: 0 0 35px rgba(0, 198, 251, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 198, 251, 0.6);
 }
 
 .hero-container {
@@ -283,9 +330,9 @@ st.markdown("""
 st.markdown("""
 <div class="navbar-custom">
     <a href="#about">👨‍💼 About Me</a>
-    <a href="#skills">🛠️ Skills</a>
+    <a href="#skills">🛠 Skills</a>
     <a href="#experience">💼 Experience</a>
-    <a href="#journey">🚶‍♂️ My Journey</a>
+    <a href="#journey">🚶‍♂ My Journey</a>
     <a href="#achievements">🏆 Achievements</a>
     <a href="#projects">🚀 Projects</a>
 </div>
@@ -447,7 +494,7 @@ st.markdown("""
 # --- Skills Section ---
 st.markdown("<div id='skills' class='content-section'>", unsafe_allow_html=True)
 st.markdown("   ")
-st.markdown("## 🛠️ Skills")
+st.markdown("## 🛠 Skills")
 
 # --- Programming Languages Sub-section ---
 st.markdown("#### 👨‍💻 Programming Languages")
@@ -506,7 +553,7 @@ for i, tool in enumerate(webdev_tools):
 
 
 # --- Databases Sub-section ---
-st.markdown("#### 🗄️ Databases") 
+st.markdown("#### 🗄 Databases") 
 
 db_icon_map = {
     "MySQL": "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000",
@@ -593,7 +640,7 @@ for i, tool in enumerate(tools_list):
 
 
 # --- Operating Systems Sub-section ---
-st.markdown("#### 🖥️ Operating Systems")
+st.markdown("#### 🖥 Operating Systems")
 
 os_icon_map = {
     "Windows": "https://img.icons8.com/?size=100&id=108792&format=png&color=000000",
@@ -637,15 +684,15 @@ st.markdown("""
 
 # --- Experience Details ---
 st.write("""
-- Architected and deployed a comprehensive career advisory system using **Deep Structured Semantic Model (DSSM)** with dual-tower neural networks for intelligent job-course matching.
+- Architected and deployed a comprehensive career advisory system using *Deep Structured Semantic Model (DSSM)* with dual-tower neural networks for intelligent job-course matching.
 
 - Developed advanced NLP pipeline for multi-format resume processing (PDF & DOCX, via OCR) with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.
  
-- Implemented vector database solution using ChromaDB for efficient storage and retrieval of **1,00,000+** job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
+- Implemented vector database solution using ChromaDB for efficient storage and retrieval of *1,00,000+* job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
 
 - Built interactive Streamlit application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on cosine similarity scoring and semantic matching.
 
-- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling **25,000+** job-course pairs while maintaining sub-second response times.
+- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling *25,000+* job-course pairs while maintaining sub-second response times.
 """)
 st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
 
@@ -653,7 +700,7 @@ st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
 # --- MY JOURNEY SECTION ---
 st.markdown("<div id='journey' class='content-section'>", unsafe_allow_html=True)
 st.markdown("    ")
-st.markdown("<h2 style='text-align:center;'>🚶‍♂️ My Journey</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align:center;'>🚶‍♂ My Journey</h2>", unsafe_allow_html=True)
 
 st.markdown("""
 <div class="timeline-container">
@@ -662,7 +709,7 @@ st.markdown("""
     <div class="timeline-content left">
       <h3>B.Tech CSE</h3>
       <p>PES University</p>
-      <p>🗓️ 2022 – Present</p>
+      <p>🗓 2022 – Present</p>
       <p>CGPA : 8.06</p>
     </div>
   </div>
@@ -671,7 +718,7 @@ st.markdown("""
     <div class="timeline-content right">
       <h3>12th CBSE</h3>
       <p>Geetanjali Olympiad School</p>
-      <p>🗓️ 2020 – 2022</p>
+      <p>🗓 2020 – 2022</p>
       <p>12th Boards : 86%</p>
     </div>
   </div>
@@ -680,7 +727,7 @@ st.markdown("""
     <div class="timeline-content left">
       <h3>10th CBSE</h3>
       <p>DPS East</p>
-      <p>🗓️ 2006 – 2020</p>
+      <p>🗓 2006 – 2020</p>
       <p>10th Boards : 90%</p>
     </div>
   </div>
@@ -724,7 +771,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Top 10 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+Top 10 out of 50+ teams in *Heal-O-Code Hackathon. Built a healthcare decision support tool using **Multi-Chain Blockchain* and *Ollama* for better drug recommendation.
 """)
 
 # MRD Scholarship
@@ -735,7 +782,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+Awarded the prestigious *MRD Scholarship* in Semester 1 by *PES University*, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
 """)
 
 # DAC Scholarship
@@ -746,7 +793,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2–6** at **PES University**.
+Received *Distinction Scholarship* of ₹ 2000 for achieving SGPA above *7.75* in *Semesters 2–6* at *PES University*.
 """)
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -765,19 +812,19 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕️ Blockchain-Powered Healthcare Insights</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕ Blockchain-Powered Healthcare Insights</a></h3>",
         unsafe_allow_html=True
     )
 
     st.write("""
-    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **Inter Planetary File System (IPFS)**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
+    Designed and developed a secure, scalable system to extract actionable insights from *Electronic Health Records (EHRs)* stored in *Inter Planetary File System (IPFS), with unique identifiers maintained on a **multi-chain blockchain* to ensure end-to-end data integrity and traceability.
 
     Key features include:
     - Analyzing patient histories
     - Predict adverse drug reactions
     - Recommend personalized treatment plans based on patient's history
 
-    **Tech Stack**: Python, Streamlit, IPFS, Multi-Chain Blockchain
+    *Tech Stack*: Python, Streamlit, IPFS, Multi-Chain Blockchain
     """)
 
 with col2:
@@ -797,14 +844,14 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Engineered a **real-time intrusion detection system** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
+    Engineered a *real-time intrusion detection system* using Arduino, designed to enhance home security through automated alerts and physical deterrents.
 
     Key features include:
-    - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
-    - Programmed using **C++** with `SoftwareSerial.h` to manage GSM module communication.
+    - Utilized an *ultrasonic sensor* to detect unauthorized entry, triggering a red LED, buzzer alarm, and *GSM-based alert notifications*.
+    - Programmed using *C++* with SoftwareSerial.h to manage GSM module communication.
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
 
-    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
+    *Tech Stack*: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
     """)
 
 
@@ -814,20 +861,20 @@ col_left, col_right = st.columns([2, 1])
 
 with col_left:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>⚖️ LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>⚖ LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
-    Developed an intelligent legal chatbot to respond to text-based queries related to **Acts, Rules, and Regulations** in the mining industry.
+    Developed an intelligent legal chatbot to respond to text-based queries related to *Acts, Rules, and Regulations* in the mining industry.
 
     Key features include:
     - Analyzed and interpreted mining laws to deliver precise legal responses based on user input.
-    - Utilized **Sentence Transformer models** and **cosine similarity** to match user queries with the most relevant legal provisions.
+    - Utilized *Sentence Transformer models* and *cosine similarity* to match user queries with the most relevant legal provisions.
     - Identified contradictions between overlapping laws and suggested alternative documents when conflicts were found.
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI
+    *Tech Stack*: Sentence Transformers, Python, MongoDB, Tkinter GUI
     """)
 
 with col_right:
@@ -842,19 +889,19 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁️ Cloud Storage System using UDP</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁ Cloud Storage System using UDP</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based *cloud storage system* using *Python* and *UDP* (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
 
     Key features include:
-    - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
-    - Integrated **SSL certificates** for secure communication between client and server.
-    - Implemented **dynamic IP handling** to support both localhost and distributed multi-system deployments.
+    - Developed a *client-server architecture* using Python *socket programming* for file upload, download, and listing operations.
+    - Integrated *SSL certificates* for secure communication between client and server.
+    - Implemented *dynamic IP handling* to support both localhost and distributed multi-system deployments.
     - Enabled execution of remote shell commands and ensured seamless file transfers across networked devices.
 
-    **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
+    *Tech Stack*: Python, UDP, Socket Programming, SSL, File Handling
     """)
 
 # Portfolio Project with image on the right and content on the left
@@ -867,7 +914,7 @@ with col_left:
         unsafe_allow_html=True
     )
     st.write("""
-    Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
+    Designed and developed an interactive personal portfolio website using *Streamlit*, showcasing my projects, skills, and educational background.
 
     Key features include:
     - Animated hero section with a circular profile picture and gradient headers
@@ -877,7 +924,7 @@ with col_left:
 
     The portfolio is fully responsive and easy to maintain, serving as a central hub for professional representation.
 
-    **Tech Stack**: Streamlit, Python, HTML/CSS, PIL
+    *Tech Stack*: Streamlit, Python, HTML/CSS, PIL
     """)
 
 with col_right:
@@ -905,7 +952,7 @@ with col_right:
     - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging both pre-computed mappings and the trained DSSM.
     
 
-    **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
+    *Tech Stack*: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
     """)
 
 st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
@@ -916,6 +963,4 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
-
-
 
