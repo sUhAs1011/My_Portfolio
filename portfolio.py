@@ -777,7 +777,7 @@ with col1:
     - Predict adverse drug reactions
     - Recommend personalized treatment plans based on patient's history
 
-    **Tech Stack**: Streamlit, Chart.js, IPFS, Multi-Chain Blockchain
+    **Tech Stack**: Python, Streamlit, IPFS, Multi-Chain Blockchain
     """)
 
 with col2:
