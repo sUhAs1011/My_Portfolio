@@ -812,7 +812,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕ Blockchain-Powered Healthcare Insights</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕️ Blockchain-Powered Healthcare Insights</a></h3>",
         unsafe_allow_html=True
     )
 
@@ -861,7 +861,7 @@ col_left, col_right = st.columns([2, 1])
 
 with col_left:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>⚖ LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS342B-NLP_Mini_Project-' target='_blank' style='text-decoration: none; color: white;'>⚖️ LegalBot: AI-Powered Mining Law Chatbot</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
