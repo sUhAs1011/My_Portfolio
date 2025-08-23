@@ -398,7 +398,7 @@ st.markdown("""
   border: 2px solid #1e3a8a;   /* Dark blue border */
   border-radius: 12px;
   text-decoration: none !important;
-  color: white;
+  color: white !important;
   font-weight: 600;
   width: 140px;
   height: 55px;
