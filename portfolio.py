@@ -976,7 +976,30 @@ with col_right:
     **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
     """)
 
-st.markdown("</div>", unsafe_allow_html=True) # End of Projects section
+st.markdown("</div>", unsafe_allow_html=True) 
+
+st.markdown("---")
+col_left, col_right = st.columns([2, 1])
+
+with col_left:
+    st.markdown(
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS351B-Distributed_Systems_Cluster_Simulation_Framework' target='_blank' style='text-decoration: none; color: white;'>🌐 Distributed Systems Cluster Simulator</a></h3>",
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Designed and implemented a distributed systems simulation framework using docker and api-server
+
+    Key features include:
+    - API Server: A centralized control unit for node management, pod scheduling, and health monitoring.
+    - Cluster Nodes: Virtualized computing units that periodically send heartbeat signals to the API Server.
+    - Pods: Deployable units simulated on nodes, which require specific CPU resources.
+
+
+    **Tech Stack**: Streamlit, Python, Docker, Node.js
+    """)
+
+with col_right:
+    st.image("node_simulator.jpg", caption="Distributed Systems Cluster Simulator", use_container_width=True)# End of Projects section
 
 # --- Custom Footer with Styling ---
 st.markdown("""
