@@ -253,6 +253,16 @@ body {
     width: 40%;
     color: white;
     box-shadow: 0 0 10px rgba(0, 198, 251, 0.2); /* Subtle glow from cyan */
+    border: 2px solid rgba(0, 198, 251, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 198, 251, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
+    border-color: rgba(0, 198, 251, 0.6);
+    background-color: #111827;
 }
 
 .left {
@@ -273,6 +283,13 @@ body {
     background-color: #00C6FB;
     border: 4px solid white;
     z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover::before {
+    background-color: #00E5FF;
+    border-color: #00C6FB;
+    transform: scale(1.1);
 }
 
 .left::before {
@@ -965,4 +982,5 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
