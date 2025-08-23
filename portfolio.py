@@ -374,7 +374,7 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: #1a1a1a;   /* Dark black background */
+  background-color: #111827;   /* Dark black background */
   border: 2px solid #1e3a8a;   /* Dark blue border */
   border-radius: 12px;
   text-decoration: none !important;
