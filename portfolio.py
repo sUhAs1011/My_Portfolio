@@ -313,26 +313,7 @@ body {
     }
 }
 
-/* --- Gradient Button CSS (No underline) --- */
-.contact-button {
-    display: inline-block;
-    padding: 14px 26px;
-    margin: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none !important;
-    color: white !important;
-    background: linear-gradient(90deg, #6e00ff, #c800c8, #0008ff);
-    border-radius: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    transition: 0.4s ease-in-out;
-    box-shadow: 0 0 10px rgba(200, 0, 255, 0.3);
-}
-.contact-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(200, 0, 255, 0.6);
-    text-decoration: none !important;
-}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -393,24 +374,25 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: #3b82f6;   /* Same as background */
-  border: 2px solid #3b82f6;   /* Default outline (blue) */
-  border-radius: 8px;
-  text-decoration: none;
+  background-color: #1a1a1a;   /* Dark black background */
+  border: 2px solid #1e3a8a;   /* Dark blue border */
+  border-radius: 12px;
+  text-decoration: none !important;
   color: white;
   font-weight: 600;
   width: 140px;
   height: 55px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-/* Hover effect = gradient fill */
+/* Hover effect = blue to purple gradient transition */
 .contact-button:hover {
-  background: linear-gradient(90deg, #9333ea, #3b82f6); /* Purple → Blue */
-  border-color: transparent;
+  background: linear-gradient(90deg, #1e3a8a, #7c3aed, #1e3a8a); /* Blue → Purple → Blue */
+  border-color: #3b82f6;
   color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0px 8px 20px rgba(30, 58, 138, 0.4);
 }
 
 .contact-icon {
@@ -982,5 +964,4 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
-
 
