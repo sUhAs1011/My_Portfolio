@@ -983,7 +983,7 @@ col_left, col_right = st.columns([2, 1])
 
 with col_left:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS351B-Distributed_Systems_Cluster_Simulation_Framework' target='_blank' style='text-decoration: none; color: white;'>🌐 Distributed Systems Cluster Simulator</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS351B-Distributed_Systems_Cluster_Simulation_Framework' target='_blank' style='text-decoration: none; color: white;'>🖧 Distributed Systems Cluster Simulator</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
