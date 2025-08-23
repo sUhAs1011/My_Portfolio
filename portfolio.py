@@ -78,6 +78,26 @@ body {
     -webkit-text-fill-color: white; /* Makes text transparent so gradient background shows through */
     color: white; /* Fallback for browsers that don't support -webkit-text-fill-color */
     margin-bottom: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gradient-text:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(0, 198, 251, 0.5);
+}
+
+/* Individual letter hover effects */
+.gradient-text span.letter {
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gradient-text span.letter:hover {
+    transform: translateY(-5px) scale(1.2);
+    -webkit-text-fill-color: #00C6FB;
+    text-shadow: 0 0 15px rgba(0, 198, 251, 0.8);
 }
 
 .gradient-text span {
@@ -341,7 +361,7 @@ col1, col2 = st.columns([3, 2])
 
 with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='gradient-text'>Suhas Venkata <span>👋</span></div>", unsafe_allow_html=True)
+    st.markdown("<div class='gradient-text'><span class='letter'>S</span><span class='letter'>u</span><span class='letter'>h</span><span class='letter'>a</span><span class='letter'>s</span> <span class='letter'>V</span><span class='letter'>e</span><span class='letter'>n</span><span class='letter'>k</span><span class='letter'>a</span><span class='letter'>t</span><span class='letter'>a</span> <span>👋</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
     st.markdown("""
 <p style='font-size:18px; line-height:1.6;'>
@@ -374,7 +394,7 @@ st.markdown("""
   justify-content: center;
   gap: 6px;
   padding: 12px 20px;
-  background-color: #111827;   /* Dark black background */
+  background-color: #111827;   /* Dark blue-gray background */
   border: 2px solid #1e3a8a;   /* Dark blue border */
   border-radius: 12px;
   text-decoration: none !important;
@@ -964,4 +984,5 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
