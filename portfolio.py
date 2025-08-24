@@ -219,10 +219,45 @@ body {
     left: -1.25%;
     z-index: 1000;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-start; /* Start from left */
+    align-items: center;
     padding: 15px 40px; /* Adjust padding to match image more closely */
     box-sizing: border-box; /* Include padding in width */
     border-bottom: 1px solid #222; /* Subtle border for separation */
+}
+
+.navbar-name {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 120px; /* Move name to the right */
+    position: relative;
+}
+
+.navbar-name::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #00C6FB;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 198, 251, 0.6);
+}
+
+.navbar-name:hover {
+    color: #00C6FB;
+    text-shadow: 0 0 10px rgba(0, 198, 251, 0.5);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 12px;
+    margin-left: auto; /* Push links to the right */
 }
 
 .navbar-custom a {
@@ -347,12 +382,15 @@ st.markdown("""
 # --- NAVIGATION BAR ---
 st.markdown("""
 <div class="navbar-custom">
-    <a href="#about">👨‍💼 About Me</a>
-    <a href="#skills">🛠️ Skills</a>
-    <a href="#experience">💼 Experience</a>
-    <a href="#journey">🚶‍♂ My Journey</a>
-    <a href="#achievements">🏆 Achievements</a>
-    <a href="#projects">🚀 Projects</a>
+    <div class="navbar-name">Suhas Venkata</div>
+    <div class="navbar-links">
+        <a href="#about">👨‍💼 About Me</a>
+        <a href="#skills">🛠️ Skills</a>
+        <a href="#experience">💼 Experience</a>
+        <a href="#journey">🚶‍♂ My Journey</a>
+        <a href="#achievements">🏆 Achievements</a>
+        <a href="#projects">🚀 Projects</a>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 # --- HERO SECTION ---
@@ -1008,5 +1046,6 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
