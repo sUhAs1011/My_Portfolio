@@ -239,7 +239,7 @@ body {
 .navbar-name::before {
     content: '';
     position: absolute;
-    left: -15px;
+    left: -8px;
     top: 50%;
     transform: translateY(-50%);
     width: 12px;
