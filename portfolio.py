@@ -228,7 +228,7 @@ body {
 
 .navbar-name {
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
