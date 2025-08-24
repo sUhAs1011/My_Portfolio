@@ -256,7 +256,7 @@ body {
 
 .navbar-links {
     display: flex;
-    gap: 12px;
+    gap: 6px;
     margin-left: auto; /* Push links to the right */
 }
 
