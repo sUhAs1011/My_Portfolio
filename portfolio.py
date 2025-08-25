@@ -173,7 +173,7 @@ body {
 
 /* Ensure content sections have padding to account for fixed navbar */
 .content-section {
-    padding-top: 80px; /* Adjust based on navbar height + desired spacing */
+    padding-top: 120px; /* Adjust based on navbar height + desired spacing */
     margin-bottom: 40px; /* Add some space between sections */
 }
 
@@ -229,9 +229,9 @@ body {
     overflow: hidden;
     background-color: #0e1117; /* Match body background for seamless look */
     position: fixed;
-    top: 40px;
+    top: 0;
     width: 100%;
-    left: -1.25%;
+    left: 0;
     z-index: 1000;
     display: flex;
     justify-content: flex-start; /* Start from left */
@@ -1060,6 +1060,7 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
