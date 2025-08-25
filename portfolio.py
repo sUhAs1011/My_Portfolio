@@ -60,6 +60,11 @@ img_b64 = load_and_base64_image("profile.jpg")
 # --- CUSTOM STYLES ---
 st.markdown("""
 <style>
+/* Hide Streamlit default header */
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+
 html {
     scroll-behavior: smooth;
 }
@@ -223,7 +228,6 @@ body {
     align-items: center;
     padding: 15px 40px; /* Adjust padding to match image more closely */
     box-sizing: border-box; /* Include padding in width */
-
 }
 
 .navbar-name {
@@ -1046,6 +1050,7 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
