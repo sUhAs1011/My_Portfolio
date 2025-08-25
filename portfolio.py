@@ -173,7 +173,7 @@ body {
 
 /* Ensure content sections have padding to account for fixed navbar */
 .content-section {
-    padding-top: 120px; /* Adjust based on navbar height + desired spacing */
+    padding-top: 20px; /* Adjust based on navbar height + desired spacing */
     margin-bottom: 40px; /* Add some space between sections */
 }
 
