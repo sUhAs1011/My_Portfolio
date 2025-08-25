@@ -68,6 +68,13 @@ footer {visibility: hidden;}
 /* Hide Streamlit sidebar */
 section[data-testid="stSidebar"] {visibility: hidden;}
 
+/* Hide all Streamlit UI elements */
+div[data-testid="stSidebar"] {visibility: hidden;}
+div[data-testid="stSidebarNav"] {visibility: hidden;}
+div[data-testid="stSidebarContent"] {visibility: hidden;}
+div[data-testid="stSidebarUserContent"] {visibility: hidden;}
+div[data-testid="stSidebarUserContent"] > div {visibility: hidden;}
+
 html {
     scroll-behavior: smooth;
 }
