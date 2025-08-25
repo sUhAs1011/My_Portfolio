@@ -65,6 +65,9 @@ st.markdown("""
 header {visibility: hidden;}
 footer {visibility: hidden;}
 
+/* Hide Streamlit sidebar */
+section[data-testid="stSidebar"] {visibility: hidden;}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1050,6 +1053,9 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
+
+
 
 
 
