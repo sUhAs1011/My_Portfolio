@@ -4,8 +4,7 @@ import base64
 from io import BytesIO
 
 # --- PAGE CONFIG ---
-st.set_page_config(page_title="Suhas Venkata · Portfolio", page_icon="🆂", layout="wide")
-
+st.set_page_config(page_title="Suhas Venkata · Portfolio", page_icon="suhas.jpg", layout="wide")
 
 # --- LOAD IMAGE ---
 def load_and_base64_image(file_path):
@@ -1058,9 +1057,18 @@ with col_right:
 # --- Custom Footer with Styling ---
 st.markdown("""
     <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
-        Made by Suhas 
+        Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
 
 
 
