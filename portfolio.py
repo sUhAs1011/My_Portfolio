@@ -223,7 +223,7 @@ body {
     align-items: center;
     padding: 15px 40px; /* Adjust padding to match image more closely */
     box-sizing: border-box; /* Include padding in width */
-    border-bottom: 1px solid #222; /* Subtle border for separation */
+
 }
 
 .navbar-name {
