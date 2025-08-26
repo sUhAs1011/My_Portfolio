@@ -962,7 +962,7 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁ Cloud Storage System using UDP</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁ Cloud File Transfer System using UDP</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
