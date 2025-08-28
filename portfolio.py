@@ -958,7 +958,7 @@ st.markdown("---")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
-    st.image("udp.jpg", caption="UDP-Based Cloud Storage System", use_container_width=True)
+    st.image("udp.jpg", caption="Cloud File Transfer System using UDP", use_container_width=True)
 
 with col_right:
     st.markdown(
