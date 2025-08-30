@@ -955,7 +955,7 @@ st.markdown("---")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
-    st.image("udp.jpg", caption="UDP-Based Cloud Storage System", use_container_width=True)
+    st.image("udp.jpg", caption="Cloud File Transfer System using UDP", use_container_width=True)
 
 with col_right:
     st.markdown(
@@ -965,7 +965,7 @@ with col_right:
                  style='width:29px; height:28px; vertical-align:middle; margin-right:8px;'/>
             <a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' 
                target='_blank' style='text-decoration: none; color: white;'>
-               Cloud Storage System using UDP
+               Cloud File Transfer System using UDP
             </a>
         </h3>
         """,
