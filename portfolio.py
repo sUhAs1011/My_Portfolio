@@ -871,6 +871,24 @@ Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75
 st.markdown("</div>", unsafe_allow_html=True)
 
 
+# IBM Datathon
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.icons8.com/?size=100&id=69456&format=png&color=000000" 
+             alt="IBM Datathon Icon" width="28" height="28">
+        <h3 style="margin: 0;">IBM Datathon</h3>
+    </div>
+    <div style="font-size: 24px; font-weight:bold;">October 2025</div>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("""
+Came in top 50 out of the 200+ teams participated in the IBMZ datathon 
+""")
+
+
+
 
 
 
@@ -958,15 +976,25 @@ st.markdown("---")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
-    st.image("udp.jpg", caption="Cloud File Transfer System using UDP", use_container_width=True)
+    st.image("udp.jpg", caption="UDP-Based Cloud Storage System", use_container_width=True)
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' target='_blank' style='text-decoration: none; color: white;'>☁ Cloud File Transfer System using UDP</a></h3>",
+        """
+        <h3>
+            <img src='https://img.icons8.com/?size=100&id=NIaxM8D5w6rv&format=png&color=FFFFFF' 
+                 style='width:29px; height:28px; vertical-align:middle; margin-right:8px;'/>
+            <a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' 
+               target='_blank' style='text-decoration: none; color: white;'>
+               Cloud Storage System using UDP
+            </a>
+        </h3>
+        """,
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), enabling efficient file transfer and command execution across systems.
+    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), 
+    enabling efficient file transfer and command execution across systems.
 
     Key features include:
     - Developed a **client-server architecture** using Python **socket programming** for file upload, download, and listing operations.
@@ -976,6 +1004,7 @@ with col_right:
 
     **Tech Stack**: Python, UDP, Socket Programming, SSL, File Handling
     """)
+
 
 # Portfolio Project with image on the right and content on the left
 st.markdown("---")
@@ -1012,7 +1041,16 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/AI-Powered-Skill-Gap-Analysis-Reskilling-for-Employment-Trends' target='_blank' style='text-decoration: none; color: white;'>🤖 AI-Powered Skill Gap Analysis & Reskilling for Employment Trends </a></h3>",
+        """
+        <h3>
+            <img src='https://img.icons8.com/?size=100&id=fLrxgaxCrjaZ&format=png&color=FFFFFF' 
+                 style='width:28px; height:26px; vertical-align:middle; margin-right:8px;'/>
+            <a href='https://github.com/sUhAs1011/AI-Powered-Skill-Gap-Analysis-Reskilling-for-Employment-Trends' 
+               target='_blank' style='text-decoration: none; color: white;'>
+               AI-Powered Skill Gap Analysis & Reskilling for Employment Trends
+            </a>
+        </h3>
+        """,
         unsafe_allow_html=True
     )
     st.write("""
@@ -1024,11 +1062,9 @@ with col_right:
     - Developed a Streamlit web application as a user-friendly frontend interface, facilitating interactive skill gap analysis and course recommendations.
     - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging both pre-computed mappings and the trained DSSM.
     
-
     **Tech Stack**: Python, Sentence Transformers, ChromaDB, DSSM, Streamlit, Tesseract 
     """)
 
-st.markdown("</div>", unsafe_allow_html=True) 
 
 st.markdown("---")
 col_left, col_right = st.columns([2, 1])
@@ -1059,11 +1095,6 @@ st.markdown("""
     <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
         Made by Suhas Venkata
     </div>
-    <div style='text-align: center; padding-top: 20px; font-size: 20px; font-weight: 500; color: #ffffff;'>
-        Using Python And Streamlit
-    </div>
 """, unsafe_allow_html=True)
-
-
 
 
