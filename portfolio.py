@@ -871,27 +871,6 @@ Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75
 st.markdown("</div>", unsafe_allow_html=True)
 
 
-# IBM Datathon
-st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <div style="display: flex; align-items: center; gap: 8px;">
-        <img src="https://img.icons8.com/?size=100&id=69456&format=png&color=000000" 
-             alt="IBM Datathon Icon" width="28" height="28">
-        <h3 style="margin: 0;">IBM Datathon</h3>
-    </div>
-    <div style="font-size: 24px; font-weight:bold;">October 2025</div>
-</div>
-""", unsafe_allow_html=True)
-
-st.write("""
-Came in top 50 out of the 200+ teams participated in the IBMZ datathon 
-""")
-
-
-
-
-
-
 # --- PROJECTS SECTION ---
 st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
 st.markdown("   ")
