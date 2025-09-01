@@ -515,7 +515,7 @@ with col2:
     st.header("👨‍💼 About Me")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I’m <strong>Suhas Venkata</strong>, a Senior in Computer Science & Engineering at PES University, Electronic City. My passion lies in machine learning and deep learning, 
+        I’m <strong>Suhas Venkata</strong>, a Senior in Computer Science & Engineering at PES University. My passion lies in machine learning and deep learning, 
         and I thrive on solving real-world problems through cutting-edge technologies.
     </div>    
     """, unsafe_allow_html=True)
