@@ -878,7 +878,7 @@ st.markdown("""
              alt="Google Cloud Icon" width="28" height="28">
         <h3 style="margin: 0;">Google Cloud Agentic AI Day</h3>
     </div>
-    <div style="font-size: 24px; font-weight:bold;">September 2025</div>
+    <div style="font-size: 24px; font-weight:bold;">July 2025</div>
 </div>
 """, unsafe_allow_html=True)
 
