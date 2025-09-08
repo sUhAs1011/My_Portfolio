@@ -883,7 +883,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.write("""
-Participated in **Google Cloud Agentic AI Day**, contributing an **innovative idea** for building the next generation of intelligent agents. Joined a global community of changemakers leveraging the power of **Agentic AI** to address real-world challenges and create future-ready solutions.  
+Participated in **Google Cloud Agentic AI Day**, contributing an innovative idea to harness Agentic AI for real-world problem solving.
 
 """)
 
