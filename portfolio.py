@@ -870,6 +870,26 @@ Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75
 """)
 st.markdown("</div>", unsafe_allow_html=True)
 
+# Google Agentic AI Day
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" 
+             alt="Google Cloud Icon" width="28" height="28">
+        <h3 style="margin: 0;">Google Cloud Agentic AI Day</h3>
+    </div>
+    <div style="font-size: 24px; font-weight:bold;">September 2025</div>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("""
+Participated in **Google Cloud Agentic AI Day**, contributing an **innovative idea** for building the next generation of intelligent agents.  
+Joined a global community of changemakers leveraging the power of **Agentic AI** to address real-world challenges and create future-ready solutions.  
+
+""")
+
+
+
 
 # --- PROJECTS SECTION ---
 st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
