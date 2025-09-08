@@ -875,7 +875,7 @@ st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center; gap: 8px;">
         <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" 
-             alt="Google Cloud Icon" width="28" height="28">
+             alt="Google Cloud Icon" width="30" height="30">
         <h3 style="margin: 0;">Google Cloud Agentic AI Day</h3>
     </div>
     <div style="font-size: 24px; font-weight:bold;">July 2025</div>
