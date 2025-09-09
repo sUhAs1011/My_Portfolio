@@ -870,6 +870,8 @@ Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75
 """)
 st.markdown("</div>", unsafe_allow_html=True)
 
+st.markdown("<div style='margin-top:-10px'></div>", unsafe_allow_html=True)
+
 # Google Agentic AI Day
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
