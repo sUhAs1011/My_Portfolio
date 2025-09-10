@@ -1073,11 +1073,11 @@ with col_left:
         unsafe_allow_html=True
     )
     st.write("""
-    Designed and implemented a distributed systems simulation framework using docker and api-server
+    Designed and implemented a distributed systems simulation framework using **Docker** and **API-server**
 
     Key features include:
     - API Server: A centralized control unit for node management, pod scheduling, and health monitoring.
-    - Cluster Nodes: Virtualized computing units that periodically send heartbeat signals to the API Server.
+    - Cluster Nodes: Virtualized computing units that periodically send heartbeat signals to the **API-Server**.
     - Pods: Deployable units simulated on nodes, which require specific CPU resources.
     - Dockerized for portability and easy deployment and Real-time cluster health and pod scheduling visualization via Streamlit.
 
