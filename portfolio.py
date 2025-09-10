@@ -522,13 +522,13 @@ with col2:
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        During my internship at the Centre of Cognitive Computing and Computational Intelligence  (C3I) in Summer 2025, I designed and deployed an end-to-end career advisory system using dual-tower Deep Structured Semantic Models and ChromaDB—achieving highly accurate job–course matching.
+        During my internship at the **Centre of Cognitive Computing and Computational Intelligence (C3I)** in Summer 2025, I designed and deployed an end-to-end career advisory system using dual-tower **Deep Structured Semantic Models** and **ChromaDB** achieving highly accurate job–course matching.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I’m always eager to take on new challenges, collaborate across disciplines, and keep learning. If you're working on NLP, Machine Learning, or AI-driven projects, I’d love to connect and build something impactful together.
+        I’m always eager to take on new challenges, collaborate across disciplines, and keep learning. If you're working on Natural Language Processing, Machine Learning, or AI-driven projects, I’d love to connect and build something impactful together.
     </div>    
     """, unsafe_allow_html=True)
 
