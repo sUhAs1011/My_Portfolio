@@ -982,7 +982,7 @@ with col_right:
         <h3>
             <img src='https://img.icons8.com/?size=100&id=NIaxM8D5w6rv&format=png&color=FFFFFF' 
                  style='width:29px; height:28px; vertical-align:middle; margin-right:8px;'/>
-            <a href='https://github.com/sUhAs1011/UE22CS252B-Cloud_Storage_Using_UDP' 
+            <a href='https://github.com/sUhAs1011/UE22CS252B-Cloud-File-Transfer-System-using-UDP-' 
                target='_blank' style='text-decoration: none; color: white;'>
                Cloud File Transfer System using UDP
             </a>
