@@ -933,7 +933,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Engineered a **real-time intrusion detection system** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
+    Engineered a **Real-Time Intrusion Detection System** using Arduino, designed to enhance home security through automated alerts and physical deterrents.
 
     Key features include:
     - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
@@ -991,7 +991,7 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Built a secure, network-based **cloud storage system** using **Python** and **UDP** (User Datagram Protocol), 
+    Built a secure, network-based **Cloud File Transfer System** using **Python** and **UDP** (User Datagram Protocol), 
     enabling efficient file transfer and command execution across systems.
 
     Key features include:
