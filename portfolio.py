@@ -1052,11 +1052,11 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across sectors.
+    Analyzing job trends, mapping skill gaps, and recommending targeted reskilling programs across different employment sectors.
 
     Key features include:
-    - Utilized all-MiniLM-L6-v2 to generate and push refined job and course embeddings into ChromaDB for efficient semantic search.
-    - Employed a Deep Structured Semantic Model (DSSM) for training to learn enhanced semantic relationships.
+    - Utilized **all-MiniLM-L6-v2** to generate and push refined job-course embeddings into **ChromaDB** for efficient semantic search.
+    - Employed a **Deep Structured Semantic Model (DSSM)** for training to learn enhanced semantic relationships.
     - Developed a Streamlit web application as a user-friendly frontend interface, facilitating interactive skill gap analysis and course recommendations.
     - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging both pre-computed mappings and the trained DSSM.
     
