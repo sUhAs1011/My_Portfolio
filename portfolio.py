@@ -1014,15 +1014,15 @@ with col_left:
         unsafe_allow_html=True
     )
     st.write("""
-    Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, and educational background.
+    Designed and developed an interactive personal portfolio website using **Streamlit**, showcasing my projects, skills, achievements and educational background.
 
     Key features include:
-    - Animated hero section with a circular profile picture and gradient headers
-    - Skill badges, project showcases with GitHub integration
+    - Animated hero section with a circular profile picture and gradient headers along with Experience, Achievements.
+    - Skill badges, project showcases along with the Github Repositories
     - A vertical educational timeline
-    - Downloadable resume and aesthetic contact buttons
+    - Downloadable resume and aesthetic contact buttons for Social Platforms like Linkedin & Gmail
 
-    The portfolio is fully responsive and easy to maintain, serving as a central hub for professional representation.
+    The portfolio is fully responsive and easy to maintain, serving as a central hub for a professional representation.
 
     **Tech Stack**: Streamlit, Python, HTML/CSS, PIL
     """)
