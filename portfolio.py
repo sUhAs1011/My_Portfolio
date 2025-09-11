@@ -963,7 +963,7 @@ with col_left:
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-    **Tech Stack**: Sentence Transformers, Python, MongoDB, Tkinter GUI
+    **Tech Stack**: Sentence Transformers, Python, MongoDB, Streamlit
     """)
 
 with col_right:
