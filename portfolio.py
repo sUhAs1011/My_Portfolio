@@ -844,7 +844,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Top 10 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+Top 6 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
 """)
 
 # MRD Scholarship
@@ -855,10 +855,10 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 st.write("""
-Awarded the prestigious **MRD Scholarship** in Semester 1 by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+Awarded the prestigious **MRD Scholarship** in 1st Semester by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
 """)
 
-# DAC Scholarship
+# Distinction Scholarship
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🏅 DAC Scholarship</h3>
