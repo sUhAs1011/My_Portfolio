@@ -941,7 +941,7 @@ with col_right:
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
     - Achieved near-instant detection **< 100 ms** with real-time serial communication, ensuring quick & reliable security alerts.
 
-    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial
+    **Tech Stack**: C++, Arduino, Ultrasonic Sensor, GSM Module, SoftwareSerial.h
     """)
 
 
@@ -964,7 +964,7 @@ with col_left:
 
     This solution streamlines legal compliance and enhances accessibility to complex regulatory frameworks.
 
-    **Tech Stack**: Sentence Transformers, Python, MongoDB, Streamlit
+    **Tech Stack**: Python, Sentence Transformers, MongoDB, Streamlit
     """)
 
 with col_right:
@@ -1025,7 +1025,7 @@ with col_left:
 
     The portfolio is fully responsive and easy to maintain, serving as a central hub for a professional representation.
 
-    **Tech Stack**: Streamlit, Python, HTML/CSS, PIL
+    **Tech Stack**: Python, Streamlit, HTML/CSS, PIL
     """)
 
 with col_right:
