@@ -906,7 +906,7 @@ with col1:
     )
 
     st.write("""
-    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)** stored in **Inter Planetary File System (IPFS)**, with unique identifiers maintained on a **multi-chain blockchain** to ensure end-to-end data integrity and traceability.
+    Designed and developed a secure, scalable system to extract actionable insights from **Electronic Health Records (EHRs)**.
 
     Key features include:
     - Extracted insights from IPFS-stored EHR’s using unique blockchain ID’s to ensuring data integrity & traceability. 
