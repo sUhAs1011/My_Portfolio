@@ -939,8 +939,9 @@ with col_right:
     - Utilized an **ultrasonic sensor** to detect unauthorized entry, triggering a red LED, buzzer alarm, and **GSM-based alert notifications**.
     - Programmed using **C++** with SoftwareSerial.h to manage GSM module communication.
     - Configured the Arduino IDE and implemented serial communication to ensure seamless system performance and real-time responsiveness.
+    - Achieved near-instant detection **< 100 ms** with real-time serial communication, ensuring quick & reliable security alerts.
 
-    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial, Arduino IDE
+    **Tech Stack**: Arduino, C++, Ultrasonic Sensor, GSM Module, SoftwareSerial
     """)
 
 
