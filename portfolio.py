@@ -246,7 +246,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .content-section {
-        padding-top: 100px; /* Slightly less padding for smaller screens */
+        padding-top: 50px; /* Slightly less padding for smaller screens */
     }
 }
 
