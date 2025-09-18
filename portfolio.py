@@ -316,7 +316,7 @@ body {
 
 /* Responsive Navigation Bar Styling */
 .navbar-custom {
-    overflow: hidden;
+    overflow: visible;
     background-color: #0e1117;
     position: fixed;
     top: 0;
@@ -324,11 +324,17 @@ body {
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 12px 30px;
     box-sizing: border-box;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .navbar-name {
@@ -385,6 +391,7 @@ body {
     display: flex;
     gap: 5px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-custom a {
@@ -401,6 +408,23 @@ body {
 .navbar-custom a:hover {
     color: #00C6FB;
     background-color: rgba(0, 198, 251, 0.1);
+}
+
+/* Desktop styles - hide mobile menu button */
+@media screen and (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .navbar-custom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar-top {
+        display: contents;
+    }
 }
 
 /* Mobile responsive styles */
@@ -425,34 +449,34 @@ body {
     }
     
     .navbar-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        display: flex;
+        position: static;
         width: 100%;
-        background-color: #0e1117;
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        gap: 10px;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+        gap: 2px;
         z-index: 1001;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
     }
     
     .navbar-links.active {
         display: flex;
     }
     
-    /* Fallback: Show menu on hover for touch devices */
-    .navbar-custom:hover .navbar-links {
-        display: flex;
-    }
-    
     .navbar-custom a {
-        padding: 12px 20px;
-        font-size: 16px;
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 8px 12px;
+        font-size: 12px;
+        width: auto;
+        text-align: center;
+        border-bottom: none;
+        border-radius: 4px;
+        margin: 2px;
+        flex: 1;
+        min-width: 80px;
     }
     
     .navbar-custom a:last-child {
@@ -477,8 +501,9 @@ body {
     }
     
     .navbar-custom a {
-        font-size: 14px;
-        padding: 10px 15px;
+        font-size: 11px;
+        padding: 6px 8px;
+        min-width: 70px;
     }
 }
 
@@ -652,8 +677,10 @@ st.markdown("""
 # --- NAVIGATION BAR ---
 st.markdown("""
 <div class="navbar-custom">
-    <div class="navbar-name">Suhas Venkata</div>
-    <button class="mobile-menu-toggle" id="mobile-menu-btn">☰</button>
+    <div class="navbar-top">
+        <div class="navbar-name">Suhas Venkata</div>
+        <button class="mobile-menu-toggle" id="mobile-menu-btn">☰</button>
+    </div>
     <div class="navbar-links" id="navbar-links">
         <a href="#about">👨‍💼 About Me</a>
         <a href="#skills">🛠️ Skills</a>
@@ -1467,6 +1494,7 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
