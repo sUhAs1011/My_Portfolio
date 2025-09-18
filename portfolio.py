@@ -444,7 +444,7 @@ body {
     
     .navbar-name {
         font-size: 18px;
-        margin-left: 10px;
+        margin-left: 30px;
     }
     
     .navbar-name::before {
@@ -500,7 +500,7 @@ body {
     
     .navbar-name {
         font-size: 16px;
-        margin-left: 5px;
+        margin-left: 20px;
     }
     
     .navbar-name::before {
