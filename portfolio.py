@@ -237,11 +237,22 @@ body {
     margin-bottom: 40px; /* Add some space between sections */
 }
 
+/* Add extra padding for mobile navbar */
+@media screen and (max-width: 768px) {
+    .content-section {
+        padding-top: 120px; /* Extra padding for mobile navbar */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-section {
+        padding-top: 100px; /* Slightly less padding for smaller screens */
+    }
+}
+
 /* Mobile responsive styles for content sections */
 @media screen and (max-width: 768px) {
     .content-section {
-        padding-top: 15px;
-        margin-bottom: 30px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -260,8 +271,6 @@ body {
 
 @media screen and (max-width: 480px) {
     .content-section {
-        padding-top: 10px;
-        margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -445,7 +454,7 @@ body {
     }
     
     .mobile-menu-toggle {
-        display: block;
+        display: none;
     }
     
     .navbar-links {
@@ -679,7 +688,6 @@ st.markdown("""
 <div class="navbar-custom">
     <div class="navbar-top">
         <div class="navbar-name">Suhas Venkata</div>
-        <button class="mobile-menu-toggle" id="mobile-menu-btn">☰</button>
     </div>
     <div class="navbar-links" id="navbar-links">
         <a href="#about">👨‍💼 About Me</a>
@@ -692,56 +700,6 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Add JavaScript for mobile menu functionality
-st.markdown("""
-<script>
-// Wait for the page to load completely
-window.addEventListener('load', function() {
-    // Also try when DOM is ready
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMobileMenu);
-    } else {
-        initMobileMenu();
-    }
-});
-
-function initMobileMenu() {
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navbarLinks = document.getElementById('navbar-links');
-    
-    console.log('Mobile menu elements:', { mobileMenuBtn, navbarLinks });
-    
-    if (mobileMenuBtn && navbarLinks) {
-        mobileMenuBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('Menu button clicked');
-            navbarLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const menuLinks = navbarLinks.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                console.log('Menu link clicked');
-                navbarLinks.classList.remove('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navbarLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                navbarLinks.classList.remove('active');
-            }
-        });
-        
-        console.log('Mobile menu initialized successfully');
-    } else {
-        console.log('Mobile menu elements not found');
-    }
-}
-</script>
-""", unsafe_allow_html=True)
 # --- HERO SECTION ---
 st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
 
@@ -1494,6 +1452,7 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
