@@ -368,7 +368,17 @@ body {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-toggle:active {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-links {
@@ -401,7 +411,7 @@ body {
     
     .navbar-name {
         font-size: 18px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
     .navbar-name::before {
@@ -425,9 +435,15 @@ body {
         padding: 20px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         gap: 10px;
+        z-index: 1001;
     }
     
     .navbar-links.active {
+        display: flex;
+    }
+    
+    /* Fallback: Show menu on hover for touch devices */
+    .navbar-custom:hover .navbar-links {
         display: flex;
     }
     
@@ -451,7 +467,7 @@ body {
     
     .navbar-name {
         font-size: 16px;
-        margin-left: 15px;
+        margin-left: 5px;
     }
     
     .navbar-name::before {
@@ -548,45 +564,77 @@ body {
 
 @media screen and (max-width: 768px) {
     .timeline-container {
-        margin: 20px 10px;
+        margin: 20px 15px;
+        padding: 0 10px;
+    }
+    
+    .timeline-item {
+        padding: 20px 0;
     }
     
     .timeline-content {
-        width: 90%;
-        left: 0 !important;
+        width: calc(100% - 60px);
+        left: 60px !important;
         margin-left: 0;
-        padding: 15px;
+        padding: 20px;
+        position: relative;
     }
     
     .timeline-item::after {
         left: 30px;
+        width: 4px;
     }
     
     .timeline-content::before {
-        left: 15px;
+        left: -15px;
+        width: 20px;
+        height: 20px;
+        border: 3px solid white;
     }
     
     .left::before {
-        left: 15px;
+        left: -15px;
     }
     
     .right::before {
-        left: 15px;
+        left: -15px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .timeline-container {
-        margin: 15px 5px;
-    }
-    
-    .timeline-content {
-        width: 95%;
-        padding: 12px;
+        margin: 15px 10px;
+        padding: 0 5px;
     }
     
     .timeline-item {
-        padding: 15px 20px;
+        padding: 15px 0;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 50px);
+        left: 50px !important;
+        padding: 15px;
+    }
+    
+    .timeline-item::after {
+        left: 25px;
+        width: 3px;
+    }
+    
+    .timeline-content::before {
+        left: -12px;
+        width: 18px;
+        height: 18px;
+        border: 2px solid white;
+    }
+    
+    .left::before {
+        left: -12px;
+    }
+    
+    .right::before {
+        left: -12px;
     }
 }
 
@@ -605,7 +653,7 @@ st.markdown("""
 st.markdown("""
 <div class="navbar-custom">
     <div class="navbar-name">Suhas Venkata</div>
-    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <button class="mobile-menu-toggle" id="mobile-menu-btn">☰</button>
     <div class="navbar-links" id="navbar-links">
         <a href="#about">👨‍💼 About Me</a>
         <a href="#skills">🛠️ Skills</a>
@@ -615,28 +663,56 @@ st.markdown("""
         <a href="#projects">🚀 Projects</a>
     </div>
 </div>
+""", unsafe_allow_html=True)
 
+# Add JavaScript for mobile menu functionality
+st.markdown("""
 <script>
-function toggleMobileMenu() {
-    const navbarLinks = document.getElementById('navbar-links');
-    navbarLinks.classList.toggle('active');
-}
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.navbar-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('navbar-links').classList.remove('active');
-    });
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', (e) => {
-    const navbar = document.querySelector('.navbar-custom');
-    const navbarLinks = document.getElementById('navbar-links');
-    if (!navbar.contains(e.target)) {
-        navbarLinks.classList.remove('active');
+// Wait for the page to load completely
+window.addEventListener('load', function() {
+    // Also try when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
+    } else {
+        initMobileMenu();
     }
 });
+
+function initMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navbarLinks = document.getElementById('navbar-links');
+    
+    console.log('Mobile menu elements:', { mobileMenuBtn, navbarLinks });
+    
+    if (mobileMenuBtn && navbarLinks) {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Menu button clicked');
+            navbarLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const menuLinks = navbarLinks.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Menu link clicked');
+                navbarLinks.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navbarLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navbarLinks.classList.remove('active');
+            }
+        });
+        
+        console.log('Mobile menu initialized successfully');
+    } else {
+        console.log('Mobile menu elements not found');
+    }
+}
 </script>
 """, unsafe_allow_html=True)
 # --- HERO SECTION ---
@@ -1391,6 +1467,7 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
 
