@@ -233,14 +233,14 @@ body {
 
 /* Ensure content sections have padding to account for fixed navbar */
 .content-section {
-    padding-top: 0px; /* Adjust based on navbar height + desired spacing */
+    padding-top: 5px; /* Adjust based on navbar height + desired spacing */
     margin-bottom: 40px; /* Add some space between sections */
 }
 
 /* Add extra padding for mobile navbar */
 @media screen and (max-width: 768px) {
     .content-section {
-        padding-top: 20px; /* Extra padding for mobile navbar */
+        padding-top: 50px; /* Extra padding for mobile navbar */
     }
 }
 
