@@ -240,7 +240,7 @@ body {
 /* Add extra padding for mobile navbar */
 @media screen and (max-width: 768px) {
     .content-section {
-        padding-top: 50px; /* Extra padding for mobile navbar */
+        padding-top: 55px; /* Extra padding for mobile navbar */
     }
 }
 
