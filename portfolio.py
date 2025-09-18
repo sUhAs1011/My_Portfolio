@@ -753,13 +753,14 @@ st.markdown("""
   cursor: pointer;
 }
 
-/* Hover effect = blue to purple gradient transition */
+/* Hover effect = electric blue glow like the name */
 .contact-button:hover {
-  background: linear-gradient(90deg, #1e3a8a, #7c3aed, #1e3a8a); /* Blue → Purple → Blue */
-  border-color: #3b82f6;
+  background: linear-gradient(90deg, #005BEA, #00C6FB); /* Same gradient as the name */
+  border-color: #00C6FB;
   color: #fff;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0px 8px 20px rgba(30, 58, 138, 0.4);
+  box-shadow: 0px 8px 20px rgba(0, 198, 251, 0.6), 0 0 15px rgba(0, 198, 251, 0.4);
+  text-shadow: 0 0 10px rgba(0, 198, 251, 0.8);
 }
 
 .contact-icon {
