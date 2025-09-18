@@ -6,6 +6,11 @@ from io import BytesIO
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Suhas Venkata · Portfolio", page_icon="suhas.jpg", layout="wide")
 
+# Add viewport meta tag for mobile responsiveness
+st.markdown("""
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+""", unsafe_allow_html=True)
+
 # --- LOAD IMAGE ---
 def load_and_base64_image(file_path):
     try:
@@ -171,10 +176,95 @@ body {
     padding: 40px 20px 20px 40px;
 }
 
+/* Mobile responsive styles for hero section */
+@media screen and (max-width: 768px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        transform: translateX(0);
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .profile-pic:hover {
+        transform: scale(1.02);
+    }
+    
+    .hero-container {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    
+    .gradient-text {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .intro {
+        font-size: 16px;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .gradient-text {
+        font-size: 28px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+    }
+    
+    .intro {
+        font-size: 14px;
+    }
+}
+
 /* Ensure content sections have padding to account for fixed navbar */
 .content-section {
     padding-top: 20px; /* Adjust based on navbar height + desired spacing */
     margin-bottom: 40px; /* Add some space between sections */
+}
+
+/* Mobile responsive styles for content sections */
+@media screen and (max-width: 768px) {
+    .content-section {
+        padding-top: 15px;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Make project images stack vertically on mobile */
+    .project-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust project text for mobile */
+    .project-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-section {
+        padding-top: 10px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* Timeline styling (for .timeline-wrapper, .timeline-col, etc. - these are generic and might not be used directly in the final timeline HTML, but good to keep if you have other timeline styles) */
@@ -224,30 +314,32 @@ body {
     margin-top: 5px;
 }
 
-/* Simplified Navigation Bar Styling (navbar-custom) */
+/* Responsive Navigation Bar Styling */
 .navbar-custom {
     overflow: hidden;
-    background-color: #0e1117; /* Match body background for seamless look */
+    background-color: #0e1117;
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
     z-index: 1000;
     display: flex;
-    justify-content: flex-start; /* Start from left */
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px; /* Adjust padding to match image more closely */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 12px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-name {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     text-decoration: none;
     transition: color 0.3s ease;
-    margin-left: 120px; /* Move name to the right */
     position: relative;
+    flex-shrink: 0;
+    margin-left: 100px;
 }
 
 .navbar-name::before {
@@ -256,8 +348,8 @@ body {
     left: -25px;
     top: 50%;
     transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: #00C6FB;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(0, 198, 251, 0.6);
@@ -268,25 +360,110 @@ body {
     text-shadow: 0 0 10px rgba(0, 198, 251, 0.5);
 }
 
+/* Mobile hamburger menu */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
 .navbar-links {
     display: flex;
-    gap: 1px;
-    margin-left: auto; /* Push links to the right */
+    gap: 5px;
+    align-items: center;
 }
 
 .navbar-custom a {
     color: #f2f2f2;
     text-align: center;
-    padding: 8px 15px; /* Adjust padding for button size */
+    padding: 8px 12px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     transition: color 0.3s, background-color 0.3s;
-    margin-left: 12px; /* Space between links */
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 .navbar-custom a:hover {
-    color: #00C6FB; /* Highlight color on hover */
-    background-color: transparent; /* Keep background transparent */
+    color: #00C6FB;
+    background-color: rgba(0, 198, 251, 0.1);
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar-custom {
+        padding: 10px 20px;
+    }
+    
+    .navbar-name {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    
+    .navbar-name::before {
+        left: -20px;
+        width: 8px;
+        height: 8px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0e1117;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        gap: 10px;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+    
+    .navbar-custom a {
+        padding: 12px 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar-custom a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-custom {
+        padding: 8px 15px;
+    }
+    
+    .navbar-name {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    
+    .navbar-name::before {
+        left: -18px;
+        width: 6px;
+        height: 6px;
+    }
+    
+    .navbar-custom a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
 }
 
 /* Timeline CSS (alternating vertical style) - actual implementation style */
@@ -370,15 +547,46 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .timeline-container {
+        margin: 20px 10px;
+    }
+    
     .timeline-content {
         width: 90%;
         left: 0 !important;
+        margin-left: 0;
+        padding: 15px;
     }
+    
     .timeline-item::after {
         left: 30px;
     }
+    
     .timeline-content::before {
         left: 15px;
+    }
+    
+    .left::before {
+        left: 15px;
+    }
+    
+    .right::before {
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline-container {
+        margin: 15px 5px;
+    }
+    
+    .timeline-content {
+        width: 95%;
+        padding: 12px;
+    }
+    
+    .timeline-item {
+        padding: 15px 20px;
     }
 }
 
@@ -397,7 +605,8 @@ st.markdown("""
 st.markdown("""
 <div class="navbar-custom">
     <div class="navbar-name">Suhas Venkata</div>
-    <div class="navbar-links">
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <div class="navbar-links" id="navbar-links">
         <a href="#about">👨‍💼 About Me</a>
         <a href="#skills">🛠️ Skills</a>
         <a href="#experience">💼 Experience</a>
@@ -406,17 +615,42 @@ st.markdown("""
         <a href="#projects">🚀 Projects</a>
     </div>
 </div>
+
+<script>
+function toggleMobileMenu() {
+    const navbarLinks = document.getElementById('navbar-links');
+    navbarLinks.classList.toggle('active');
+}
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('navbar-links').classList.remove('active');
+    });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    const navbar = document.querySelector('.navbar-custom');
+    const navbarLinks = document.getElementById('navbar-links');
+    if (!navbar.contains(e.target)) {
+        navbarLinks.classList.remove('active');
+    }
+});
+</script>
 """, unsafe_allow_html=True)
 # --- HERO SECTION ---
 st.markdown("<div id='home' class='content-section'>", unsafe_allow_html=True)
-col1, col2 = st.columns([3, 2])
+
+# Use responsive columns that stack on mobile
+col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown("<div class='hero-container'>", unsafe_allow_html=True)
     st.markdown("<div class='gradient-text'><span class='letter'>S</span><span class='letter'>u</span><span class='letter'>h</span><span class='letter'>a</span><span class='letter'>s</span> <span class='letter'>V</span><span class='letter'>e</span><span class='letter'>n</span><span class='letter'>k</span><span class='letter'>a</span><span class='letter'>t</span><span class='letter'>a</span> <span>👋</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>CSE Student at PES University</div>", unsafe_allow_html=True)
     st.markdown("""
-<p style='font-size:18px; line-height:1.6;'>
+<p class='intro'>
 Final-year Computer Science student at PES University, passionate about Machine Learning and Natural Language Processing. 
 Recently interned at C3I, gaining hands-on experience in ML systems. 
 Actively exploring software engineering and always open to new challenges and collaborations.
@@ -470,6 +704,45 @@ st.markdown("""
 .contact-icon {
   width: 24px;
   height: 24px;
+}
+
+/* Mobile responsive styles for contact buttons */
+@media screen and (max-width: 768px) {
+  .button-row {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-button {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-row {
+    gap: 10px;
+  }
+  
+  .contact-button {
+    width: 100px;
+    height: 45px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  
+  .contact-icon {
+    width: 18px;
+    height: 18px;
+  }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -557,6 +830,29 @@ st.markdown("""
     }
     .skill-text:hover {
         color: #00BFFF;
+    }
+    
+    /* Mobile responsive styles for skills */
+    @media screen and (max-width: 768px) {
+        .skill-box {
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-text {
+            font-size: 16px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .skill-box {
+            padding: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .skill-text {
+            font-size: 14px;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -1095,5 +1391,6 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
+
 
 
