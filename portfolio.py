@@ -850,14 +850,14 @@ with col2:
     st.header("👨‍💼 About Me")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        I’m <strong>Suhas Venkata</strong>, a Senior in Computer Science & Engineering at PES University. My passion lies in machine learning and deep learning, 
+        I’m <strong>Suhas Venkata</strong>, a Senior in Computer Science & Engineering at PES University. My passion lies in Machine learning and Deep learning, 
         and I thrive on solving real-world problems through cutting-edge technologies.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
     st.markdown("""
     <div style="font-size:18px; line-height:1.6; text-align: left;">
-        During my internship at the Centre of Cognitive Computing and Computational Intelligence (C3I) in Summer 2025, I designed and deployed an end-to-end career advisory system using dual-tower Deep Structured Semantic Models and ChromaDB achieving highly accurate job–course matching.
+        During my internship at the Centre of Cognitive Computing and Computational Intelligence (C3I) in the Summer of 2025, I designed and deployed an end-to-end career advisory system using dual-tower Deep Structured Semantic Models and ChromaDB achieving highly accurate job–course matching.
     </div>    
     """, unsafe_allow_html=True)
     st.markdown("    ")
@@ -986,7 +986,7 @@ st.markdown("#### 🗄️ Databases")
 db_icon_map = {
     "MySQL": "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000",
     "MongoDB": "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
-    "ChromaDB": "https://miro.medium.com/v2/resize:fit:1044/1*d2XUNgrLw7687CDfXx9-Dw.png"  # Placeholder DB icon
+    "ChromaDB": "https://miro.medium.com/v2/resize:fit:1044/1*d2XUNgrLw7687CDfXx9-Dw.png"  
 }
 
 db_tools = ["MySQL", "MongoDB", "ChromaDB"]
