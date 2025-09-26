@@ -159,11 +159,14 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    object-position: center;
     box-shadow: 0 0 25px rgba(0, 198, 251, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
     transform: translateX(150px);
     border: 4px solid rgba(0, 198, 251, 0.3);
     transition: all 0.3s ease;
-    filter: brightness(1.02) contrast(1.05);
+    filter: brightness(1.0) contrast(1.0) saturate(1.0);
+    overflow: hidden;
+    display: block;
 }
 
 .profile-pic:hover {
@@ -184,6 +187,10 @@ body {
         transform: translateX(0);
         margin: 20px auto;
         display: block;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        overflow: hidden;
     }
     
     .profile-pic:hover {
@@ -216,6 +223,10 @@ body {
     .profile-pic {
         width: 150px;
         height: 150px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        overflow: hidden;
     }
     
     .gradient-text {
@@ -1453,9 +1464,3 @@ st.markdown("""
         Made by Suhas Venkata
     </div>
 """, unsafe_allow_html=True)
-
-
-
-
-
-
