@@ -27,7 +27,6 @@
 
 
 
-<img width="1920" height="1080" alt="udp" src="https://github.com/user-attachments/assets/a584ebfd-3b0b-4d70-bf8a-c9bb9d190f21" />
 
 
 
