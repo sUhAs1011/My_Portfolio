@@ -155,10 +155,10 @@ body {
 }
 
 .profile-pic {
-    border-radius: 12px;
+    border-radius: 50%;
     width: 300px;
     height: 300px;
-    object-fit: fill;
+    object-fit: cover;
     object-position: center;
     box-shadow: 0 0 25px rgba(0, 198, 251, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
     transform: translateX(150px);
@@ -187,9 +187,9 @@ body {
         transform: translateX(0);
         margin: 20px auto;
         display: block;
-        object-fit: fill;
+        object-fit: cover;
         object-position: center;
-        border-radius: 12px;
+        border-radius: 50%;
         overflow: hidden;
     }
     
@@ -223,9 +223,9 @@ body {
     .profile-pic {
         width: 150px;
         height: 150px;
-        object-fit: fill;
+        object-fit: cover;
         object-position: center;
-        border-radius: 12px;
+        border-radius: 50%;
         overflow: hidden;
     }
     
