@@ -155,7 +155,7 @@ body {
 }
 
 .profile-pic {
-    border-radius: 50%;
+    border-radius: 12px;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -189,7 +189,7 @@ body {
         display: block;
         object-fit: cover;
         object-position: center;
-        border-radius: 50%;
+        border-radius: 12px;
         overflow: hidden;
     }
     
@@ -225,7 +225,7 @@ body {
         height: 150px;
         object-fit: cover;
         object-position: center;
-        border-radius: 50%;
+        border-radius: 12px;
         overflow: hidden;
     }
     
