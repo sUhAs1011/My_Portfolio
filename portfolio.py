@@ -1298,7 +1298,7 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-Arduino-Based-Intruder-Detection-and-Alert-System' target='_blank' style='text-decoration: none; color: white;'>🚨 IoT-Based Intruder Detection and Alert System</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-Arduino-Based-Intruder-Detection-and-Alert-System' target='_blank' style='text-decoration: none; color: white;'>🚨 IoT-Enabled Arduino-Based Intruder Detection and Alert System</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
