@@ -1270,7 +1270,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕️ Blockchain-Powered Healthcare Insights</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/HoC2_PS9_Hash_Bros' target='_blank' style='text-decoration: none; color: white;'>⚕️ Blockchain-Powered AI Healthcare Insights</a></h3>",
         unsafe_allow_html=True
     )
 
