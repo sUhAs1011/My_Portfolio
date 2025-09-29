@@ -1298,7 +1298,16 @@ with col_left:
 
 with col_right:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/UE22CS251B-IoT-Enabled-Arduino-Based-Intruder-Detection-and-Alert-System' target='_blank' style='text-decoration: none; color: white;'>🚨 IoT-Enabled Arduino-Based Intruder Detection and Alert System</a></h3>",
+        """
+        <h3>
+            <img src="https://img.icons8.com/?size=100&id=zShGYtnXWfZz&format=png&color=000000" 
+                 width="30" style="vertical-align:middle; margin-right:10px;">
+            <a href='https://github.com/sUhAs1011/UE22CS251B-IoT-Enabled-Arduino-Based-Intruder-Detection-and-Alert-System' 
+               target='_blank' style='text-decoration: none; color: white;'>
+               IoT-Enabled Arduino-Based Intruder Detection and Alert System
+            </a>
+        </h3>
+        """,
         unsafe_allow_html=True
     )
     st.write("""
