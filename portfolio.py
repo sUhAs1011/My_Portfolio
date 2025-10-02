@@ -1492,10 +1492,10 @@ with col_right:
     Detecting And Mitigating Replay Attack in CCTV systems which are a significant threat to the society
 
     Key features include:
-    - Used *Farneback Algorith* to create optical dense flow vectors which for the basis for HTM training.
-    - Converted the Optically Dense raw motion vectors into SDR(Sparse Distributed Representation) which is suitable for the *HTM* training.
-    - Trained the model using HTM(Hierarchical Temporal Memory) for Replay attack detection and used *SHA-256* hashing for mitigaton.
-    - Stored all the safe hashes metadata in *SQLite*.
+    - Used **Farneback Algorithm** to create optical dense flow vectors which for the basis for **HTM training**.
+    - Converted the Optically Dense raw motion vectors into SDR(Sparse Distributed Representation) which is suitable for the **HTM training**.
+    - Trained the model using HTM(Hierarchical Temporal Memory) for Replay attack detection and used **SHA-256** hashing for mitigaton.
+    - Stored all the safe hashes metadata in **SQLite**.
     
     *Tech Stack*: Python, HTM, SHA-256, SDR
     """)# End of Projects section
