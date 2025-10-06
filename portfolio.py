@@ -1450,7 +1450,7 @@ with col_left:
     st.markdown(
         """
         <h3>
-        <img src='https://img.icons8.com/?size=100&id=undefined&format=png&color=000000' 
+        <img src='https://img.icons8.com/?size=100&id=7pFfikEfVGOV&format=png&color=000000' 
                  style='width:29px; height:28px; vertical-align:middle; margin-right:8px;'/>
          <a href='https://github.com/sUhAs1011/UE22CS351B-Distributed_Systems_Cluster_Simulation_Framework' 
                target='_blank' style='text-decoration: none; color: white;'>
