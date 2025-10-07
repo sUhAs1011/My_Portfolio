@@ -1398,7 +1398,7 @@ with col_left:
                  style='width:35px; height:35px; vertical-align:middle; margin-right:8px;'/>
          <a href='https://github.com/sUhAs1011/My_Portfolio' 
                target='_blank' style='text-decoration: none; color: white;'>
-               Distributed Systems Cluster Simulator
+               Interactive Personal Portfolio Website
         </a>
         </h3>""",
         unsafe_allow_html=True
