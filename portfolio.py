@@ -1395,7 +1395,7 @@ with col_left:
         """
         <h3>
         <img src='https://img.icons8.com/?size=100&id=ognMDWHTIaDL&format=png&color=000000' 
-                 style='width:35px; height:35px; vertical-align:middle; margin-right:8px;'/>
+                 style='width:40px; height:40px; vertical-align:middle; margin-right:8px;'/>
          <a href='https://github.com/sUhAs1011/My_Portfolio' 
                target='_blank' style='text-decoration: none; color: white;'>
                Interactive Personal Portfolio Website
