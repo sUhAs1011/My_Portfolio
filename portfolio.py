@@ -1127,13 +1127,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# --- Experience Details ---
+#Experience Details
 st.write("""
-- Architected and deployed a comprehensive career advisory system using **Deep Structured Semantic Model (DSSM)** with dual-tower neural networks for intelligent job-course matching.Developed advanced NLP pipeline for multi-format resume processing using **Tesseract** with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.Implemented vector database solution using **ChromaDB** for efficient storage and retrieval of **1,00,000+** job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
+- Architected and deployed a comprehensive career advisory system using **Deep Structured Semantic Model (DSSM)** with dual-tower neural networks for intelligent job-course matching.
 
-- Built interactive **Streamlit** application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on **Cosine-Similarity** scoring and semantic matching and Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling **30,000+** job-course pairs while maintaining sub-second response times.
+- Developed advanced NLP pipeline for multi-format resume processing using **Tesseract** with sophisticated skill extraction using regex patterns and custom normalization algorithms, successfully extracting relevant technical and business skills in a resume.
+ 
+- Implemented vector database solution using **ChromaDB** for efficient storage and retrieval of **1,00,000+** job and course embeddings, enabling real-time semantic similarity searches across diverse datasets.
+
+- Built interactive **Streamlit** application with real-time skill gap analysis, providing personalized course recommendations from Coursera and other platforms based on **Cosine-Similarity** scoring and semantic matching.
+
+- Optimized system performance through memory-efficient negative sampling, batch processing, and embedding normalization, handling **30,000+** job-course pairs while maintaining sub-second response times.
 """)
-st.markdown("</div>", unsafe_allow_html=True)  # End of Experience section
+
 
 
 # --- MY JOURNEY SECTION ---
