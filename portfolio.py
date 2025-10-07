@@ -1398,7 +1398,7 @@ with col_left:
                  style='width:40px; height:40px; vertical-align:middle; margin-right:8px;'/>
          <a href='https://github.com/sUhAs1011/My_Portfolio' 
                target='_blank' style='text-decoration: none; color: white;'>
-               Interactive Personal Portfolio Website
+               Interactive Personal Portfolio Website using Streamlit
         </a>
         </h3>""",
         unsafe_allow_html=True
