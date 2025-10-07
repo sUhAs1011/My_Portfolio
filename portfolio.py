@@ -944,10 +944,11 @@ icon_map = {
     "C": "https://img.icons8.com/color/48/000000/c-programming.png",
     "C++": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
     "Java": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png",
-    "Rust": "https://img.icons8.com/?size=100&id=haeAxVQEIg0F&format=png&color=000000"
+    "Rust": "https://img.icons8.com/?size=100&id=haeAxVQEIg0F&format=png&color=000000",
+    "R": "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
 }
 
-prog_langs = ["Python", "C", "C++", "Java", "Rust"]
+prog_langs = ["Python", "C", "C++", "Java", "Rust", "R"]
 prog_cols = st.columns(3)
 
 for i, lang in enumerate(prog_langs):
