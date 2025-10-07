@@ -1392,7 +1392,7 @@ col_left, col_right = st.columns([2, 1])
 
 with col_left:
     st.markdown(
-        "<h3><a href='https://github.com/sUhAs1011/My_Portfolio' target='_blank' style='text-decoration: none; color: white;'>🌐 Personal Portfolio Website</a></h3>",
+        "<h3><a href='https://github.com/sUhAs1011/My_Portfolio' target='_blank' style='text-decoration: none; color: white;'>🌐 Interactive Personal Portfolio Website</a></h3>",
         unsafe_allow_html=True
     )
     st.write("""
