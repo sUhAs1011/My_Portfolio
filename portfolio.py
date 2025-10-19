@@ -1238,6 +1238,7 @@ Participated in **Google Cloud Agentic AI Day**, contributing an innovative idea
 
 """)
 
+# Heal-O-Code
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🩺 Heal-O-Code Hackathon</h3>
@@ -1246,6 +1247,23 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.write("""
 Top 6 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+""")
+
+# Kaggle Achievements
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://storage.googleapis.com/kaggle-media/Kaggle%20Brand%20Guidelines%20CMS/transparent%20logo.png" 
+             alt="Google Cloud Icon" width="30" height="30">
+        <h3 style="margin: 0;">Kaggle Hackathon</h3>
+    </div>
+    <div style="font-size: 24px; font-weight:bold;">October 2024</div>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("""
+Ranked in the top 30% on Hackerrank college hackathons for **Data Analytics** and **Machine Learning coursework**.
+
 """)
 
 # MRD Scholarship
