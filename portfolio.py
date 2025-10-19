@@ -1253,7 +1253,7 @@ Top 6 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center; gap: 8px;">
-        <img src="https://w7.pngwing.com/pngs/589/699/png-transparent-kaggle-logo-tech-companies-thumbnail.png" 
+        <img src="https://w7.pngwing.com/pngs/1002/482/png-transparent-kaggle-logos-and-brands-line-filled-icon-thumbnail.png" 
              alt="Kaggle Icon" width="60" height="60">
         <h3 style="margin: 0;">Kaggle Hackathon</h3>
     </div>
