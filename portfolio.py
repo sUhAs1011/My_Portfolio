@@ -1209,26 +1209,6 @@ st.markdown("   ")
 st.header("🏆 Achievements")
 
 # Heal-O-Code Hackathon
-st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">🩺 Heal-O-Code Hackathon</h3>
-    <div style="font-size: 24px;font-weight:bold;">March 2025</div>
-</div>
-""", unsafe_allow_html=True)
-st.write("""
-Top 6 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
-""")
-
-# MRD Scholarship
-st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
-    <div style="font-size: 24px;font-weight:bold;">March 2023</div>
-</div>
-""", unsafe_allow_html=True)
-st.write("""
-Awarded the prestigious **MRD Scholarship** in 1st Semester by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
-""")
 
 # Distinction Scholarship
 st.markdown("""
@@ -1257,10 +1237,28 @@ st.write("""
 Participated in **Google Cloud Agentic AI Day**, contributing an innovative idea to harness Agentic AI for real-world problem solving.
 
 """)
+
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🩺 Heal-O-Code Hackathon</h3>
+    <div style="font-size: 24px;font-weight:bold;">March 2025</div>
+</div>
+""", unsafe_allow_html=True)
+st.write("""
+Top 6 out of 50+ teams in **Heal-O-Code Hackathon**. Built a healthcare decision support tool using **Multi-Chain Blockchain** and **Ollama** for better drug recommendation.
+""")
+
+# MRD Scholarship
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
+    <div style="font-size: 24px;font-weight:bold;">March 2023</div>
+</div>
+""", unsafe_allow_html=True)
+st.write("""
+Awarded the prestigious **MRD Scholarship** in 1st Semester by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+""")
 st.markdown("</div>", unsafe_allow_html=True)
-
-
-
 
 # --- PROJECTS SECTION ---
 st.markdown("<div id='projects' class='content-section'>", unsafe_allow_html=True)
