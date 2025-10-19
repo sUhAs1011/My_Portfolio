@@ -1240,7 +1240,6 @@ st.markdown("""
 st.write("""
 Received **Distinction Scholarship** of ₹ 2000 for achieving SGPA above **7.75** in **Semesters 2–6** at **PES University**.
 """)
-st.markdown("</div>", unsafe_allow_html=True)
 
 # Google Agentic AI Day
 st.markdown("""
@@ -1258,6 +1257,7 @@ st.write("""
 Participated in **Google Cloud Agentic AI Day**, contributing an innovative idea to harness Agentic AI for real-world problem solving.
 
 """)
+st.markdown("</div>", unsafe_allow_html=True)
 
 
 
