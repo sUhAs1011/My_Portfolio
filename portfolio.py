@@ -1502,6 +1502,39 @@ with col_left:
 with col_right:
     st.image("node_simulator.jpg", caption="Distributed Systems Cluster Simulator", use_container_width=True)
 
+# Detection And Mitigation Of Replay Attack in CCTV systems
+st.markdown("---")
+col_left, col_right = st.columns([1, 2])
+
+with col_left:
+    st.image("cctv.jpg", caption="Replay Attack Detection And Mitigation", use_container_width=True)
+
+with col_right:
+    st.markdown(
+        """
+        <h3>
+            <img src='https://img.icons8.com/?size=100&id=3wl52ZDVBgG0&format=png&color=000000' 
+                 style='width:28px; height:26px; vertical-align:middle; margin-right:8px;'/>
+            <a href='https://github.com/sUhAs1011/Capstone_Project' 
+               target='_blank' style='text-decoration: none; color: white;'>
+               Detection And Mitigation Of Replay Attack in CCTV systems
+            </a>
+        </h3>
+        """,
+        unsafe_allow_html=True
+    )
+    st.write("""
+    Detecting And Mitigating Replay Attack in CCTV systems which are a significant threat to the society
+
+    Key features include:
+    - Utilized *all-MiniLM-L6-v2* to generate and push refined job-course embeddings into *ChromaDB* for efficient semantic search.
+    - Employed a *Deep Structured Semantic Model (DSSM)* for training to learn enhanced semantic relationships.
+    - Developed a Streamlit web application as a user-friendly frontend interface, facilitating interactive skill gap analysis and course recommendations.
+    - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging the pre-computed mappings.
+    
+    *Tech Stack*: Python, HTM, SHA-256, SDR
+    """)
+
 
 # --- Custom Footer with Styling ---
 st.markdown("""
