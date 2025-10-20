@@ -1524,13 +1524,16 @@ with col_right:
         unsafe_allow_html=True
     )
     st.write("""
-    Detecting And Mitigating Replay Attack in CCTV systems which are a significant threat to the society
+    Replay attacks on CCTV systems exploit vulnerabilities by retransmitting recorded footage to bypass live monitoring
 
     Key features include:
-    - Utilized *all-MiniLM-L6-v2* to generate and push refined job-course embeddings into *ChromaDB* for efficient semantic search.
-    - Employed a *Deep Structured Semantic Model (DSSM)* for training to learn enhanced semantic relationships.
-    - Developed a Streamlit web application as a user-friendly frontend interface, facilitating interactive skill gap analysis and course recommendations.
-    - Provided intelligent course suggestions directly addressing identified skill gaps relevant to a specific job position, leveraging the pre-computed mappings.
+    - **Optical flow–based motion analysis** with **SDR** encoding to capture temporal motion patterns in a compact and interpretable form.
+
+    - **Hierarchical Temporal Memory (HTM)** model for lightweight, real-time anomaly detection of unusual motion sequences.
+
+    - **SHA‑256** frame hashing and verification to ensure tamper-evident, forensic reliability of CCTV footage.
+
+    - Decision engine with dashboard interface that fuses anomaly scores and integrity checks, providing real-time alerts, visualization, and forensic reporting.
     
     *Tech Stack*: Python, HTM, SHA-256, SDR
     """)
