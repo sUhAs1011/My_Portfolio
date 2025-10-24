@@ -1481,7 +1481,7 @@ with col_left:
                  style='width:35px; height:35px; vertical-align:middle; margin-right:8px;'/>
          <a href='https://github.com/sUhAs1011/UE22CS351B-Distributed_Systems_Cluster_Simulation_Framework' 
                target='_blank' style='text-decoration: none; color: white;'>
-               Distributed Systems Cluster Simulator
+               Distributed Systems Cluster Simulator Framework
         </a>
         </h3>""",
         unsafe_allow_html=True
