@@ -1242,7 +1242,6 @@ Participated in **Google Cloud Agentic AI Day**, contributing an innovative idea
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🩺 Heal-O-Code Hackathon</h3>
-    <div style="font-size: 24px;font-weight:bold;">March 2025</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
