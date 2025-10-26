@@ -1208,13 +1208,21 @@ st.markdown("<div id='achievements' class='content-section'>", unsafe_allow_html
 st.markdown("   ")
 st.header("🏆 Achievements")
 
-# Heal-O-Code Hackathon
+
+# MRD Scholarship
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
+</div>
+""", unsafe_allow_html=True)
+st.write("""
+Awarded the prestigious **MRD Scholarship** in 1st Semester by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
+""")
 
 # Distinction Scholarship
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <h3 style="margin: 0;">🏅 Distinction Scholarship</h3>
-    <div style="font-size: 24px;font-weight:bold;">August 2025</div>
 </div>
 """, unsafe_allow_html=True)
 st.write("""
@@ -1229,7 +1237,6 @@ st.markdown("""
              alt="Google Cloud Icon" width="30" height="30">
         <h3 style="margin: 0;">Google Cloud Agentic AI Day</h3>
     </div>
-    <div style="font-size: 24px; font-weight:bold;">July 2025</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -1256,24 +1263,12 @@ st.markdown("""
              alt="Kaggle Icon" width="30" height="30">
         <h3 style="margin: 0;">Kaggle Hackathon</h3>
     </div>
-    <div style="font-size: 24px; font-weight:bold;">October 2024</div>
 </div>
 """, unsafe_allow_html=True)
 
 st.write("""
 Ranked in the top 30% on Hackerrank college hackathons for **Data Analytics** and **Machine Learning coursework**.
 
-""")
-
-# MRD Scholarship
-st.markdown("""
-<div style="display: flex; justify-content: space-between; align-items: center;">
-    <h3 style="margin: 0;">🎓 MRD Scholarship</h3>
-    <div style="font-size: 24px;font-weight:bold;">March 2023</div>
-</div>
-""", unsafe_allow_html=True)
-st.write("""
-Awarded the prestigious **MRD Scholarship** in 1st Semester by **PES University**, receiving a 20% tuition fee reimbursement in recognition of academic excellence.
 """)
 st.markdown("</div>", unsafe_allow_html=True)
 
