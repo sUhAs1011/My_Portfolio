@@ -1510,9 +1510,9 @@ with col_right:
         <h3>
             <img src='https://img.icons8.com/?size=100&id=3wl52ZDVBgG0&format=png&color=000000' 
                  style='width:28px; height:26px; vertical-align:middle; margin-right:8px;'/>
-            <a href='https://github.com/sUhAs1011/Capstone_Project' 
+            <a href='https://github.com/sUhAs1011/Detection_And_Mitigation_of_Replay_Attack_in_CCTV_Systems' 
                target='_blank' style='text-decoration: none; color: white;'>
-               Detection And Mitigation Of Replay Attack in CCTV systems
+               Replay Attack Detection and Mitigation in CCTV systems
             </a>
         </h3>
         """,
