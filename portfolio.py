@@ -1445,7 +1445,7 @@ with col_right:
                  style='width:35px; height:35px; vertical-align:middle; margin-right:8px;'/>
             <a href='https://github.com/sUhAs1011/AI-Powered-Skill-Gap-Analysis-Reskilling-for-Employment-Trends' 
                target='_blank' style='text-decoration: none; color: white;'>
-               AI-Powered Skill Gap Analysis & Reskilling for Employment Trends
+               AI-Powered Skill Gap Analysis and Reskilling for Employment Trends
             </a>
         </h3>
         """,
