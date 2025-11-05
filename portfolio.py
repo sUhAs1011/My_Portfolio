@@ -1435,7 +1435,7 @@ st.markdown("---")
 col_left, col_right = st.columns([1, 2])
 
 with col_left:
-    st.image("career.jpg", caption="Career Pilot", use_container_width=True)
+    st.image("career.jpg", caption="Career Copilot", use_container_width=True)
 
 with col_right:
     st.markdown(
