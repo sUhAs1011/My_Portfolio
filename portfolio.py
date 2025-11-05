@@ -1522,9 +1522,9 @@ with col_right:
     Replay attacks on CCTV systems exploit vulnerabilities by retransmitting recorded footage to bypass live monitoring
 
     Key features include:
-    - *Optical flow–based motion analysis* with *SDR* encoding to capture temporal motion patterns in a compact and interpretable form.
-    - *Hierarchical Temporal Memory (HTM)* model for lightweight, real-time anomaly detection of unusual motion sequences.
-    - *SHA‑256* frame hashing and verification to ensure tamper-evident, forensic reliability of CCTV footage.
+    - **Optical flow–based motion analysis** with **SDR** encoding to capture temporal motion patterns in a compact and interpretable form.
+    - **Hierarchical Temporal Memory (HTM)** model for lightweight, real-time anomaly detection of unusual motion sequences.
+    - **SHA‑256** frame hashing and verification to ensure tamper-evident, forensic reliability of CCTV footage.
     - Decision engine with dashboard interface that fuses anomaly scores and integrity checks, providing real-time alerts, visualization, and forensic reporting.
     
     Tech Stack: Python, HTM, SHA-256, SDR
