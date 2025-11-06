@@ -1533,7 +1533,7 @@ with col_right:
 
 # --- Custom Footer with Styling ---
 st.markdown("""
-    <div style='text-align: center; padding-top: 20px; font-size: 40px; font-weight: 500; color: #ffffff;'>
+    <div style='text-align: center; padding-top: 20px; font-size: 30px; font-weight: 500; color: #ffffff;'>
         Made by Suhas Venkata with ❤️
     </div>
     <div style='text-align: center; padding-top: 0px; font-size: 20px; font-weight: 500; color: #ffffff;'>
