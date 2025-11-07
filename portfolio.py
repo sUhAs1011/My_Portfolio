@@ -1774,7 +1774,7 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-:root { --nav-h: 72px; }                  /* desktop navbar height */
+:root { --nav-h: 60px; }                  /* desktop navbar height */
 
 /* Streamlit's main content containers */
 [data-testid="stAppViewContainer"],
