@@ -1774,35 +1774,33 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-/* ==== Navbar Height Control ==== */
-:root {
-  --nav-h: 60px; /* decrease this value (default was ~72px) */
-}
+:root { --nav-h: 72px; }                  /* desktop navbar height */
 
-/* Navbar height */
-.navbar-custom {
-  height: var(--nav-h) !important;
-  line-height: var(--nav-h) !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Ensure content starts below navbar */
+/* Streamlit's main content containers */
 [data-testid="stAppViewContainer"],
 .main {
-  padding-top: calc(var(--nav-h) + 8px) !important;
+  padding-top: var(--nav-h) !important;   /* push all content below navbar */
 }
 
-/* Anchor offset for sections */
+/* Make navbar height explicit & on top */
+.navbar-custom {
+  height: var(--nav-h) !important;
+  z-index: 1000 !important;
+}
+
+/* When jumping to #about, #skills, … keep the title visible */
 .content-section {
-  scroll-margin-top: calc(var(--nav-h) + 10px) !important;
+  scroll-margin-top: calc(var(--nav-h) + 12px) !important;
 }
 
-/* Mobile adaptive height (optional) */
+/* Mobile tweaks: navbar is taller when links wrap */
 @media (max-width: 768px) {
-  :root {
-    --nav-h: 60px; /* slight increase for mobile */
-  }
+  :root { --nav-h: 104px; }               /* adjust if your mobile navbar is taller/shorter */
+}
+
+/* Optional: ensure the profile image row doesn’t hide under the bar on tiny screens */
+@media (max-width: 480px) {
+  .hero-container { padding-top: 8px !important; }
 }
 
 </style>
