@@ -1828,5 +1828,33 @@ st.markdown("""
 }
 
 
+/* --- tighten bottom whitespace --- */
+
+/* Streamlit's main block has big bottom padding by default */
+main .block-container { padding-bottom: 0.5rem !important; }
+
+/* Reduce space after sections; almost none after the last one */
+.content-section { margin-bottom: 18px !important; }
+.content-section:last-of-type { margin-bottom: 6px !important; }
+
+/* Footer spacing (small + centered) */
+.site-footer {
+  margin: 0 !important;
+  padding: 8px 0 14px !important;   /* top / bottom */
+  text-align: center;
+}
+.site-footer-title { font-size: 24px; font-weight: 600; }
+.site-footer-sub   { font-size: 18px; font-weight: 500; opacity: .9; }
+
+/* Kill stray bottom margins on elements inside the last section */
+.content-section:last-of-type h1,
+.content-section:last-of-type h2,
+.content-section:last-of-type h3,
+.content-section:last-of-type p,
+.content-section:last-of-type img { margin-bottom: 8px !important; }
+
+/* Just in case any container adds extra padding */
+[data-testid="stAppViewContainer"] { padding-bottom: 0 !important; }
+
 </style>
 """, unsafe_allow_html=True)
