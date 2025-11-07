@@ -1773,5 +1773,36 @@ st.markdown("""
   }
 }
 
+/* ===== Keep content below the fixed navbar (works in light & dark) ===== */
+:root { --nav-h: 72px; }                  /* desktop navbar height */
+
+/* Streamlit's main content containers */
+[data-testid="stAppViewContainer"],
+.main {
+  padding-top: var(--nav-h) !important;   /* push all content below navbar */
+}
+
+/* Make navbar height explicit & on top */
+.navbar-custom {
+  height: var(--nav-h) !important;
+  z-index: 1000 !important;
+}
+
+/* When jumping to #about, #skills, … keep the title visible */
+.content-section {
+  scroll-margin-top: calc(var(--nav-h) + 12px) !important;
+}
+
+/* Mobile tweaks: navbar is taller when links wrap */
+@media (max-width: 768px) {
+  :root { --nav-h: 104px; }               /* adjust if your mobile navbar is taller/shorter */
+}
+
+/* Optional: ensure the profile image row doesn’t hide under the bar on tiny screens */
+@media (max-width: 480px) {
+  .hero-container { padding-top: 8px !important; }
+}
+
+
 </style>
 """, unsafe_allow_html=True)
