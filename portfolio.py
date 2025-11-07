@@ -89,39 +89,44 @@ body {
     color: inherit; /* Ensure text is visible on dark background */
 }
 
-.gradient-text {
-    font-size: 48px;
-    font-weight: 800;
-    /* Corrected: use linear-gradient for standard syntax and -webkit- for webkit browsers */
-    background: linear-gradient(90deg, #005BEA, #00C6FB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: inherit; /* Makes text transparent so gradient background shows through */
-    color: inherit; /* Fallback for browsers that don't support -webkit-text-fill-color */
-    margin-bottom: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+/* Theme-safe hero name: no gradient at first paint */
+:root{
+  --sv-text: var(--text-color, #e5e7eb);              /* dark theme fallback */
 }
 
-.gradient-text:hover {
-    transform: scale(1.05);
-    text-shadow: 0 0 20px rgba(0, 198, 251, 0.5);
+/* Default state = solid theme color (prevents flash) */
+.hero-name{
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--sv-text) !important;
+  -webkit-text-fill-color: var(--sv-text) !important;
+  text-shadow: none !important;
+  margin: 0 0 6px 0;
 }
 
-/* Individual letter hover effects */
-.gradient-text span.letter {
-    display: inline-block;
-    cursor: pointer;
+/* emoji follows text color */
+.hero-name .wave{
+  color: var(--sv-text) !important;
+  -webkit-text-fill-color: var(--sv-text) !important;
 }
 
-.gradient-text span.letter:hover {
-    transform: translateY(-5px) scale(1.2);
-    -webkit-text-fill-color: #00C6FB;
-    text-shadow: 0 0 15px rgba(0, 198, 251, 0.8);
+/* Optional: show gradient ONLY on hover (no FOUC) */
+.hero-name:hover{
+  background: linear-gradient(90deg, #005BEA, #00C6FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.hero-name:hover .wave{
+  -webkit-text-fill-color: #00C6FB !important;
+  color: #00C6FB !important;
 }
 
-.gradient-text span {
-    -webkit-text-fill-color: inherit; /* Span within gradient-text should also be transparent to inherit parent's gradient */
+/* Light-mode adjustment so it’s black on white */
+@media (prefers-color-scheme: light){
+  :root{ --sv-text: #111827; }  /* near-black */
 }
+
 
 .subtitle {
     font-size: 20px;
