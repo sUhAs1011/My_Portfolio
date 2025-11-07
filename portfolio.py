@@ -114,13 +114,6 @@ body {
     cursor: pointer;
 }
 
-<script>
-window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
-});
-</script>
-
-
 .gradient-text span.letter:hover {
     transform: translateY(-5px) scale(1.2);
     -webkit-text-fill-color: #00C6FB;
