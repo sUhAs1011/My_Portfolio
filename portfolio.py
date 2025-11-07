@@ -1807,7 +1807,7 @@ st.markdown("""
 @media (max-width: 768px) {
 
   :root {
-    --nav-h: 68px; /* smaller than your original 104px */
+    --nav-h: 40px; /* smaller than your original 104px */
   }
 
   /* Make navbar sticky on phone (prevents overlap!) */
