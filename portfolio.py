@@ -1790,12 +1790,12 @@ st.markdown("""
 
 /* When jumping to #about, #skills, … keep the title visible */
 .content-section {
-  scroll-margin-top: calc(var(--nav-h) + 12px) !important;
+  scroll-margin-top: calc(var(--nav-h) + 10px) !important;
 }
 
 /* Mobile tweaks: navbar is taller when links wrap */
 @media (max-width: 768px) {
-  :root { --nav-h: 104px; }               /* adjust if your mobile navbar is taller/shorter */
+  :root { --nav-h: 80px; }               /* adjust if your mobile navbar is taller/shorter */
 }
 
 /* Optional: ensure the profile image row doesn’t hide under the bar on tiny screens */
