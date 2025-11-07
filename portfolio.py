@@ -110,7 +110,7 @@ body {
 /* Individual letter hover effects */
 .gradient-text span.letter {
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all 0s ease;
     cursor: pointer;
 }
 
