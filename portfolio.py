@@ -1834,7 +1834,7 @@ st.markdown("""
 main .block-container { padding-bottom: 0.5rem !important; }
 
 /* Reduce space after sections; almost none after the last one */
-.content-section { margin-bottom: 18px !important; }
+.content-section { margin-bottom: 5px !important; }
 .content-section:last-of-type { margin-bottom: 6px !important; }
 
 /* Footer spacing (small + centered) */
