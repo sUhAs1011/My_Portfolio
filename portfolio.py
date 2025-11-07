@@ -1774,35 +1774,32 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-:root { --nav-h: 60px; }                  /* desktop navbar height */
+/* --- Dynamic navbar-safe padding using CSS variable set by JS --- */
+:root { --nav-h: 56px; } /* fallback if JS hasn't run yet */
 
-/* Streamlit's main content containers */
-[data-testid="stAppViewContainer"],
-.main {
-  padding-top: var(--nav-h) !important;   /* push all content below navbar */
-}
-
-/* Make navbar height explicit & on top */
-.navbar-custom {
-  height: var(--nav-h) !important;
+.navbar-custom{
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
   z-index: 1000 !important;
+  background: var(--background-color, #0e1117) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  /* keep links from wrapping into multiple rows */
+  display:flex; flex-direction: row; align-items: center; gap: 12px;
 }
-
-/* When jumping to #about, #skills, … keep the title visible */
-.content-section {
-  scroll-margin-top: calc(var(--nav-h) + 12px) !important;
+.navbar-links{
+  white-space: nowrap !important;
+  overflow-x: auto !important; overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
 }
+.navbar-links::-webkit-scrollbar { display: none; }
 
-/* Mobile tweaks: navbar is taller when links wrap */
-@media (max-width: 768px) {
-  :root { --nav-h: 104px; }               /* adjust if your mobile navbar is taller/shorter */
+/* use measured height if available, else fallback */
+[data-testid="stAppViewContainer"], .main{
+  padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 8px) !important;
 }
-
-/* Optional: ensure the profile image row doesn’t hide under the bar on tiny screens */
-@media (max-width: 480px) {
-  .hero-container { padding-top: 8px !important; }
+.content-section{
+  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 12px) !important;
 }
-
 
 </style>
 """, unsafe_allow_html=True)
