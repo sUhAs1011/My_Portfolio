@@ -1583,11 +1583,14 @@ with col_right:
 
 # --- Custom Footer with Styling ---
 st.markdown("""
-<div class="site-footer">
-  <div class="site-footer-title">Made by Suhas Venkata with ❤️</div>
-  <div class="site-footer-sub">Using Streamlit and Python</div>
-</div>
+    <div style='text-align: center; padding-top: 20px; font-size: 25px; font-weight: 500; color: #ffffff;'>
+        Made by Suhas Venkata with ❤️
+    </div>
+    <div style='text-align: center; padding-top: 0px; font-size: 20px; font-weight: 500; color: #ffffff;'>
+        Using Streamlit and Python
+    </div>
 """, unsafe_allow_html=True)
+
 
 
 
