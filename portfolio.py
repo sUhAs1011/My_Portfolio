@@ -1798,7 +1798,7 @@ st.markdown("""
   padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 8px) !important;
 }
 .content-section{
-  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 2px) !important;
+  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 0px) !important;
 }
 
 </style>
