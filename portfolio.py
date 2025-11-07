@@ -1776,7 +1776,7 @@ st.markdown("""
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
 /* ==== Navbar Height Control ==== */
 :root {
-  --nav-h: 50px; /* decrease this value (default was ~72px) */
+  --nav-h: 60px; /* decrease this value (default was ~72px) */
 }
 
 /* Navbar height */
