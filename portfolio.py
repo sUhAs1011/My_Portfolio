@@ -1774,89 +1774,36 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-/* ==== NAVBAR HEIGHT (Desktop) ==== */
+/* ==== Navbar Height Control ==== */
 :root {
-  --nav-h: 60px; /* desktop navbar height */
+  --nav-h: 50px; /* decrease this value (default was ~72px) */
 }
 
-/* Streamlit main container: push content below fixed navbar */
+/* Navbar height */
+.navbar-custom {
+  height: var(--nav-h) !important;
+  line-height: var(--nav-h) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Ensure content starts below navbar */
 [data-testid="stAppViewContainer"],
 .main {
   padding-top: calc(var(--nav-h) + 8px) !important;
 }
 
-/* Fixed navbar on desktop */
-.navbar-custom {
-  height: var(--nav-h) !important;
-  line-height: var(--nav-h) !important;
-  z-index: 1000 !important;
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: var(--background-color, #0e1117) !important;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-/* Anchor link fix — headings not hidden */
+/* Anchor offset for sections */
 .content-section {
-  scroll-margin-top: calc(var(--nav-h) + 12px) !important;
+  scroll-margin-top: calc(var(--nav-h) + 10px) !important;
 }
 
-/* ===== MOBILE FIX ===== */
+/* Mobile adaptive height (optional) */
 @media (max-width: 768px) {
-
   :root {
-    --nav-h: 68px; /* smaller than your original 104px */
-  }
-
-  /* Make navbar sticky on phone (prevents overlap!) */
-  .navbar-custom {
-    position: sticky !important;
-    height: auto !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-
-  /* Remove desktop padding compensation */
-  [data-testid="stAppViewContainer"],
-  .main {
-    padding-top: 0 !important;
-  }
-
-  /* Fix anchor scroll offset on small screen */
-  .content-section {
-    scroll-margin-top: 90px !important;
-  }
-
-  /* Nav links scroll horizontally instead of wrapping */
-  .navbar-links {
-    display: block !important;
-    white-space: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 6px !important;
-  }
-
-  .navbar-links a {
-    display: inline-block !important;
-    margin-right: 12px !important;
-  }
-
-  /* Hide scroll bar for cleaner UI */
-  .navbar-links::-webkit-scrollbar {
-    display: none;
+    --nav-h: 60px; /* slight increase for mobile */
   }
 }
-
-/* Tiny phones */
-@media (max-width: 480px) {
-  .hero-container {
-    padding-top: 8px !important;
-  }
-}
-
 
 </style>
 """, unsafe_allow_html=True)
