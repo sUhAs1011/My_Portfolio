@@ -1799,6 +1799,11 @@ st.markdown("""
   scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 1px) !important;
 }
 
+@media (max-width: 768px){
+  .content-section{
+    scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 60px) !important;
+  }
+
 /* ✅ Force navbar readable in both themes */
 @media (prefers-color-scheme: light){
   .navbar-custom{
