@@ -1774,7 +1774,7 @@ st.markdown("""
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
 /* --- Dynamic navbar-safe padding using CSS variable set by JS --- */
-:root { --nav-h: 56px; } /* fallback if JS hasn't run yet */
+:root { --nav-offset: calc(var(--nav-h-dyn, var(--nav-h, 64px)) + 40px);  } /* fallback if JS hasn't run yet */
 
 .navbar-custom{
   position: fixed !important;
