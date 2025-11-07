@@ -1773,23 +1773,30 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-/* --- Navbar-aware anchor offset (desktop + mobile) --- */
-:root{
-  /* use measured height if available, else fallback */
-  --nav-h: 64px;
-  --nav-offset: calc(var(--nav-h-dyn, var(--nav-h)) + 40px);
+:root { --nav-offset: calc(var(--nav-h-dyn, var(--nav-h, 64px)) + 40px);  } /* fallback if JS hasn't run yet */
+
+.navbar-custom{
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 1000 !important;
+  background: var(--background-color, #0e1117) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  /* keep links from wrapping into multiple rows */
+  display:flex; flex-direction: row; align-items: center; gap: 12px;
 }
+.navbar-links{
+  white-space: nowrap !important;
+  overflow-x: auto !important; overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+.navbar-links::-webkit-scrollbar { display: none; }
 
-/* Make the browser keep this space above ANY #hash target */
-html { scroll-padding-top: var(--nav-offset) !important; }      /* safari/ios friendly */
-*:target { scroll-margin-top: var(--nav-offset) !important; }   /* all targets */
-
-/* Sections too, for #projects / #about etc. */
-.content-section { scroll-margin-top: var(--nav-offset) !important; }
-
-/* Mobile needs a bit more cushion */
-@media (max-width: 768px){
-  :root{ --nav-offset: calc(var(--nav-h-dyn, var(--nav-h)) + 56px); }
+/* use measured height if available, else fallback */
+[data-testid="stAppViewContainer"], .main{
+  padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 2px) !important;
+}
+.content-section{
+  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 1px) !important;
 }
 
 </style>
