@@ -1774,62 +1774,89 @@ st.markdown("""
 }
 
 /* ===== Keep content below the fixed navbar (works in light & dark) ===== */
-/* ========= FINAL, MOBILE-PROOF FIXED NAV ========= */
+/* ==== NAVBAR HEIGHT (Desktop) ==== */
 :root {
-  --nav-h: 56px;                 /* desktop navbar height (tweak to taste) */
+  --nav-h: 60px; /* desktop navbar height */
 }
 
-/* Fixed bar on top, always */
-.navbar-custom{
-  position: fixed !important;
-  top: 0; left: 0; right: 0;
+/* Streamlit main container: push content below fixed navbar */
+[data-testid="stAppViewContainer"],
+.main {
+  padding-top: calc(var(--nav-h) + 8px) !important;
+}
+
+/* Fixed navbar on desktop */
+.navbar-custom {
   height: var(--nav-h) !important;
-  display: flex;                 /* keep content vertically centered */
-  align-items: center;           
-  padding: 0 16px !important;    /* horizontal breathing room */
+  line-height: var(--nav-h) !important;
   z-index: 1000 !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--background-color, #0e1117) !important;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Push all content below the fixed bar */
-[data-testid="stAppViewContainer"],
-.main{
-  padding-top: calc(var(--nav-h) + 8px) !important;
-}
-
-/* Ensure anchor jumps (#about/#skills/…) show the heading */
-.content-section{
+/* Anchor link fix — headings not hidden */
+.content-section {
   scroll-margin-top: calc(var(--nav-h) + 12px) !important;
 }
 
-/* Keep links on ONE line on mobile (no tall bar).
-   They will scroll horizontally if needed. */
-.navbar-links{
-  white-space: nowrap !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  -webkit-overflow-scrolling: touch;
-  gap: 8px !important;
-  margin-left: auto;             /* push links to the right */
-}
-.navbar-links a{
-  display: inline-block !important;
-  padding: 8px 10px;             /* comfy tap targets */
-}
-.navbar-links::-webkit-scrollbar{ display: none; }
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
 
-/* Phone tweaks */
-@media (max-width: 768px){
-  :root { --nav-h: 64px; }       /* slightly taller for icons/touch */
-  .navbar-custom{ height: var(--nav-h) !important; }
-  [data-testid="stAppViewContainer"], .main{
-    padding-top: calc(var(--nav-h) + 8px) !important;
+  :root {
+    --nav-h: 68px; /* smaller than your original 104px */
   }
-  .content-section{
-    scroll-margin-top: calc(var(--nav-h) + 10px) !important;
+
+  /* Make navbar sticky on phone (prevents overlap!) */
+  .navbar-custom {
+    position: sticky !important;
+    height: auto !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  /* Remove desktop padding compensation */
+  [data-testid="stAppViewContainer"],
+  .main {
+    padding-top: 0 !important;
+  }
+
+  /* Fix anchor scroll offset on small screen */
+  .content-section {
+    scroll-margin-top: 90px !important;
+  }
+
+  /* Nav links scroll horizontally instead of wrapping */
+  .navbar-links {
+    display: block !important;
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 6px !important;
+  }
+
+  .navbar-links a {
+    display: inline-block !important;
+    margin-right: 12px !important;
+  }
+
+  /* Hide scroll bar for cleaner UI */
+  .navbar-links::-webkit-scrollbar {
+    display: none;
   }
 }
+
+/* Tiny phones */
+@media (max-width: 480px) {
+  .hero-container {
+    padding-top: 8px !important;
+  }
+}
+
 
 </style>
 """, unsafe_allow_html=True)
