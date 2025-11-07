@@ -1793,7 +1793,7 @@ st.markdown("""
 
 /* use measured height if available, else fallback */
 [data-testid="stAppViewContainer"], .main{
-  padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 2px) !important;
+  padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 8px) !important;
 }
 .content-section{
   scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 1px) !important;
