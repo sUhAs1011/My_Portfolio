@@ -1799,5 +1799,29 @@ st.markdown("""
   scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 1px) !important;
 }
 
+/* ✅ Force navbar readable in both themes */
+@media (prefers-color-scheme: light){
+  .navbar-custom{
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+  .navbar-custom a,
+  .navbar-name{
+    color: #000000 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+  .navbar-custom{
+    background: #0e1117 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .navbar-custom a,
+  .navbar-name{
+    color: #e5e7eb !important;
+  }
+}
+
+
 </style>
 """, unsafe_allow_html=True)
