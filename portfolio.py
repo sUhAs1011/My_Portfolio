@@ -1801,7 +1801,7 @@ st.markdown("""
 
 @media (max-width: 768px){
   .content-section{
-    scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 60px) !important;
+    scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 70px) !important;
   }
 
 /* ✅ Force navbar readable in both themes */
