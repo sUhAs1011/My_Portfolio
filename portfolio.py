@@ -1738,5 +1738,40 @@ st.markdown("""
     text-shadow:none !important;
   }
 }
+
+/* ===== FINAL FIX: Contact Buttons Visible in Light & Dark Mode ===== */
+.button-row .contact-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+}
+
+/* Light mode — dark pill + white text */
+@media (prefers-color-scheme: light) {
+  .button-row .contact-button {
+    background-color: #0f172a !important;
+    border: 2px solid #1e3a8a !important;
+    color: #ffffff !important;
+  }
+  .button-row .contact-button * {
+    color: #ffffff !important;
+  }
+}
+
+/* Dark mode — slightly lighter pill + white text */
+@media (prefers-color-scheme: dark) {
+  .button-row .contact-button {
+    background-color: #111827 !important;
+    border: 2px solid #1e3a8a !important;
+    color: #ffffff !important;
+  }
+  .button-row .contact-button * {
+    color: #ffffff !important;
+  }
+}
+
 </style>
 """, unsafe_allow_html=True)
