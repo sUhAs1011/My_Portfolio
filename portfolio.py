@@ -84,6 +84,10 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --text-color: #e5e7eb; /* Default to light text for dark theme */
+}
+
 body {
     background-color: #0e1117;
     color: inherit; /* Ensure text is visible on dark background */
@@ -92,11 +96,11 @@ body {
 .gradient-text {
     font-size: 48px;
     font-weight: 800;
-    /* Corrected: use linear-gradient for standard syntax and -webkit- for webkit browsers */
-    background: linear-gradient(90deg, #005BEA, #00C6FB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: inherit; /* Makes text transparent so gradient background shows through */
-    color: inherit; /* Fallback for browsers that don't support -webkit-text-fill-color */
+    /* Theme-aware: no gradient by default to prevent blue flash */
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: var(--text-color, #e5e7eb) !important;
+    color: var(--text-color, #e5e7eb) !important;
     margin-bottom: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -115,12 +119,21 @@ body {
 
 .gradient-text span.letter:hover {
     transform: translateY(-5px) scale(1.2);
-    -webkit-text-fill-color: #00C6FB;
-    text-shadow: 0 0 15px rgba(0, 198, 251, 0.8);
+    -webkit-text-fill-color: #1d4ed8 !important;
+    color: #1d4ed8 !important;
+    text-shadow: 0 0 15px rgba(29, 78, 216, 0.4);
 }
 
 .gradient-text span {
-    -webkit-text-fill-color: inherit; /* Span within gradient-text should also be transparent to inherit parent's gradient */
+    -webkit-text-fill-color: var(--text-color, #e5e7eb) !important;
+    color: var(--text-color, #e5e7eb) !important;
+}
+
+.gradient-text .emoji {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: var(--text-color, #e5e7eb) !important;
+    color: var(--text-color, #e5e7eb) !important;
 }
 
 .subtitle {
