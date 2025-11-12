@@ -1797,7 +1797,7 @@ st.markdown("""
   padding-top: calc(var(--nav-h-dyn, var(--nav-h)) + 10px) !important;
 }
 .content-section{
-  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 10px) !important;
+  scroll-margin-top: calc(var(--nav-h-dyn, var(--nav-h)) + 30px) !important;
 }
 
 @media (max-width: 768px){
