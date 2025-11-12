@@ -683,60 +683,12 @@ body {
 }
 
 
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown("""
 <style>
 /* your .timeline-container, .timeline-item, .left/right CSS here */
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -789,30 +741,6 @@ h3 a { color: var(--text-color) !important; font-weight: 700; }
 /* Profile pic glow tuned for both themes */
 .profile-pic { box-shadow: 0 0 25px rgba(0, 198, 251, 0.35); }
 .profile-pic:hover { box-shadow: 0 0 35px rgba(0, 198, 251, 0.55); }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -939,30 +867,6 @@ st.markdown("""
     height: 18px;
   }
 }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -1073,31 +977,7 @@ st.markdown("""
             font-size: 14px;
         }
     }
-    
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
-</style>
+    </style>
 """, unsafe_allow_html=True)
 
 # --- Skills Section ---
@@ -1370,30 +1250,6 @@ st.markdown("""
     font-size: 16px;
     color: #bbb;
 }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -1771,30 +1627,6 @@ st.markdown("""
   -webkit-text-fill-color: var(--text-color) !important;
   color: var(--text-color) !important;
 }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -1826,30 +1658,6 @@ h3 a{ color: var(--sv-text) !important; }
 
 /* Buttons */
 .contact-button{ border-color: var(--sv-text) !important; color: var(--sv-text) !important; }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -1882,30 +1690,6 @@ st.markdown("""
 
 /* Keep subtitle and paragraph readable across themes */
 .subtitle, .intro, p { color: var(--text-color, var(--sv-text, #111)) !important; }
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
-
 </style>
 """, unsafe_allow_html=True)
 
@@ -2075,30 +1859,6 @@ main .block-container { padding-bottom: 0.5rem !important; }
 
 /* Just in case any container adds extra padding */
 [data-testid="stAppViewContainer"] { padding-bottom: 0 !important; }
-
-
-/* ===== FIX: Ensure section headings don't hide under navbar ===== */
-:root{
-  --nav-offset-desktop: 90px;   /* adjust smaller/larger if needed */
-  --nav-offset-mobile: 130px;   /* increase for taller mobile navbars */
-}
-
-.anchor-target{ position: relative; }
-
-.anchor-target::before{
-  content: "";
-  display: block;
-  height: var(--nav-offset-desktop);
-  margin-top: calc(var(--nav-offset-desktop) * -1);
-  visibility: hidden;
-}
-
-@media (max-width: 768px){
-  .anchor-target::before{
-    height: var(--nav-offset-mobile);
-    margin-top: calc(var(--nav-offset-mobile) * -1);
-  }
-}
 
 </style>
 """, unsafe_allow_html=True)
