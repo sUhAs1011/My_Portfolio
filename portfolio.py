@@ -449,7 +449,7 @@ body {
 /* Mobile responsive styles */
 @media screen and (max-width: 768px) {
     .navbar-custom {
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
     
     .navbar-name {
